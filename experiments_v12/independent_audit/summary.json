@@ -1,0 +1,11 @@
+{
+  "runs": 64,
+  "source_hash_mismatches": 0,
+  "max_fir": 2.3836428919565833e-07,
+  "max_anr": 7.418523068736249e-06,
+  "max_all_controller_anr": 7.497062398442722e-06,
+  "max_summary": 4.869842527455148e-06,
+  "max_ledger": 0.0,
+  "event_mismatches": 0,
+  "max_missing_jacobi_cost_ratio": 4.756429019443864e-07
+}

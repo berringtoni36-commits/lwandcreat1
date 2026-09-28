@@ -1,0 +1,66 @@
+{
+  "phase": "dev",
+  "case": "E2",
+  "run": 2,
+  "mu": 0.05,
+  "config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false
+  },
+  "source": "experiments_v14\\outputs\\n14_dev_inputs\\caseE2_run02.npz",
+  "source_sha256": "8fb51f0233bdfb0d032df3777ccddaca6e632a9fb9e98e7a8c89617fe83856d6",
+  "simulator_sha256": "652a60190486d5160da8d496371e5401a9375b396b354c1446ceba2bcfc373ce",
+  "protocol_sha256": "0f8e4ce8da696e8349b2a586ecb5e2d7b742a26ed7f04a14e47c708e46a1c225",
+  "segments": [
+    {
+      "anr_db": -9.471647262573242,
+      "mean_mults": 16771.35153,
+      "mean_R": 2.48002
+    },
+    {
+      "anr_db": -8.893288612365723,
+      "mean_mults": 15834.0,
+      "mean_R": 2.0
+    },
+    {
+      "anr_db": -7.768567085266113,
+      "mean_mults": 15834.0,
+      "mean_R": 2.0
+    },
+    {
+      "anr_db": -9.804953575134277,
+      "mean_mults": 15834.0,
+      "mean_R": 2.0
+    }
+  ],
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 315671,
+      "truncation_relative_frobenius": 0.03142604165072742,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.99823018706218,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    }
+  ],
+  "mean_mults": 16068.3378825,
+  "mean_cost_ratio_to_R4": 0.8398671274566172,
+  "accepted_prune": 1,
+  "physical_fir_max_abs": 8.881784197001252e-16,
+  "seconds": 14.536019099999976,
+  "result_sha256": "4c38d2e9f1bcf2ca52d8cd60eb791d34c35fdeb47045ea063934db03c9802095"
+}

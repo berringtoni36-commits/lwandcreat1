@@ -1,0 +1,44 @@
+{
+  "phase": "dev",
+  "round": 1,
+  "runs": 5,
+  "cases": [
+    "E1"
+  ],
+  "lengths": {
+    "E1": 300000
+  },
+  "seed": 2026092801,
+  "config": {
+    "r_min": 1,
+    "r_max": 8,
+    "warmup": 2000,
+    "train_samples": 1000,
+    "validation_samples": 1000,
+    "ramp_samples": 100,
+    "cooldown": 4000,
+    "screen_every": 50,
+    "screen_beta": 0.9,
+    "lambda_cost": 0.01,
+    "margin": 0.0005,
+    "enabled": true,
+    "max_backoff": 16000,
+    "prune_mode": "svd"
+  },
+  "mu_by_method": {},
+  "baselines": "essential",
+  "git_head": "e4ec3206fbaa9e3d43a439408878e8700b28b51a",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "sources_sha256": {
+    "experiments_v12\\adaptive_core.py": "1c9883778aa3f8ae31fa1aff7a054989f322f6711c0adf9002db6115812b6568",
+    "experiments_v12\\run.py": "7f2f489d1d4b50d540f53ba3ed2758e6a668a769a167dd3e1ab8d75ca6c16b83",
+    "experiments_v12\\test_adaptive.py": "dc929ff95526727056b58184047b83616a87c376e98fdce3f9d9f9d07e409069",
+    "experiments_v10\\anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "performance_margin_db": 0.5,
+  "total_cost_ratio_target": 0.9,
+  "confirm_alpha": 0.025,
+  "interpretation": "Only phase=confirm with frozen inputs is independent confirmation"
+}

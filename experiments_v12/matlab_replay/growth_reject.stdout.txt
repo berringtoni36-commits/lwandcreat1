@@ -1,0 +1,18 @@
+                   max_z_error: 5.1348e-16
+                   max_q_error: 5.2736e-16
+               max_trace_error: 5.5511e-16
+     max_trace_error_by_column: [0 0 2.7756e-16 3.3307e-16 0 0 5.5511e-16 5.5511e-16 4.4409e-16 4.4409e-16]
+    max_actual_secondary_error: 3.3307e-16
+             max_A_final_error: 3.0531e-16
+             max_B_final_error: 2.7756e-16
+               proposal_sample: 9
+       validation_start_sample: 39
+               decision_sample: 79
+               decision_accept: 0
+                 switch_sample: NaN
+                old_loss_error: 1.0225e-33
+                new_loss_error: 3.8218e-34
+               old_score_error: 0
+               new_score_error: 0
+               structure_match: 1
+

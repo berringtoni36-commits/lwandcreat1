@@ -1,0 +1,175 @@
+{
+  "phase": "dev_diagnostic",
+  "case": "E3",
+  "run": 2,
+  "mu": 0.05,
+  "interval": 50000,
+  "config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false,
+    "resort_interval": 50000
+  },
+  "input_sha256": "cb9cd9d3f01e6b5e3f623680060169bacaa4ba1590b88e6e599c91aa701b7f61",
+  "simulator_sha256": "0f189b00dc2988fa16451ba9c5ca94456073ddcd6fdf1296ba5cd1c758ea00ee",
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 322395,
+      "truncation_relative_frobenius": 0.07205490123299897,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.000754732294252,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    },
+    {
+      "n": 74000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 78000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9987131789309799,
+      "validation_samples": 2000,
+      "ramp_start": 78001,
+      "ramp_end": 78100
+    },
+    {
+      "n": 128000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 132000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9993804375776258,
+      "validation_samples": 2000,
+      "ramp_start": 132001,
+      "ramp_end": 132100
+    },
+    {
+      "n": 182000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 186000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0002631078870212,
+      "validation_samples": 2000,
+      "ramp_start": 186001,
+      "ramp_end": 186100
+    },
+    {
+      "n": 236000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 240000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9998799763349925,
+      "validation_samples": 2000,
+      "ramp_start": 240001,
+      "ramp_end": 240100
+    },
+    {
+      "n": 290000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 294000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0005571069769401,
+      "validation_samples": 2000,
+      "ramp_start": 294001,
+      "ramp_end": 294100
+    },
+    {
+      "n": 344000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 348000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9997517037169357,
+      "validation_samples": 2000,
+      "ramp_start": 348001,
+      "ramp_end": 348100
+    },
+    {
+      "n": 398000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    }
+  ],
+  "segment_anr_db": [
+    -9.000092506408691,
+    -8.559585571289062,
+    -7.356609344482422,
+    -9.258344650268555
+  ],
+  "total_cost_ratio": 0.8514354802163914,
+  "physical_fir_max_abs": 5.306866057708248e-14
+}

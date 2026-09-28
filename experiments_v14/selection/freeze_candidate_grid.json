@@ -1,0 +1,48 @@
+{
+  "status": "frozen_for_select",
+  "phase": "select",
+  "version": "N14",
+  "grid_kind": "one_signed_sort_periodic_resort_spectral_physical_strategy",
+  "cases": [
+    "E2",
+    "E3"
+  ],
+  "runs_per_case": 8,
+  "segment_length": 100000,
+  "tail_samples": 5000,
+  "mu_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.8
+  ],
+  "dynamic_config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false,
+    "resort_interval": 50000
+  },
+  "cost_rule": "C_R=12512+1655R;full500=14508;physical_FIR=4",
+  "selection_rule": "fixed_8x4_mean_ANR;dynamic_25_joint_J_ge7of8",
+  "protocol_sha256": "faa111bab5d7979b27a5755bb700347fdcfa075e71f259c3cb7e6128f329034f",
+  "source_sha256": {
+    "experiments_v14/protocol/PREREGISTRATION.md": "faa111bab5d7979b27a5755bb700347fdcfa075e71f259c3cb7e6128f329034f",
+    "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+    "experiments_v14/fixed_frontier/kernel.py": "66a09b04bd182070382e31c3d6df8af25518528263dafc217ceb9ddebea58561",
+    "experiments_v14/fixed_frontier/run_frontier.py": "afb0487ec3e60a7850c679fce8e9ff2b2e49b5117d101263a1bc249f6fb95948",
+    "experiments_v14/fixed_frontier/selection_interface.py": "743fb526b7cf1c4aafa75d2516bdf9ad336d05cd9d88ea7efada6e1376ef8fbf",
+    "experiments_v14/selection/selection_runner.py": "7c9fa3fbe1236c9bc05192c8347f945987e78ad24832cece4bb9782b4249bd39",
+    "experiments_v14/selection/selection_analysis.py": "a21525ceeeb8f699b351964918a87e1b465f3126f4fe66ae7a8814c856d3a4a3",
+    "experiments_v14/selection/check_freeze.py": "3d97151ebce5d723b4beaabbf820cf330d3c770b396eb161b40124736e03cab6",
+    "experiments_v14/selection/test_selection.py": "fd292f0a59f5baeea4a5f1069a8281be6d33a7617c2ab8cbac83674d565c90e2",
+    "experiments_v14/resort_diagnostic/selector_resort.py": "3be39ad3665aeab96e9f068135f9cab9b04fbafda960421682be398fd4e3f356",
+    "experiments_v14/resort_diagnostic/test_resort.py": "24035b867910bb65fb4c3237e557cefab643ad9cd75c4537db80e69410983d7c",
+    "experiments_v12/counted_linalg.py": "1a3ffc6158641623ec65704c4f94e721243887c922a873d6ba9ad80afd5a8db3",
+    "experiments_v12/outputs/main_dev_round1/sources/experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "dev_audit_relative_path": "experiments_v14/resort_diagnostic/DEVELOPMENT_REPORT.md",
+  "freeze_authorization": "parent_reviewed_after_dev",
+  "evidence_note": "N14 10 new development runs passed all 40 segment quality gates and 0.90 cost; independent Python replay, causal-prefix test, physical FIR and hidden MATLAB E2/E3 full-length checks passed. E1 failure is explicitly a non-primary migration boundary; select gate and thresholds remain unchanged."
+}

@@ -1,0 +1,71 @@
+{
+  "phase": "dev",
+  "stem": "E2_run00_mu0.1_60f6_full",
+  "selector_sha256": "60f6fa3f0afe5b9ffc03ef4b610bc446efd7a9e5ed391d621fce6f9b1cc78846",
+  "fixture_sha256": "3f5747259beef37ffa161278c1413cf07abf4b2bf5d6c02a2345ad9644b87b94",
+  "reference_trace_sha256": "3ad931cacdaa8cc4e4918a846d33fe4eacf19456f77bca299987847ab9db5744",
+  "matlab_result_sha256": "f0982711abfb1b12a7962138e3396440d8517364d936eefa3987bf5790019fae",
+  "trace_max_abs": {
+    "drive": 1.176836406102666e-14,
+    "physical_error": 1.3100631690576847e-14,
+    "ys_actual": 1.3100631690576847e-14,
+    "anr": 7.35376238480967e-06,
+    "R": 0.0,
+    "candidate_R": 0.0,
+    "retiring_R": 0.0,
+    "resident_factor_coeffs": 0.0,
+    "gamma": 0.0,
+    "cost_core": 0.0,
+    "cost_candidate": 0.0,
+    "cost_retiring": 0.0,
+    "cost_management": 0.0,
+    "cost_reorder": 0.0,
+    "cost_total": 0.0
+  },
+  "integer_traces_equal": true,
+  "event_differences": {
+    "proposal_index": 0,
+    "reorder_mults": 0,
+    "jacobi_sweeps": 0,
+    "truncation": 1.3877787807814457e-17,
+    "decision_index": 0,
+    "accepted": 0,
+    "validation_samples": 0,
+    "validation_ratio": 6.661338147750939e-16,
+    "ramp_start": 0,
+    "ramp_end": 0
+  },
+  "segment_ANR_abs_differences_db": [
+    4.285182644281349e-07,
+    2.3238692925531268e-07,
+    1.08986508706721e-08,
+    2.81717781547286e-07
+  ],
+  "segment_cost_abs_differences": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "mean_cost_abs_difference": 0.0,
+  "physical_FIR_max_abs": 1.1102230246251565e-15,
+  "post_ramp_max_abs": 0.0,
+  "checkpoint_physical_error_abs": {
+    "0": 0.0,
+    "1": 0.0,
+    "19999": 0.0,
+    "20000": 1.3322676295501878e-15,
+    "20001": 8.881784197001252e-16,
+    "22000": 8.881784197001252e-16,
+    "22001": 1.3322676295501878e-15,
+    "24000": 1.5543122344752192e-15,
+    "24001": 1.9984014443252818e-15,
+    "24100": 2.220446049250313e-16,
+    "24101": 1.1102230246251565e-16,
+    "99999": 1.1102230246251565e-15,
+    "199999": 1.1102230246251565e-15,
+    "299999": 2.3314683517128287e-15,
+    "399999": 2.9976021664879227e-15
+  },
+  "pass_full": true
+}

@@ -1,0 +1,52 @@
+{
+  "phase": "dev",
+  "paired_runs": [
+    {
+      "run": 0,
+      "extra_growth_after_burst": 0,
+      "extra_R_time_integral": 0.0,
+      "extra_candidate_R_time_integral": 0.0,
+      "mean_extra_mults_after_burst": 0.0,
+      "R_trace_identical": true,
+      "candidate_R_trace_identical": true
+    },
+    {
+      "run": 1,
+      "extra_growth_after_burst": 0,
+      "extra_R_time_integral": 0.0,
+      "extra_candidate_R_time_integral": 0.0,
+      "mean_extra_mults_after_burst": -0.0012,
+      "R_trace_identical": true,
+      "candidate_R_trace_identical": true
+    },
+    {
+      "run": 2,
+      "extra_growth_after_burst": 0,
+      "extra_R_time_integral": 0.0,
+      "extra_candidate_R_time_integral": 0.0,
+      "mean_extra_mults_after_burst": -0.00104,
+      "R_trace_identical": true,
+      "candidate_R_trace_identical": true
+    },
+    {
+      "run": 3,
+      "extra_growth_after_burst": 0,
+      "extra_R_time_integral": 0.0,
+      "extra_candidate_R_time_integral": 0.0,
+      "mean_extra_mults_after_burst": 0.0,
+      "R_trace_identical": true,
+      "candidate_R_trace_identical": true
+    },
+    {
+      "run": 4,
+      "extra_growth_after_burst": 0,
+      "extra_R_time_integral": 0.0,
+      "extra_candidate_R_time_integral": 0.0,
+      "mean_extra_mults_after_burst": -0.00632,
+      "R_trace_identical": true,
+      "candidate_R_trace_identical": true
+    }
+  ],
+  "all_no_extra_growth": true,
+  "all_rank_traces_identical": true
+}

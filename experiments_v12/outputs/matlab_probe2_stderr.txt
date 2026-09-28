@@ -1,0 +1,5 @@
+ disp(version('\'-release\''); disp(license('\'test\'','\'MATLAB\''));
+                             ↑
+{无效表达式。调用函数或对变量进行索引时，请使用圆括号。否则，请检查不匹配的分隔符。
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

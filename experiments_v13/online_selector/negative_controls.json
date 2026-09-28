@@ -1,0 +1,368 @@
+{
+  "phase": "dev",
+  "rows": [
+    {
+      "case": "E2",
+      "run": 0,
+      "phase": "dev",
+      "proposal_n": 20000,
+      "mu": 0.1,
+      "spectral_threshold": 0.15,
+      "controls": [
+        {
+          "method": "signed_sort",
+          "decision": "send_to_physical_candidate_validation",
+          "counted_jacobi_sweeps": 9,
+          "counted_reorder_mults": 318295,
+          "counted_truncation_relative_frobenius": 0.06549621187013978,
+          "posthoc_library_truncation_for_audit_only": 0.06549621187013974
+        },
+        {
+          "method": "identity",
+          "decision": "reject_jacobi_nonconvergence",
+          "counted_jacobi_sweeps": 32,
+          "counted_reorder_mults": 1055781,
+          "counted_truncation_relative_frobenius": null,
+          "posthoc_library_truncation_for_audit_only": 0.5664443514500644
+        },
+        {
+          "method": "fixed_random",
+          "decision": "reject_spectral_veto",
+          "counted_jacobi_sweeps": 8,
+          "counted_reorder_mults": 295855,
+          "counted_truncation_relative_frobenius": 0.842740599598886,
+          "posthoc_library_truncation_for_audit_only": 0.8427405995988863
+        }
+      ]
+    },
+    {
+      "case": "E2",
+      "run": 1,
+      "phase": "dev",
+      "proposal_n": 20000,
+      "mu": 0.1,
+      "spectral_threshold": 0.15,
+      "controls": [
+        {
+          "method": "signed_sort",
+          "decision": "send_to_physical_candidate_validation",
+          "counted_jacobi_sweeps": 9,
+          "counted_reorder_mults": 313375,
+          "counted_truncation_relative_frobenius": 0.05861825034478885,
+          "posthoc_library_truncation_for_audit_only": 0.05861825034478883
+        },
+        {
+          "method": "identity",
+          "decision": "reject_jacobi_nonconvergence",
+          "counted_jacobi_sweeps": 32,
+          "counted_reorder_mults": 1066113,
+          "counted_truncation_relative_frobenius": null,
+          "posthoc_library_truncation_for_audit_only": 0.5557146001381681
+        },
+        {
+          "method": "fixed_random",
+          "decision": "reject_spectral_veto",
+          "counted_jacobi_sweeps": 9,
+          "counted_reorder_mults": 319935,
+          "counted_truncation_relative_frobenius": 0.7845712093982277,
+          "posthoc_library_truncation_for_audit_only": 0.7845712093982274
+        }
+      ]
+    },
+    {
+      "case": "E2",
+      "run": 2,
+      "phase": "dev",
+      "proposal_n": 20000,
+      "mu": 0.1,
+      "spectral_threshold": 0.15,
+      "controls": [
+        {
+          "method": "signed_sort",
+          "decision": "send_to_physical_candidate_validation",
+          "counted_jacobi_sweeps": 9,
+          "counted_reorder_mults": 325511,
+          "counted_truncation_relative_frobenius": 0.055369748856921065,
+          "posthoc_library_truncation_for_audit_only": 0.05536974885692105
+        },
+        {
+          "method": "identity",
+          "decision": "reject_jacobi_nonconvergence",
+          "counted_jacobi_sweeps": 32,
+          "counted_reorder_mults": 1010353,
+          "counted_truncation_relative_frobenius": null,
+          "posthoc_library_truncation_for_audit_only": 0.564505621636001
+        },
+        {
+          "method": "fixed_random",
+          "decision": "reject_spectral_veto",
+          "counted_jacobi_sweeps": 8,
+          "counted_reorder_mults": 289459,
+          "counted_truncation_relative_frobenius": 0.8353670045036031,
+          "posthoc_library_truncation_for_audit_only": 0.8353670045036031
+        }
+      ]
+    },
+    {
+      "case": "E2",
+      "run": 3,
+      "phase": "dev",
+      "proposal_n": 20000,
+      "mu": 0.1,
+      "spectral_threshold": 0.15,
+      "controls": [
+        {
+          "method": "signed_sort",
+          "decision": "send_to_physical_candidate_validation",
+          "counted_jacobi_sweeps": 10,
+          "counted_reorder_mults": 334831,
+          "counted_truncation_relative_frobenius": 0.053114758921303656,
+          "posthoc_library_truncation_for_audit_only": 0.05311475892130366
+        },
+        {
+          "method": "identity",
+          "decision": "reject_jacobi_nonconvergence",
+          "counted_jacobi_sweeps": 32,
+          "counted_reorder_mults": 1040037,
+          "counted_truncation_relative_frobenius": null,
+          "posthoc_library_truncation_for_audit_only": 0.5146189483688763
+        },
+        {
+          "method": "fixed_random",
+          "decision": "reject_spectral_veto",
+          "counted_jacobi_sweeps": 8,
+          "counted_reorder_mults": 291591,
+          "counted_truncation_relative_frobenius": 0.841689768839103,
+          "posthoc_library_truncation_for_audit_only": 0.841689768839103
+        }
+      ]
+    },
+    {
+      "case": "E2",
+      "run": 4,
+      "phase": "dev",
+      "proposal_n": 20000,
+      "mu": 0.1,
+      "spectral_threshold": 0.15,
+      "controls": [
+        {
+          "method": "signed_sort",
+          "decision": "send_to_physical_candidate_validation",
+          "counted_jacobi_sweeps": 9,
+          "counted_reorder_mults": 320919,
+          "counted_truncation_relative_frobenius": 0.026890264035657908,
+          "posthoc_library_truncation_for_audit_only": 0.02689026403565792
+        },
+        {
+          "method": "identity",
+          "decision": "reject_jacobi_nonconvergence",
+          "counted_jacobi_sweeps": 32,
+          "counted_reorder_mults": 1049221,
+          "counted_truncation_relative_frobenius": null,
+          "posthoc_library_truncation_for_audit_only": 0.6171093041931822
+        },
+        {
+          "method": "fixed_random",
+          "decision": "reject_spectral_veto",
+          "counted_jacobi_sweeps": 8,
+          "counted_reorder_mults": 299627,
+          "counted_truncation_relative_frobenius": 0.7898900104419004,
+          "posthoc_library_truncation_for_audit_only": 0.7898900104419001
+        }
+      ]
+    },
+    {
+      "case": "E3",
+      "run": 0,
+      "phase": "dev",
+      "proposal_n": 20000,
+      "mu": 0.05,
+      "spectral_threshold": 0.15,
+      "controls": [
+        {
+          "method": "signed_sort",
+          "decision": "send_to_physical_candidate_validation",
+          "counted_jacobi_sweeps": 9,
+          "counted_reorder_mults": 311243,
+          "counted_truncation_relative_frobenius": 0.0328138474767216,
+          "posthoc_library_truncation_for_audit_only": 0.03281384747672161
+        },
+        {
+          "method": "identity",
+          "decision": "reject_jacobi_nonconvergence",
+          "counted_jacobi_sweeps": 32,
+          "counted_reorder_mults": 1001989,
+          "counted_truncation_relative_frobenius": null,
+          "posthoc_library_truncation_for_audit_only": 0.5463081908907504
+        },
+        {
+          "method": "fixed_random",
+          "decision": "reject_spectral_veto",
+          "counted_jacobi_sweeps": 8,
+          "counted_reorder_mults": 299627,
+          "counted_truncation_relative_frobenius": 0.8202722514188279,
+          "posthoc_library_truncation_for_audit_only": 0.8202722514188279
+        }
+      ]
+    },
+    {
+      "case": "E3",
+      "run": 1,
+      "phase": "dev",
+      "proposal_n": 20000,
+      "mu": 0.05,
+      "spectral_threshold": 0.15,
+      "controls": [
+        {
+          "method": "signed_sort",
+          "decision": "send_to_physical_candidate_validation",
+          "counted_jacobi_sweeps": 10,
+          "counted_reorder_mults": 340243,
+          "counted_truncation_relative_frobenius": 0.05949171606552878,
+          "posthoc_library_truncation_for_audit_only": 0.05949171606552884
+        },
+        {
+          "method": "identity",
+          "decision": "reject_jacobi_nonconvergence",
+          "counted_jacobi_sweeps": 32,
+          "counted_reorder_mults": 1066933,
+          "counted_truncation_relative_frobenius": null,
+          "posthoc_library_truncation_for_audit_only": 0.5009713044055228
+        },
+        {
+          "method": "fixed_random",
+          "decision": "reject_spectral_veto",
+          "counted_jacobi_sweeps": 8,
+          "counted_reorder_mults": 297331,
+          "counted_truncation_relative_frobenius": 0.8268615139390926,
+          "posthoc_library_truncation_for_audit_only": 0.8268615139390927
+        }
+      ]
+    },
+    {
+      "case": "E3",
+      "run": 2,
+      "phase": "dev",
+      "proposal_n": 20000,
+      "mu": 0.05,
+      "spectral_threshold": 0.15,
+      "controls": [
+        {
+          "method": "signed_sort",
+          "decision": "send_to_physical_candidate_validation",
+          "counted_jacobi_sweeps": 11,
+          "counted_reorder_mults": 369407,
+          "counted_truncation_relative_frobenius": 0.03477312802195615,
+          "posthoc_library_truncation_for_audit_only": 0.03477312802195618
+        },
+        {
+          "method": "identity",
+          "decision": "reject_jacobi_nonconvergence",
+          "counted_jacobi_sweeps": 32,
+          "counted_reorder_mults": 1091533,
+          "counted_truncation_relative_frobenius": null,
+          "posthoc_library_truncation_for_audit_only": 0.570719297151564
+        },
+        {
+          "method": "fixed_random",
+          "decision": "reject_spectral_veto",
+          "counted_jacobi_sweeps": 8,
+          "counted_reorder_mults": 303235,
+          "counted_truncation_relative_frobenius": 0.8369544441105116,
+          "posthoc_library_truncation_for_audit_only": 0.8369544441105116
+        }
+      ]
+    },
+    {
+      "case": "E3",
+      "run": 3,
+      "phase": "dev",
+      "proposal_n": 20000,
+      "mu": 0.05,
+      "spectral_threshold": 0.15,
+      "controls": [
+        {
+          "method": "signed_sort",
+          "decision": "send_to_physical_candidate_validation",
+          "counted_jacobi_sweeps": 10,
+          "counted_reorder_mults": 358119,
+          "counted_truncation_relative_frobenius": 0.07237700936775984,
+          "posthoc_library_truncation_for_audit_only": 0.07237700936775994
+        },
+        {
+          "method": "identity",
+          "decision": "reject_jacobi_nonconvergence",
+          "counted_jacobi_sweeps": 32,
+          "counted_reorder_mults": 1092681,
+          "counted_truncation_relative_frobenius": null,
+          "posthoc_library_truncation_for_audit_only": 0.3515042919952155
+        },
+        {
+          "method": "fixed_random",
+          "decision": "reject_spectral_veto",
+          "counted_jacobi_sweeps": 8,
+          "counted_reorder_mults": 290935,
+          "counted_truncation_relative_frobenius": 0.7477900004567214,
+          "posthoc_library_truncation_for_audit_only": 0.7477900004567218
+        }
+      ]
+    },
+    {
+      "case": "E3",
+      "run": 4,
+      "phase": "dev",
+      "proposal_n": 20000,
+      "mu": 0.05,
+      "spectral_threshold": 0.15,
+      "controls": [
+        {
+          "method": "signed_sort",
+          "decision": "send_to_physical_candidate_validation",
+          "counted_jacobi_sweeps": 10,
+          "counted_reorder_mults": 345327,
+          "counted_truncation_relative_frobenius": 0.0537143716939905,
+          "posthoc_library_truncation_for_audit_only": 0.05371437169399042
+        },
+        {
+          "method": "identity",
+          "decision": "reject_jacobi_nonconvergence",
+          "counted_jacobi_sweeps": 32,
+          "counted_reorder_mults": 1023145,
+          "counted_truncation_relative_frobenius": null,
+          "posthoc_library_truncation_for_audit_only": 0.5094100853947044
+        },
+        {
+          "method": "fixed_random",
+          "decision": "reject_spectral_veto",
+          "counted_jacobi_sweeps": 8,
+          "counted_reorder_mults": 303563,
+          "counted_truncation_relative_frobenius": 0.8572529054748766,
+          "posthoc_library_truncation_for_audit_only": 0.8572529054748769
+        }
+      ]
+    }
+  ],
+  "threshold_sensitivity": {
+    "0.1": {
+      "signed_sort": 10,
+      "identity": 0,
+      "fixed_random": 0
+    },
+    "0.15": {
+      "signed_sort": 10,
+      "identity": 0,
+      "fixed_random": 0
+    },
+    "0.2": {
+      "signed_sort": 10,
+      "identity": 0,
+      "fixed_random": 0
+    },
+    "0.3": {
+      "signed_sort": 10,
+      "identity": 0,
+      "fixed_random": 0
+    }
+  },
+  "important": "Library SVD above is only post-hoc control audit; deployed factorization is counted QR/Jacobi and nonconvergence rejects."
+}

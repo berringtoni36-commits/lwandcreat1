@@ -29,4 +29,14 @@ Desktop.ini
 *.fls
 *.synctex.gz
 
-# Research outputs, NPZ data, figures, PDFs and logs are intentionally tracked.
+# This paused code checkpoint keeps reproducible source and small reports.
+# New large numeric arrays remain local and can be regenerated from frozen
+# inputs/seeds. Already tracked historical files are unaffected by ignore.
+experiments_v12/**/*.npz
+experiments_v12/**/*.mat
+experiments_v13/**/*.npz
+experiments_v13/**/*.mat
+experiments_v14/**/*.npz
+experiments_v14/**/*.mat
+experiments_v14/outputs/n14_select_*/
+experiments_v14/outputs/n14_confirm_*/

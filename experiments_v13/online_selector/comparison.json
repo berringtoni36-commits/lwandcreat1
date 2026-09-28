@@ -1,0 +1,281 @@
+{
+  "phase": "dev",
+  "mu_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.8
+  ],
+  "selection_rule": "one mu per case and fixed rank minimizing 5 runs x 4 segments development mean ANR",
+  "cases": {
+    "E2": {
+      "chosen_fixed_mu_from_5x4_dev_mean": {
+        "1": 0.05,
+        "2": 0.05,
+        "3": 0.1,
+        "4": 0.1,
+        "5": 0.05,
+        "6": 0.05,
+        "7": 0.1,
+        "8": 0.1
+      },
+      "rows": [
+        {
+          "method": "fixed_R1",
+          "mu": 0.05,
+          "factor_coeffs": 45,
+          "cost_mults": 14167,
+          "cost_ratio_to_R4": 0.7404871419611123,
+          "worst_segment_gap_to_tuned_R4_db": 5.384770925463687,
+          "mean_segment_gap_to_tuned_R4_db": 4.432979944157218,
+          "segments_within_half_db": 0
+        },
+        {
+          "method": "fixed_R2",
+          "mu": 0.05,
+          "factor_coeffs": 90,
+          "cost_mults": 15822,
+          "cost_ratio_to_R4": 0.8269914279740749,
+          "worst_segment_gap_to_tuned_R4_db": 2.879404261371592,
+          "mean_segment_gap_to_tuned_R4_db": 2.1981765703839096,
+          "segments_within_half_db": 0
+        },
+        {
+          "method": "fixed_R3",
+          "mu": 0.1,
+          "factor_coeffs": 135,
+          "cost_mults": 17477,
+          "cost_ratio_to_R4": 0.9134957139870374,
+          "worst_segment_gap_to_tuned_R4_db": 1.5089789130675975,
+          "mean_segment_gap_to_tuned_R4_db": 0.8168389492707551,
+          "segments_within_half_db": 0
+        },
+        {
+          "method": "fixed_R4",
+          "mu": 0.1,
+          "factor_coeffs": 180,
+          "cost_mults": 19132,
+          "cost_ratio_to_R4": 1.0,
+          "worst_segment_gap_to_tuned_R4_db": 0.0,
+          "mean_segment_gap_to_tuned_R4_db": 0.0,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "fixed_R5",
+          "mu": 0.05,
+          "factor_coeffs": 225,
+          "cost_mults": 20787,
+          "cost_ratio_to_R4": 1.0865042860129626,
+          "worst_segment_gap_to_tuned_R4_db": -0.4882596429412427,
+          "mean_segment_gap_to_tuned_R4_db": -0.7246201542786287,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "fixed_R6",
+          "mu": 0.05,
+          "factor_coeffs": 270,
+          "cost_mults": 22442,
+          "cost_ratio_to_R4": 1.1730085720259251,
+          "worst_segment_gap_to_tuned_R4_db": -0.8937523501982874,
+          "mean_segment_gap_to_tuned_R4_db": -1.2345660671633785,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "fixed_R7",
+          "mu": 0.1,
+          "factor_coeffs": 315,
+          "cost_mults": 24097,
+          "cost_ratio_to_R4": 1.2595128580388877,
+          "worst_segment_gap_to_tuned_R4_db": -1.1953523931543142,
+          "mean_segment_gap_to_tuned_R4_db": -1.6248002125821734,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "fixed_R8",
+          "mu": 0.1,
+          "factor_coeffs": 360,
+          "cost_mults": 25752,
+          "cost_ratio_to_R4": 1.3460171440518502,
+          "worst_segment_gap_to_tuned_R4_db": -1.3964023765498474,
+          "mean_segment_gap_to_tuned_R4_db": -1.869400254394013,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "full_RFF_MCC_original_default_mu",
+          "mu": 0.2,
+          "factor_coeffs": 500,
+          "cost_mults": 14508,
+          "cost_ratio_to_R4": 0.758310683671336,
+          "worst_segment_gap_to_tuned_R4_db": -2.0697432121137957,
+          "mean_segment_gap_to_tuned_R4_db": -2.7817391122884976,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "online_once",
+          "mu": 0.1,
+          "factor_coeffs_active_after_accept": 90,
+          "max_resident_factor_coeffs": 270,
+          "mean_cost_mults": 16068.355170499999,
+          "mean_cost_ratio_to_R4": 0.8398680310735939,
+          "worst_segment_cost_ratio_to_R4": 0.8766225763119381,
+          "worst_segment_gap_to_tuned_R4_db": 0.3948058859269805,
+          "mean_segment_gap_to_tuned_R4_db": 0.050973108857132354,
+          "segments_within_half_db": 20,
+          "worst_segment_gap_to_default_full500_db": 3.4625062942504883,
+          "mean_segment_gap_to_default_full500_db": 2.8327122211456297,
+          "segments_better_than_default_full500": 0
+        },
+        {
+          "method": "online_gated_growth",
+          "mu": 0.1,
+          "factor_coeffs_active_after_accept": 90,
+          "max_resident_factor_coeffs": 270,
+          "mean_cost_mults": 16399.6769705,
+          "mean_cost_ratio_to_R4": 0.857185708263642,
+          "worst_segment_cost_ratio_to_R4": 0.8939402535019861,
+          "worst_segment_gap_to_tuned_R4_db": 0.3948058859269805,
+          "mean_segment_gap_to_tuned_R4_db": 0.050973108857132354,
+          "segments_within_half_db": 20,
+          "worst_segment_gap_to_default_full500_db": 3.4625062942504883,
+          "mean_segment_gap_to_default_full500_db": 2.8327122211456297,
+          "segments_better_than_default_full500": 0
+        }
+      ]
+    },
+    "E3": {
+      "chosen_fixed_mu_from_5x4_dev_mean": {
+        "1": 0.05,
+        "2": 0.05,
+        "3": 0.05,
+        "4": 0.05,
+        "5": 0.1,
+        "6": 0.1,
+        "7": 0.1,
+        "8": 0.1
+      },
+      "rows": [
+        {
+          "method": "fixed_R1",
+          "mu": 0.05,
+          "factor_coeffs": 45,
+          "cost_mults": 14167,
+          "cost_ratio_to_R4": 0.7404871419611123,
+          "worst_segment_gap_to_tuned_R4_db": 5.130684333924614,
+          "mean_segment_gap_to_tuned_R4_db": 4.295202453162023,
+          "segments_within_half_db": 0
+        },
+        {
+          "method": "fixed_R2",
+          "mu": 0.05,
+          "factor_coeffs": 90,
+          "cost_mults": 15822,
+          "cost_ratio_to_R4": 0.8269914279740749,
+          "worst_segment_gap_to_tuned_R4_db": 2.6038678219442826,
+          "mean_segment_gap_to_tuned_R4_db": 2.1234841860922797,
+          "segments_within_half_db": 0
+        },
+        {
+          "method": "fixed_R3",
+          "mu": 0.05,
+          "factor_coeffs": 135,
+          "cost_mults": 17477,
+          "cost_ratio_to_R4": 0.9134957139870374,
+          "worst_segment_gap_to_tuned_R4_db": 1.1044822808709531,
+          "mean_segment_gap_to_tuned_R4_db": 0.7927327895599315,
+          "segments_within_half_db": 0
+        },
+        {
+          "method": "fixed_R4",
+          "mu": 0.05,
+          "factor_coeffs": 180,
+          "cost_mults": 19132,
+          "cost_ratio_to_R4": 1.0,
+          "worst_segment_gap_to_tuned_R4_db": 0.0,
+          "mean_segment_gap_to_tuned_R4_db": 0.0,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "fixed_R5",
+          "mu": 0.1,
+          "factor_coeffs": 225,
+          "cost_mults": 20787,
+          "cost_ratio_to_R4": 1.0865042860129626,
+          "worst_segment_gap_to_tuned_R4_db": -0.4198286242131424,
+          "mean_segment_gap_to_tuned_R4_db": -0.6058064110236052,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "fixed_R6",
+          "mu": 0.1,
+          "factor_coeffs": 270,
+          "cost_mults": 22442,
+          "cost_ratio_to_R4": 1.1730085720259251,
+          "worst_segment_gap_to_tuned_R4_db": -0.7797352001080089,
+          "mean_segment_gap_to_tuned_R4_db": -1.048181882595672,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "fixed_R7",
+          "mu": 0.1,
+          "factor_coeffs": 315,
+          "cost_mults": 24097,
+          "cost_ratio_to_R4": 1.2595128580388877,
+          "worst_segment_gap_to_tuned_R4_db": -0.928171688938761,
+          "mean_segment_gap_to_tuned_R4_db": -1.3737503241423885,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "fixed_R8",
+          "mu": 0.1,
+          "factor_coeffs": 360,
+          "cost_mults": 25752,
+          "cost_ratio_to_R4": 1.3460171440518502,
+          "worst_segment_gap_to_tuned_R4_db": -1.2136793813725504,
+          "mean_segment_gap_to_tuned_R4_db": -1.6650771112225633,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "full_RFF_MCC_original_default_mu",
+          "mu": 0.1,
+          "factor_coeffs": 500,
+          "cost_mults": 14508,
+          "cost_ratio_to_R4": 0.758310683671336,
+          "worst_segment_gap_to_tuned_R4_db": -2.048362793166932,
+          "mean_segment_gap_to_tuned_R4_db": -2.6888828553652018,
+          "segments_within_half_db": 20
+        },
+        {
+          "method": "online_once",
+          "mu": 0.05,
+          "factor_coeffs_active_after_accept": 90,
+          "max_resident_factor_coeffs": 270,
+          "mean_cost_mults": 16068.410874500001,
+          "mean_cost_ratio_to_R4": 0.8398709426353752,
+          "worst_segment_cost_ratio_to_R4": 0.8766406486514738,
+          "worst_segment_gap_to_tuned_R4_db": 0.45488732890338035,
+          "mean_segment_gap_to_tuned_R4_db": 0.07594713788278402,
+          "segments_within_half_db": 20,
+          "worst_segment_gap_to_default_full500_db": 3.3883919715881348,
+          "mean_segment_gap_to_default_full500_db": 2.764829993247986,
+          "segments_better_than_default_full500": 0
+        },
+        {
+          "method": "online_gated_growth",
+          "mu": 0.05,
+          "factor_coeffs_active_after_accept": 90,
+          "max_resident_factor_coeffs": 270,
+          "mean_cost_mults": 16399.7326745,
+          "mean_cost_ratio_to_R4": 0.8571886198254234,
+          "worst_segment_cost_ratio_to_R4": 0.893958325841522,
+          "worst_segment_gap_to_tuned_R4_db": 0.45488732890338035,
+          "mean_segment_gap_to_tuned_R4_db": 0.07594713788278402,
+          "segments_within_half_db": 20,
+          "worst_segment_gap_to_default_full500_db": 3.3883919715881348,
+          "mean_segment_gap_to_default_full500_db": 2.764829993247986,
+          "segments_better_than_default_full500": 0
+        }
+      ]
+    }
+  }
+}

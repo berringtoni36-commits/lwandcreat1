@@ -1,0 +1,51 @@
+{
+  "phase": "select",
+  "round": 1,
+  "runs": 8,
+  "cases": [
+    "E1"
+  ],
+  "lengths": {
+    "E1": 315000
+  },
+  "seed": 2026092802,
+  "config": {
+    "r_min": 1,
+    "r_max": 8,
+    "warmup": 2000,
+    "train_samples": 1000,
+    "validation_samples": 500,
+    "ramp_samples": 100,
+    "cooldown": 4000,
+    "screen_every": 50,
+    "screen_beta": 0.9,
+    "lambda_cost": 0.0005,
+    "margin": 2e-05,
+    "enabled": true,
+    "max_backoff": 16000,
+    "prune_mode": "counted",
+    "growth_mode": "random"
+  },
+  "mu_by_method": {},
+  "baselines": "all",
+  "git_head": "e4ec3206fbaa9e3d43a439408878e8700b28b51a",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "sources_sha256": {
+    "experiments_v12\\adaptive_core.py": "a62414fcaf46dcbbf22872890ccf9bdb10500205d9bd91cd8f0f86762acad5df",
+    "experiments_v12\\counted_linalg.py": "510d78cbb2ec85dd1892ba654cc5be6964b2349d0b404274629226a7e28963a6",
+    "experiments_v12\\run.py": "302a191bf49c6d195873842c13340bebb74fe092068c24319ad2437f1e4e60a8",
+    "experiments_v12\\analyze.py": "49f3130a013b21f1976edac697c398fbdbce3ccda75bf5eecac5fe6d53dce673",
+    "experiments_v12\\test_adaptive.py": "d6bc12896c144cfbfd98697e5e6bfa0c3458633efe072787b83442ea69e82a52",
+    "experiments_v12\\make_matlab_audit.py": "90d637a53aa325151c848bdda8cfda05713cd9d47609256ae5334df5d4ea52dc",
+    "experiments_v12\\matlab\\audit_dynamic.m": "a6cff4e6fd77010c58f5b5cebee66525a7456bf4ed5e5d38e076de5be12be02b",
+    "experiments_v12\\matlab\\verify_fixed_r4.m": "92838e9dd06461f9249502592399e26e976b7fd9609271e30322e083dbe2ca10",
+    "experiments_v10\\anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "performance_margin_db": 0.5,
+  "total_cost_ratio_target": 0.9,
+  "frontier_witness_by_case": {},
+  "confirm_alpha": 0.025,
+  "interpretation": "Only phase=confirm with frozen inputs is independent confirmation"
+}

@@ -1,0 +1,36 @@
+{
+  "checked_run_files": 54,
+  "paired_groups": {
+    "E1": [
+      "selection_e1_v500",
+      "selection_e1_t1000_v500",
+      "selection_e1_growth"
+    ],
+    "E2": [
+      "main_dev_round1",
+      "main_dev_aggressive_growth",
+      "main_dev_continue"
+    ],
+    "E3": [
+      "main_dev_round1",
+      "main_dev_aggressive_growth",
+      "main_dev_continue"
+    ]
+  },
+  "max_ledger_difference": 0.0,
+  "max_physical_fir_difference": 2.3836428919565833e-07,
+  "different_length_not_paired": [
+    "E2 run 0: main_dev_aggressive_growth",
+    "E2 run 1: main_dev_aggressive_growth",
+    "E2 run 2: main_dev_aggressive_growth",
+    "E2 run 3: main_dev_aggressive_growth",
+    "E2 run 4: main_dev_aggressive_growth",
+    "E3 run 0: main_dev_aggressive_growth",
+    "E3 run 1: main_dev_aggressive_growth",
+    "E3 run 2: main_dev_aggressive_growth",
+    "E3 run 3: main_dev_aggressive_growth",
+    "E3 run 4: main_dev_aggressive_growth"
+  ],
+  "problems": [],
+  "passed": true
+}

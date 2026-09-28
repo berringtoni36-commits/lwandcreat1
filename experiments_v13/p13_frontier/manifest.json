@@ -1,0 +1,145 @@
+{
+  "phase": "dev",
+  "case": "P13",
+  "run_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "stages": [
+    120000,
+    80000,
+    120000
+  ],
+  "tail_samples": 10000,
+  "mu": [
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.8
+  ],
+  "ranks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "source_sha256": {
+    "experiments_v13/protocol/PREREGISTRATION.md": "edb82d57321dd4f0f5d896c3b5c64416b5e8b678a19686c054389893cd3fb742",
+    "experiments_v13/protocol/generator.py": "0cefb51190d91bf5dfa98c9afbfec0145898eeac8e02808540d85256c5cd39d1",
+    "experiments_v13/p13_frontier/run_frontier.py": "b0afe2bf2640f7e639cebe74f5c3257da7e44c609ec6635b2395481f607eb757",
+    "experiments_v13/p13_frontier/test_frontier.py": "d9483d0354c766f5308aa5e71e16e6a86aae22db1f47aa8616211e007a4187ef",
+    "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "numba": "0.63.1",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "cost_ledger": {
+    "R1": {
+      "shared_rff_projection": 10000,
+      "shared_rff_scaling": 500,
+      "filtered_x": 2000,
+      "factor_output": 520,
+      "factor_filtered_regressors": 1000,
+      "predictions_norms_increments": 135,
+      "scalar_core": 8,
+      "physical_output_fir": 4,
+      "total_per_sample": 14167
+    },
+    "R2": {
+      "shared_rff_projection": 10000,
+      "shared_rff_scaling": 500,
+      "filtered_x": 2000,
+      "factor_output": 1040,
+      "factor_filtered_regressors": 2000,
+      "predictions_norms_increments": 270,
+      "scalar_core": 8,
+      "physical_output_fir": 4,
+      "total_per_sample": 15822
+    },
+    "R3": {
+      "shared_rff_projection": 10000,
+      "shared_rff_scaling": 500,
+      "filtered_x": 2000,
+      "factor_output": 1560,
+      "factor_filtered_regressors": 3000,
+      "predictions_norms_increments": 405,
+      "scalar_core": 8,
+      "physical_output_fir": 4,
+      "total_per_sample": 17477
+    },
+    "R4": {
+      "shared_rff_projection": 10000,
+      "shared_rff_scaling": 500,
+      "filtered_x": 2000,
+      "factor_output": 2080,
+      "factor_filtered_regressors": 4000,
+      "predictions_norms_increments": 540,
+      "scalar_core": 8,
+      "physical_output_fir": 4,
+      "total_per_sample": 19132
+    },
+    "R5": {
+      "shared_rff_projection": 10000,
+      "shared_rff_scaling": 500,
+      "filtered_x": 2000,
+      "factor_output": 2600,
+      "factor_filtered_regressors": 5000,
+      "predictions_norms_increments": 675,
+      "scalar_core": 8,
+      "physical_output_fir": 4,
+      "total_per_sample": 20787
+    },
+    "R6": {
+      "shared_rff_projection": 10000,
+      "shared_rff_scaling": 500,
+      "filtered_x": 2000,
+      "factor_output": 3120,
+      "factor_filtered_regressors": 6000,
+      "predictions_norms_increments": 810,
+      "scalar_core": 8,
+      "physical_output_fir": 4,
+      "total_per_sample": 22442
+    },
+    "R7": {
+      "shared_rff_projection": 10000,
+      "shared_rff_scaling": 500,
+      "filtered_x": 2000,
+      "factor_output": 3640,
+      "factor_filtered_regressors": 7000,
+      "predictions_norms_increments": 945,
+      "scalar_core": 8,
+      "physical_output_fir": 4,
+      "total_per_sample": 24097
+    },
+    "R8": {
+      "shared_rff_projection": 10000,
+      "shared_rff_scaling": 500,
+      "filtered_x": 2000,
+      "factor_output": 4160,
+      "factor_filtered_regressors": 8000,
+      "predictions_norms_increments": 1080,
+      "scalar_core": 8,
+      "physical_output_fir": 4,
+      "total_per_sample": 25752
+    },
+    "full500": {
+      "shared_rff_projection": 10000,
+      "shared_rff_scaling": 500,
+      "filtered_x": 2000,
+      "output_residual_norm_increment": 2000,
+      "scalar_core": 4,
+      "physical_output_fir": 4,
+      "total_per_sample": 14508
+    }
+  },
+  "interpretation": "Development capacity gate only; no selection or confirmation"
+}

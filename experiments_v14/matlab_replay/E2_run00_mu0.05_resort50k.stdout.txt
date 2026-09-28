@@ -1,0 +1,1 @@
+N14 resort MATLAB replay: T=400000 proposals=8 decisions=7 pending=1 mean_cost=16295.54842000 physical_gap=8.88e-16

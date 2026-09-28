@@ -1,0 +1,49 @@
+{
+  "case": "E3",
+  "run": 2,
+  "phase": "dev",
+  "switch": 20000,
+  "mu": 0.05,
+  "known_segment_boundaries_used": false,
+  "no_candidate_gate": true,
+  "fixed_R4_segment_anr_db": [
+    -7.614116429854519,
+    -7.698819268674678,
+    -6.909528558700092,
+    -8.21453108204863
+  ],
+  "branches": {
+    "signed_sort_R2": {
+      "segment_deltas_db": [
+        -0.09762093177108344,
+        0.1321067876083779,
+        0.29948529566506465,
+        0.2559545701034196
+      ],
+      "body_cost_ratio": 0.8356418565753712,
+      "conventional_cost_ratio": 0.8357728008049342,
+      "quality_within_half_db": true,
+      "check": {
+        "relative_initial_truncation": 0.03477841533212957,
+        "full_output_invariance_error": 0.0,
+        "inherited_FIR_error": 0.0
+      }
+    },
+    "signed_sort_R3": {
+      "segment_deltas_db": [
+        -0.685668445782623,
+        -0.5659599047190786,
+        -0.32664290688374287,
+        -0.505799619951528
+      ],
+      "body_cost_ratio": 0.9178209282876856,
+      "conventional_cost_ratio": 0.9179518783974493,
+      "quality_within_half_db": true,
+      "check": {
+        "relative_initial_truncation": 0.011679837322672117,
+        "full_output_invariance_error": 0.0,
+        "inherited_FIR_error": 0.0
+      }
+    }
+  }
+}

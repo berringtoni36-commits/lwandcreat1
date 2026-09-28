@@ -1,0 +1,84 @@
+{
+  "rows": [
+    {
+      "case": "E2",
+      "best_mu": 0.05,
+      "segment_anr": [
+        -5.121022436722054,
+        -4.940808758298206,
+        -4.363061259065403,
+        -5.193484034420845
+      ],
+      "mean_anr": -4.904594122126627,
+      "new_R4_mean_anr": -4.735420532169576,
+      "old_R4_mean_anr": -8.23299226365228,
+      "full_minus_new_R4_db": -0.169173589957051,
+      "full_minus_old_R4_db": 3.3283981415256525,
+      "seconds": 10.939834799999517,
+      "provenance": {
+        "case": "E2",
+        "run": 0,
+        "phase": "dev",
+        "source": "experiments_v12\\outputs\\main_dev_round1\\caseE2_run00.npz",
+        "source_sha256": "b23df82a3b35eb72dd81a7430aa1a92bbad2c2b5b54310848738c91ee30a3efd",
+        "old_fixed_sweep_sha256": "d66487429372d6ea0074aff056fc8d07559d34ce42ee482e15e2fdabb2690337",
+        "archived_core_sha256": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41",
+        "map_seed": [
+          2026092801,
+          1,
+          0,
+          13
+        ],
+        "ell": 3.9,
+        "mu": [
+          0.05,
+          0.1,
+          0.2,
+          0.4,
+          0.8
+        ],
+        "seconds": 10.939834799999517
+      }
+    },
+    {
+      "case": "E3",
+      "best_mu": 0.05,
+      "segment_anr": [
+        -3.481481422925926,
+        -3.57666612698607,
+        -3.294201318989902,
+        -3.7276040441629448
+      ],
+      "mean_anr": -3.519988228266211,
+      "new_R4_mean_anr": -3.036852325407953,
+      "old_R4_mean_anr": -8.878080342667994,
+      "full_minus_new_R4_db": -0.4831359028582578,
+      "full_minus_old_R4_db": 5.358092114401783,
+      "seconds": 10.82594429999881,
+      "provenance": {
+        "case": "E3",
+        "run": 0,
+        "phase": "dev",
+        "source": "experiments_v12\\outputs\\main_dev_round1\\caseE3_run00.npz",
+        "source_sha256": "3531d81b4382b6fd8ee1cc068e5507b4fa8cb47ca68d791a423ace19f010ac70",
+        "old_fixed_sweep_sha256": "6b5053d62447e9834c265f4ca003065e5770c46d278d587de2e05a43d266e7b7",
+        "archived_core_sha256": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41",
+        "map_seed": [
+          2026092801,
+          2,
+          0,
+          13
+        ],
+        "ell": 3.9,
+        "mu": [
+          0.05,
+          0.1,
+          0.2,
+          0.4,
+          0.8
+        ],
+        "seconds": 10.82594429999881
+      }
+    }
+  ]
+}

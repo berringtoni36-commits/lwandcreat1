@@ -1,0 +1,175 @@
+{
+  "phase": "dev_diagnostic",
+  "case": "E2",
+  "run": 1,
+  "mu": 0.05,
+  "interval": 50000,
+  "config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false,
+    "resort_interval": 50000
+  },
+  "input_sha256": "dc30136c75dfdaa999a61264067209e4d0b94bd57e84f89355df910e8a10a5c3",
+  "simulator_sha256": "3be39ad3665aeab96e9f068135f9cab9b04fbafda960421682be398fd4e3f356",
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 309603,
+      "truncation_relative_frobenius": 0.05693020027493102,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9998917081039395,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    },
+    {
+      "n": 74000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 341539,
+      "truncation_relative_frobenius": 0.059223510294303505,
+      "jacobi_sweeps": 10
+    },
+    {
+      "n": 78000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9968103468977997,
+      "validation_samples": 2000,
+      "ramp_start": 78001,
+      "ramp_end": 78100
+    },
+    {
+      "n": 128000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 346459,
+      "truncation_relative_frobenius": 0.05800230744002438,
+      "jacobi_sweeps": 10
+    },
+    {
+      "n": 132000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9996248281035327,
+      "validation_samples": 2000,
+      "ramp_start": 132001,
+      "ramp_end": 132100
+    },
+    {
+      "n": 182000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 322379,
+      "truncation_relative_frobenius": 0.04418217867456087,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 186000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0001394872943077,
+      "validation_samples": 2000,
+      "ramp_start": 186001,
+      "ramp_end": 186100
+    },
+    {
+      "n": 236000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 378083,
+      "truncation_relative_frobenius": 0.04463350175431243,
+      "jacobi_sweeps": 11
+    },
+    {
+      "n": 240000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9958159672070084,
+      "validation_samples": 2000,
+      "ramp_start": 240001,
+      "ramp_end": 240100
+    },
+    {
+      "n": 290000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 350231,
+      "truncation_relative_frobenius": 0.059622714366668064,
+      "jacobi_sweeps": 10
+    },
+    {
+      "n": 294000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0021939146797687,
+      "validation_samples": 2000,
+      "ramp_start": 294001,
+      "ramp_end": 294100
+    },
+    {
+      "n": 344000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 325823,
+      "truncation_relative_frobenius": 0.033497421782681856,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 348000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.001037938291461,
+      "validation_samples": 2000,
+      "ramp_start": 348001,
+      "ramp_end": 348100
+    },
+    {
+      "n": 398000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 368899,
+      "truncation_relative_frobenius": 0.03258377567820406,
+      "jacobi_sweeps": 11
+    }
+  ],
+  "segment_anr_db": [
+    -9.73039722442627,
+    -10.087281227111816,
+    -9.02086353302002,
+    -11.027389526367188
+  ],
+  "total_cost_ratio": 0.851751163495714,
+  "physical_fir_max_abs": 1.3322676295501878e-15
+}

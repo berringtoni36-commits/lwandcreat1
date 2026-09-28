@@ -1,0 +1,139 @@
+{
+  "phase": "dev",
+  "case": "E1",
+  "run": 4,
+  "provenance": {
+    "phase": "dev",
+    "case": "E1",
+    "run": 4,
+    "source": "experiments_v12\\outputs\\mechanism_dev_residual_only\\caseE1_run04.npz",
+    "source_sha256": "ac10eaffaf3d992a1bdc3949cfc72fa5e8a7fd159c6b0584654e795a956f5c77",
+    "summary_sha256": "c0a2641cf0f0fa30bd1da07b329cbd185ef972c7818b09b1cc73abdc78db0a49",
+    "protocol_sha256": "5e719ddc4f3e9a3acdea94a345ce2004a9171e1e9c3b34aa100facb2297a1dbe",
+    "archived_core_sha256": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "transitions": {
+    "high_boundary": {
+      "sample": 100000,
+      "inverse_permutation_R4_projection_relative_error": 0.05177991884746026,
+      "inherited_FIR_error": 0.0
+    },
+    "prune_200k": {
+      "sample": 200000,
+      "R4_to_R2_projection_relative_error": 0.032540598640182834,
+      "full_output_permutation_error_max_abs": 1.1102230246251565e-16,
+      "inherited_FIR_error": 0.0,
+      "true_low_teacher_geometry_under_current_sort": {
+        "numeric_rank": 20,
+        "relative_best_R1": 0.8037156601247437,
+        "relative_best_R2": 0.7003505860569801,
+        "relative_best_R4": 0.5582658315353508
+      }
+    },
+    "prune_220k": {
+      "sample": 220000,
+      "R4_to_R2_projection_relative_error": 0.07031831620112747,
+      "full_output_permutation_error_max_abs": 2.220446049250313e-16,
+      "inherited_FIR_error": 0.0,
+      "true_low_teacher_geometry_under_current_sort": {
+        "numeric_rank": 20,
+        "relative_best_R1": 0.2552082425024611,
+        "relative_best_R2": 0.08592461262281773,
+        "relative_best_R4": 0.047422352363456384
+      }
+    },
+    "prune_250k": {
+      "sample": 250000,
+      "R4_to_R2_projection_relative_error": 0.06883788287499669,
+      "full_output_permutation_error_max_abs": 5.551115123125783e-17,
+      "inherited_FIR_error": 0.0,
+      "true_low_teacher_geometry_under_current_sort": {
+        "numeric_rank": 20,
+        "relative_best_R1": 0.24970536570420282,
+        "relative_best_R2": 0.07272150214576481,
+        "relative_best_R4": 0.019614421910810274
+      }
+    }
+  },
+  "segments": [
+    {
+      "segment": 1,
+      "teacher_R": 1,
+      "arm_ANR_db": {
+        "original_R4": -35.165613471739384,
+        "prune_200k": -27.817397029726756,
+        "prune_220k": -27.817397029726756,
+        "prune_250k": -27.817397029726756
+      }
+    },
+    {
+      "segment": 2,
+      "teacher_R": 4,
+      "arm_ANR_db": {
+        "original_R4": -32.94729982221386,
+        "prune_200k": -32.95294279070309,
+        "prune_220k": -32.95294279070309,
+        "prune_250k": -32.95294279070309
+      }
+    },
+    {
+      "segment": 3,
+      "teacher_R": 1,
+      "arm_ANR_db": {
+        "original_R4": -35.14538665246512,
+        "prune_200k": -9.758178218610862,
+        "prune_220k": -26.933102862452664,
+        "prune_250k": -27.73712428533191
+      }
+    }
+  ],
+  "first_5000_after_prune_ANR_db": {
+    "200000": {
+      "original_R4": -15.23004971518945,
+      "prune_200k": -9.50740920055357
+    },
+    "220000": {
+      "original_R4": -32.160193628698124,
+      "prune_220k": -27.266536934656692
+    },
+    "250000": {
+      "original_R4": -34.52699061650372,
+      "prune_250k": -28.419702398157085
+    }
+  },
+  "costs": {
+    "prune_200k": {
+      "segment_body_mults_per_sample": [
+        16484.0,
+        19132,
+        15822.0
+      ],
+      "mean_body_mults_per_sample": 17146.0,
+      "one_time_counted_mults": 3005360,
+      "amortized_counted_mults_per_sample": 17156.017866666665,
+      "excluded": "known-boundary detection, sorting comparisons/moves, feature gathers, state copy, candidate/gate"
+    },
+    "prune_220k": {
+      "segment_body_mults_per_sample": [
+        16484.0,
+        19132,
+        16484.0
+      ],
+      "mean_body_mults_per_sample": 17366.666666666668,
+      "one_time_counted_mults": 3005360,
+      "amortized_counted_mults_per_sample": 17376.684533333333,
+      "excluded": "known-boundary detection, sorting comparisons/moves, feature gathers, state copy, candidate/gate"
+    },
+    "prune_250k": {
+      "segment_body_mults_per_sample": [
+        16484.0,
+        19132,
+        17477.0
+      ],
+      "mean_body_mults_per_sample": 17697.666666666668,
+      "one_time_counted_mults": 3005360,
+      "amortized_counted_mults_per_sample": 17707.684533333333,
+      "excluded": "known-boundary detection, sorting comparisons/moves, feature gathers, state copy, candidate/gate"
+    }
+  }
+}

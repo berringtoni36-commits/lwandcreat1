@@ -1,0 +1,94 @@
+{
+  "phase": "dev",
+  "case": "E1",
+  "run": 0,
+  "provenance": {
+    "phase": "dev",
+    "case": "E1",
+    "run": 0,
+    "source": "experiments_v12\\outputs\\mechanism_dev_residual_only\\caseE1_run00.npz",
+    "source_sha256": "3c7dcb1bdffd8594b6a92fe1dd38f4ee5b8f84a55c02174a80cfa94155341116",
+    "summary_sha256": "76cbbe374d4a4928557130d9f907cdefde93fff88b208b855629d0e50574314f",
+    "protocol_sha256": "5e719ddc4f3e9a3acdea94a345ce2004a9171e1e9c3b34aa100facb2297a1dbe",
+    "archived_core_sha256": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "transitions": {
+    "high_boundary": {
+      "sample": 100000,
+      "from_R": 2,
+      "to_R": 4,
+      "old_permutation": "low-stage signed sort",
+      "new_permutation": "identity",
+      "inverse_permutation_output_error_max_abs": 8.326672684688674e-17,
+      "R4_projection_relative_frobenius_error": 0.03383849884265945,
+      "inherited_FIR_max_abs_change": 0.0
+    },
+    "final_low_boundary": {
+      "sample": 200000,
+      "from_R": 4,
+      "to_R": 2,
+      "old_permutation": "identity",
+      "new_permutation": "current signed sort",
+      "full_output_permutation_error_max_abs": 2.220446049250313e-16,
+      "R2_projection_relative_frobenius_error": 0.024336172212813405,
+      "inherited_FIR_max_abs_change": 0.0
+    }
+  },
+  "audit": {
+    "low_switch": {
+      "sample": 19999,
+      "first_branch_sample": 20000,
+      "inherited_FIR_max_abs_change": 0.0
+    },
+    "first_low_replay_error_db": 0.0
+  },
+  "segments": [
+    {
+      "segment": 1,
+      "teacher_R": 1,
+      "original_R4_ANR_db": -33.37258941023385,
+      "boundary_realign_ANR_db": -28.667431595806928,
+      "delta_vs_original_R4_db": 4.705157814426918,
+      "original_R4_reference_error_db": 2.9890572506019453e-07
+    },
+    {
+      "segment": 2,
+      "teacher_R": 4,
+      "original_R4_ANR_db": -33.033203865372876,
+      "boundary_realign_ANR_db": -33.03094582879631,
+      "delta_vs_original_R4_db": 0.002258036576566519,
+      "original_R4_reference_error_db": 3.0743243897290995e-06
+    },
+    {
+      "segment": 3,
+      "teacher_R": 1,
+      "original_R4_ANR_db": -33.30694514827657,
+      "boundary_realign_ANR_db": -7.266150528582562,
+      "delta_vs_original_R4_db": 26.040794619694005,
+      "original_R4_reference_error_db": 3.1621925842273413e-06
+    }
+  ],
+  "boundary_first_5000_ANR_db": {
+    "100000": {
+      "original_R4": -8.384424939295155,
+      "boundary_realign_R2_R4_R2": -7.856680144241042
+    },
+    "200000": {
+      "original_R4": -13.8430805129592,
+      "boundary_realign_R2_R4_R2": -7.890355159293298
+    }
+  },
+  "costs": {
+    "segment_body_mults_per_sample": [
+      16484.0,
+      19132,
+      15822
+    ],
+    "mean_body_mults_per_sample": 17146.0,
+    "one_time_counted_mults": 3005360,
+    "amortized_counted_mults_per_sample": 17156.017866666665,
+    "excluded": "boundary detection, sorting comparisons/moves, feature gathers, memory/state copy, candidate/gate"
+  },
+  "permutation_file": "E1_run00_realign_permutations.npz",
+  "permutation_file_sha256": "2ea1c8294c818958c85de10aa079131fbe7f8e529f3d1546e7aab82fb814af42"
+}

@@ -1,0 +1,175 @@
+{
+  "phase": "dev_diagnostic",
+  "case": "E3",
+  "run": 3,
+  "mu": 0.05,
+  "interval": 50000,
+  "config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false,
+    "resort_interval": 50000
+  },
+  "input_sha256": "68c26fd9585afa748a1a7a62c4d25ff8f5ce41c86abb3c956632fd468ede8947",
+  "simulator_sha256": "0f189b00dc2988fa16451ba9c5ca94456073ddcd6fdf1296ba5cd1c758ea00ee",
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 330075,
+      "truncation_relative_frobenius": 0.053343051513597556,
+      "jacobi_sweeps": 10
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9981491857526599,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    },
+    {
+      "n": 74000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 78000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9998707235855946,
+      "validation_samples": 2000,
+      "ramp_start": 78001,
+      "ramp_end": 78100
+    },
+    {
+      "n": 128000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 132000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9994669013433511,
+      "validation_samples": 2000,
+      "ramp_start": 132001,
+      "ramp_end": 132100
+    },
+    {
+      "n": 182000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 186000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9979265587179218,
+      "validation_samples": 2000,
+      "ramp_start": 186001,
+      "ramp_end": 186100
+    },
+    {
+      "n": 236000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 240000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0055755729481544,
+      "validation_samples": 2000,
+      "ramp_start": 240001,
+      "ramp_end": 240100
+    },
+    {
+      "n": 290000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 294000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0010806397823104,
+      "validation_samples": 2000,
+      "ramp_start": 294001,
+      "ramp_end": 294100
+    },
+    {
+      "n": 344000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 348000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0004763601607078,
+      "validation_samples": 2000,
+      "ramp_start": 348001,
+      "ramp_end": 348100
+    },
+    {
+      "n": 398000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    }
+  ],
+  "segment_anr_db": [
+    -8.770101547241211,
+    -8.292980194091797,
+    -7.0699357986450195,
+    -8.811482429504395
+  ],
+  "total_cost_ratio": 0.851436483770646,
+  "physical_fir_max_abs": 1.0880185641326534e-14
+}

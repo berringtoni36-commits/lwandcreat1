@@ -1,0 +1,512 @@
+[
+  {
+    "sample": 1999,
+    "event": "proposal",
+    "old_R": 2,
+    "new_R": 3,
+    "remove_index": null,
+    "prune_mode": null,
+    "growth_mode": "random",
+    "smallest_singular": null,
+    "decomposition_sweeps": null,
+    "decomposition_charge": 0
+  },
+  {
+    "sample": 3999,
+    "event": "validation_start"
+  },
+  {
+    "sample": 4999,
+    "event": "accept",
+    "old_R": 2,
+    "new_R": 3,
+    "old_loss": 0.042643316518791316,
+    "new_loss": 0.04049128209397362,
+    "old_score": 0.0431886143676606,
+    "new_score": 0.04109363316953898,
+    "validation_samples": 1000,
+    "direction": 1,
+    "loss_delta": -0.002152034424817699,
+    "cost_penalty_delta": 5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 0
+  },
+  {
+    "sample": 5099,
+    "event": "switch_complete",
+    "old_R": 2,
+    "new_R": 3
+  },
+  {
+    "sample": 9099,
+    "event": "proposal",
+    "old_R": 3,
+    "new_R": 2,
+    "remove_index": null,
+    "prune_mode": "counted",
+    "growth_mode": null,
+    "smallest_singular": 5.5770715061153595,
+    "decomposition_sweeps": 4,
+    "decomposition_charge": 1387
+  },
+  {
+    "sample": 11099,
+    "event": "validation_start"
+  },
+  {
+    "sample": 12099,
+    "event": "reject",
+    "old_R": 3,
+    "new_R": 2,
+    "old_loss": 0.028589650117365653,
+    "new_loss": 0.0327848393095453,
+    "old_score": 0.029192001192931014,
+    "new_score": 0.03333013715841458,
+    "validation_samples": 1000,
+    "direction": -1,
+    "loss_delta": 0.004195189192179649,
+    "cost_penalty_delta": -5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 1
+  },
+  {
+    "sample": 16099,
+    "event": "proposal",
+    "old_R": 3,
+    "new_R": 4,
+    "remove_index": null,
+    "prune_mode": null,
+    "growth_mode": "random",
+    "smallest_singular": null,
+    "decomposition_sweeps": null,
+    "decomposition_charge": 0
+  },
+  {
+    "sample": 18099,
+    "event": "validation_start"
+  },
+  {
+    "sample": 19099,
+    "event": "accept",
+    "old_R": 3,
+    "new_R": 4,
+    "old_loss": 0.024213592899260315,
+    "new_loss": 0.02289587720316381,
+    "old_score": 0.024815943974825675,
+    "new_score": 0.023555281505425255,
+    "validation_samples": 1000,
+    "direction": 1,
+    "loss_delta": -0.001317715696096504,
+    "cost_penalty_delta": 5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 0
+  },
+  {
+    "sample": 19199,
+    "event": "switch_complete",
+    "old_R": 3,
+    "new_R": 4
+  },
+  {
+    "sample": 23199,
+    "event": "proposal",
+    "old_R": 4,
+    "new_R": 3,
+    "remove_index": null,
+    "prune_mode": "counted",
+    "growth_mode": null,
+    "smallest_singular": 3.443772778621523,
+    "decomposition_sweeps": 4,
+    "decomposition_charge": 2867
+  },
+  {
+    "sample": 25199,
+    "event": "validation_start"
+  },
+  {
+    "sample": 26199,
+    "event": "reject",
+    "old_R": 4,
+    "new_R": 3,
+    "old_loss": 0.02602116805689501,
+    "new_loss": 0.02766956306852037,
+    "old_score": 0.026680572359156454,
+    "new_score": 0.02827191414408573,
+    "validation_samples": 1000,
+    "direction": -1,
+    "loss_delta": 0.0016483950116253608,
+    "cost_penalty_delta": -5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 1
+  },
+  {
+    "sample": 30199,
+    "event": "proposal",
+    "old_R": 4,
+    "new_R": 5,
+    "remove_index": null,
+    "prune_mode": null,
+    "growth_mode": "random",
+    "smallest_singular": null,
+    "decomposition_sweeps": null,
+    "decomposition_charge": 0
+  },
+  {
+    "sample": 32199,
+    "event": "validation_start"
+  },
+  {
+    "sample": 33199,
+    "event": "accept",
+    "old_R": 4,
+    "new_R": 5,
+    "old_loss": 0.024671880546846214,
+    "new_loss": 0.024269386151234605,
+    "old_score": 0.025331284849107658,
+    "new_score": 0.024985843680192132,
+    "validation_samples": 1000,
+    "direction": 1,
+    "loss_delta": -0.0004024943956116092,
+    "cost_penalty_delta": 5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 0
+  },
+  {
+    "sample": 33299,
+    "event": "switch_complete",
+    "old_R": 4,
+    "new_R": 5
+  },
+  {
+    "sample": 37299,
+    "event": "proposal",
+    "old_R": 5,
+    "new_R": 4,
+    "remove_index": null,
+    "prune_mode": "counted",
+    "growth_mode": null,
+    "smallest_singular": 1.7209869265833402,
+    "decomposition_sweeps": 5,
+    "decomposition_charge": 5463
+  },
+  {
+    "sample": 39299,
+    "event": "validation_start"
+  },
+  {
+    "sample": 40299,
+    "event": "reject",
+    "old_R": 5,
+    "new_R": 4,
+    "old_loss": 0.022956173484236488,
+    "new_loss": 0.023126225392673568,
+    "old_score": 0.023672631013194015,
+    "new_score": 0.02378562969493501,
+    "validation_samples": 1000,
+    "direction": -1,
+    "loss_delta": 0.00017005190843707996,
+    "cost_penalty_delta": -5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 1
+  },
+  {
+    "sample": 44299,
+    "event": "proposal",
+    "old_R": 5,
+    "new_R": 6,
+    "remove_index": null,
+    "prune_mode": null,
+    "growth_mode": "random",
+    "smallest_singular": null,
+    "decomposition_sweeps": null,
+    "decomposition_charge": 0
+  },
+  {
+    "sample": 46299,
+    "event": "validation_start"
+  },
+  {
+    "sample": 47299,
+    "event": "accept",
+    "old_R": 5,
+    "new_R": 6,
+    "old_loss": 0.01761603635311791,
+    "new_loss": 0.017345244993017785,
+    "old_score": 0.01833249388207544,
+    "new_score": 0.0181187557486714,
+    "validation_samples": 1000,
+    "direction": 1,
+    "loss_delta": -0.0002707913601001262,
+    "cost_penalty_delta": 5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 0
+  },
+  {
+    "sample": 47399,
+    "event": "switch_complete",
+    "old_R": 5,
+    "new_R": 6
+  },
+  {
+    "sample": 51399,
+    "event": "proposal",
+    "old_R": 6,
+    "new_R": 5,
+    "remove_index": null,
+    "prune_mode": "counted",
+    "growth_mode": null,
+    "smallest_singular": 1.6414164280118588,
+    "decomposition_sweeps": 5,
+    "decomposition_charge": 8822
+  },
+  {
+    "sample": 53399,
+    "event": "validation_start"
+  },
+  {
+    "sample": 54399,
+    "event": "reject",
+    "old_R": 6,
+    "new_R": 5,
+    "old_loss": 0.023574878261511004,
+    "new_loss": 0.02376858990723955,
+    "old_score": 0.02434838901716462,
+    "new_score": 0.02448504743619708,
+    "validation_samples": 1000,
+    "direction": -1,
+    "loss_delta": 0.0001937116457285462,
+    "cost_penalty_delta": -5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 1
+  },
+  {
+    "sample": 58399,
+    "event": "proposal",
+    "old_R": 6,
+    "new_R": 7,
+    "remove_index": null,
+    "prune_mode": null,
+    "growth_mode": "random",
+    "smallest_singular": null,
+    "decomposition_sweeps": null,
+    "decomposition_charge": 0
+  },
+  {
+    "sample": 60399,
+    "event": "validation_start"
+  },
+  {
+    "sample": 61399,
+    "event": "accept",
+    "old_R": 6,
+    "new_R": 7,
+    "old_loss": 0.02103006049839096,
+    "new_loss": 0.02081658295031246,
+    "old_score": 0.021803571254044574,
+    "new_score": 0.02164714693266216,
+    "validation_samples": 1000,
+    "direction": 1,
+    "loss_delta": -0.00021347754807849936,
+    "cost_penalty_delta": 5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 0
+  },
+  {
+    "sample": 61499,
+    "event": "switch_complete",
+    "old_R": 6,
+    "new_R": 7
+  },
+  {
+    "sample": 65499,
+    "event": "proposal",
+    "old_R": 7,
+    "new_R": 6,
+    "remove_index": null,
+    "prune_mode": "counted",
+    "growth_mode": null,
+    "smallest_singular": 1.0821147842387668,
+    "decomposition_sweeps": 5,
+    "decomposition_charge": 13037
+  },
+  {
+    "sample": 67499,
+    "event": "validation_start"
+  },
+  {
+    "sample": 68499,
+    "event": "reject",
+    "old_R": 7,
+    "new_R": 6,
+    "old_loss": 0.017035875270102127,
+    "new_loss": 0.017283485649234372,
+    "old_score": 0.017866439252451825,
+    "new_score": 0.018056996404887986,
+    "validation_samples": 1000,
+    "direction": -1,
+    "loss_delta": 0.00024761037913224523,
+    "cost_penalty_delta": -5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 1
+  },
+  {
+    "sample": 72499,
+    "event": "proposal",
+    "old_R": 7,
+    "new_R": 8,
+    "remove_index": null,
+    "prune_mode": null,
+    "growth_mode": "random",
+    "smallest_singular": null,
+    "decomposition_sweeps": null,
+    "decomposition_charge": 0
+  },
+  {
+    "sample": 74499,
+    "event": "validation_start"
+  },
+  {
+    "sample": 75499,
+    "event": "accept",
+    "old_R": 7,
+    "new_R": 8,
+    "old_loss": 0.01632123456989849,
+    "new_loss": 0.01614491801513843,
+    "old_score": 0.017151798552248188,
+    "new_score": 0.01703253522418421,
+    "validation_samples": 1000,
+    "direction": 1,
+    "loss_delta": -0.00017631655476006008,
+    "cost_penalty_delta": 5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 0
+  },
+  {
+    "sample": 75599,
+    "event": "switch_complete",
+    "old_R": 7,
+    "new_R": 8
+  },
+  {
+    "sample": 79599,
+    "event": "proposal",
+    "old_R": 8,
+    "new_R": 7,
+    "remove_index": null,
+    "prune_mode": "counted",
+    "growth_mode": null,
+    "smallest_singular": 0.9383139183587689,
+    "decomposition_sweeps": 5,
+    "decomposition_charge": 18839
+  },
+  {
+    "sample": 81599,
+    "event": "validation_start"
+  },
+  {
+    "sample": 82599,
+    "event": "accept",
+    "old_R": 8,
+    "new_R": 7,
+    "old_loss": 0.01797327358825602,
+    "new_loss": 0.017876162504633895,
+    "old_score": 0.018860890797301803,
+    "new_score": 0.018706726486983592,
+    "validation_samples": 1000,
+    "direction": -1,
+    "loss_delta": -9.7111083622127e-05,
+    "cost_penalty_delta": -5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 0
+  },
+  {
+    "sample": 82699,
+    "event": "switch_complete",
+    "old_R": 8,
+    "new_R": 7
+  },
+  {
+    "sample": 86699,
+    "event": "proposal",
+    "old_R": 7,
+    "new_R": 8,
+    "remove_index": null,
+    "prune_mode": null,
+    "growth_mode": "random",
+    "smallest_singular": null,
+    "decomposition_sweeps": null,
+    "decomposition_charge": 0
+  },
+  {
+    "sample": 88699,
+    "event": "validation_start"
+  },
+  {
+    "sample": 89699,
+    "event": "accept",
+    "old_R": 7,
+    "new_R": 8,
+    "old_loss": 0.01945393693336723,
+    "new_loss": 0.01931691051459778,
+    "old_score": 0.020284500915716926,
+    "new_score": 0.02020452772364356,
+    "validation_samples": 1000,
+    "direction": 1,
+    "loss_delta": -0.0001370264187694481,
+    "cost_penalty_delta": 5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 0
+  },
+  {
+    "sample": 89799,
+    "event": "switch_complete",
+    "old_R": 7,
+    "new_R": 8
+  },
+  {
+    "sample": 93799,
+    "event": "proposal",
+    "old_R": 8,
+    "new_R": 7,
+    "remove_index": null,
+    "prune_mode": "counted",
+    "growth_mode": null,
+    "smallest_singular": 0.7404307421079418,
+    "decomposition_sweeps": 5,
+    "decomposition_charge": 18023
+  },
+  {
+    "sample": 95799,
+    "event": "validation_start"
+  },
+  {
+    "sample": 96799,
+    "event": "reject",
+    "old_R": 8,
+    "new_R": 7,
+    "old_loss": 0.0149733637970966,
+    "new_loss": 0.015164221499598488,
+    "old_score": 0.01586098100614238,
+    "new_score": 0.015994785481948184,
+    "validation_samples": 1000,
+    "direction": -1,
+    "loss_delta": 0.0001908577025018874,
+    "cost_penalty_delta": -5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 1
+  }
+]

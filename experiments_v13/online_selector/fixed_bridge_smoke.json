@@ -1,0 +1,33 @@
+{
+  "phase": "synthetic_dev_smoke",
+  "rows": [
+    {
+      "case": "C1",
+      "T": 4000,
+      "max_actuator_abs_difference": 3.552713678800501e-15,
+      "max_physical_error_abs_difference": 3.1086244689504383e-15,
+      "fixed_cost_mults_per_sample": 19132
+    },
+    {
+      "case": "C2",
+      "T": 4000,
+      "max_actuator_abs_difference": 3.608224830031759e-15,
+      "max_physical_error_abs_difference": 4.218847493575595e-15,
+      "fixed_cost_mults_per_sample": 19132
+    },
+    {
+      "case": "C3",
+      "T": 4000,
+      "max_actuator_abs_difference": 4.385380947269368e-15,
+      "max_physical_error_abs_difference": 4.884981308350689e-15,
+      "fixed_cost_mults_per_sample": 19132
+    },
+    {
+      "case": "C4",
+      "T": 4000,
+      "max_actuator_abs_difference": 2.7755575615628914e-15,
+      "max_physical_error_abs_difference": 2.7755575615628914e-15,
+      "fixed_cost_mults_per_sample": 19132
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "phase": "dev",
+  "case": "E2",
+  "run": 0,
+  "mu_before": 0.05,
+  "mu_after": 0.05,
+  "config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false,
+    "mu_after": 0.05
+  },
+  "input_sha256": "052aaf07e3f5f2138b7117a3ba23c4c5abc041520932ef6fca82597c7bca1ce4",
+  "controller_sha256": "3e348e946ed7194c908e69983d18decc3f00a3cb075d25227aa9e541ed6a8fd7",
+  "source_core_sha256": "60F6FA3F0AFE5B9FFC03EF4B610BC446EFD7A9E5ED391D621FCE6F9B1CC78846",
+  "segments": [
+    {
+      "segment": 1,
+      "anr_db": -9.3876953125,
+      "fixed_R4_mu0.05_anr_db": -9.408624140187992,
+      "gap_db": 0.020928827687992424,
+      "mean_mults": 16771.48273,
+      "cost_ratio_to_R4": 0.876619419297512
+    },
+    {
+      "segment": 2,
+      "anr_db": -8.902610778808594,
+      "fixed_R4_mu0.05_anr_db": -9.21812063019555,
+      "gap_db": 0.3155098513869561,
+      "mean_mults": 15834.0,
+      "cost_ratio_to_R4": 0.8276186493832323
+    },
+    {
+      "segment": 3,
+      "anr_db": -7.719491958618164,
+      "fixed_R4_mu0.05_anr_db": -8.493171259005733,
+      "gap_db": 0.7736793003875686,
+      "mean_mults": 15834.0,
+      "cost_ratio_to_R4": 0.8276186493832323
+    },
+    {
+      "segment": 4,
+      "anr_db": -9.629383087158203,
+      "fixed_R4_mu0.05_anr_db": -10.091464995752219,
+      "gap_db": 0.46208190859401554,
+      "mean_mults": 15834.0,
+      "cost_ratio_to_R4": 0.8276186493832323
+    }
+  ],
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 328791,
+      "truncation_relative_frobenius": 0.10886963172848718,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0002397995922807,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    }
+  ],
+  "max_gap_db": 0.7736793003875686,
+  "max_cost_ratio": 0.876619419297512,
+  "mean_cost_ratio": 0.8398688418618022,
+  "physical_fir_max_abs": 1.2212453270876722e-15,
+  "post_ramp_max_abs": 0.0,
+  "seconds": 14.147378999998182,
+  "frozen_60f6_bridge_max_abs": {
+    "drive": 0.0,
+    "error": 0.0,
+    "anr": 0.0,
+    "R": 0.0,
+    "cost_total": 0.0
+  }
+}

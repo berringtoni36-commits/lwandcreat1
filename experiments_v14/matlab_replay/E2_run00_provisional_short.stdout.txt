@@ -1,0 +1,1 @@
+N14 MATLAB short replay: N=24200, proposal=20000, counted=347295, sweeps=10, tail=0.0770027782473

@@ -1,0 +1,175 @@
+{
+  "phase": "dev_diagnostic",
+  "case": "E3",
+  "run": 0,
+  "mu": 0.05,
+  "interval": 50000,
+  "config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false,
+    "resort_interval": 50000
+  },
+  "input_sha256": "e9e895a93b6d343c6b19c93a0ae6c7d3c7a8870c39f399d8cda7d999c72f5f90",
+  "simulator_sha256": "0f189b00dc2988fa16451ba9c5ca94456073ddcd6fdf1296ba5cd1c758ea00ee",
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 368423,
+      "truncation_relative_frobenius": 0.02657503705251578,
+      "jacobi_sweeps": 11
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0001603666697219,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    },
+    {
+      "n": 74000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 78000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0010739089402623,
+      "validation_samples": 2000,
+      "ramp_start": 78001,
+      "ramp_end": 78100
+    },
+    {
+      "n": 128000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 132000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.998577188629049,
+      "validation_samples": 2000,
+      "ramp_start": 132001,
+      "ramp_end": 132100
+    },
+    {
+      "n": 182000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 186000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9998475503453597,
+      "validation_samples": 2000,
+      "ramp_start": 186001,
+      "ramp_end": 186100
+    },
+    {
+      "n": 236000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 240000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9992887024376315,
+      "validation_samples": 2000,
+      "ramp_start": 240001,
+      "ramp_end": 240100
+    },
+    {
+      "n": 290000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 294000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0000050778815552,
+      "validation_samples": 2000,
+      "ramp_start": 294001,
+      "ramp_end": 294100
+    },
+    {
+      "n": 344000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    },
+    {
+      "n": 348000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9990269414797642,
+      "validation_samples": 2000,
+      "ramp_start": 348001,
+      "ramp_end": 348100
+    },
+    {
+      "n": 398000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 680,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 2
+    }
+  ],
+  "segment_anr_db": [
+    -9.304186820983887,
+    -8.480437278747559,
+    -7.046210765838623,
+    -9.023218154907227
+  ],
+  "total_cost_ratio": 0.8514414947470207,
+  "physical_fir_max_abs": 3.441691376337985e-14
+}

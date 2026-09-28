@@ -5,7 +5,8 @@ import unittest
 import numpy as np
 from adaptive_core import (ac, AdaptiveKron, SelectionConfig, resized_copy,
                            mcc_loss, AdaptiveKronV12, V12Config, best_rank_prune)
-from counted_linalg import counted_prune
+from counted_linalg import Count, counted_prune, jacobi_svd
+from run import make_controllers, stream
 
 
 def initial(R=2):
@@ -14,6 +15,20 @@ def initial(R=2):
 
 
 class AdaptiveTests(unittest.TestCase):
+    def test_measurement_noise_and_growth_use_distinct_streams(self):
+        seed = 2026092801
+        controllers, _, _, _ = make_controllers('E2', 0, seed, V12Config(), 'essential')
+        growth = controllers['adaptive'].rng.standard_normal(25)
+        np.testing.assert_array_equal(growth, stream(seed, 'E2', 0, 41).standard_normal(25))
+        self.assertFalse(np.array_equal(growth,
+                         stream(seed, 'E2', 0, 4).standard_normal(25)))
+
+    def test_jacobi_convergence_check_counts_both_products(self):
+        counter = Count()
+        jacobi_svd(np.diag([2., 1.]), counter)
+        # Three length-2 dot products, two threshold products, four norms.
+        self.assertEqual(counter.multiplies, 12)
+
     def test_svd_prune_is_best_matrix_rank_approximation(self):
         base = initial(4)
         original = base.B[0] @ base.A[0].T
@@ -57,6 +72,22 @@ class AdaptiveTests(unittest.TestCase):
         np.testing.assert_allclose(candidate.B@candidate.A.transpose(0,2,1),
                                    base.B@base.A.transpose(0,2,1),atol=1e-11)
 
+    def test_counted_prune_repeated_and_near_zero_spectrum(self):
+        base=initial(4)
+        base.A[:]=0; base.B[:]=0
+        base.A[0,:4,:]=np.eye(4)
+        base.B[0,:,:]=np.eye(4)
+        candidate,s,_,_=counted_prune(base)
+        self.assertEqual(candidate.R,3)
+        np.testing.assert_allclose(s,np.ones(4),atol=1e-12)
+        self.assertAlmostEqual(np.linalg.norm(base.B[0]@base.A[0].T-
+            candidate.B[0]@candidate.A[0].T),1.,places=11)
+        base.A*=1e-15; base.B*=1e-15
+        candidate,s,_,_=counted_prune(base)
+        self.assertTrue(np.isfinite(candidate.A).all())
+        self.assertTrue(np.isfinite(candidate.B).all())
+        self.assertLess(np.linalg.norm(candidate.B[0]@candidate.A[0].T),1e-20)
+
     def test_v12_backoff_is_direction_specific(self):
         cfg = V12Config(r_max=4, warmup=4, train_samples=4,
                         validation_samples=4, ramp_samples=2, cooldown=4, max_backoff=16,
@@ -83,6 +114,17 @@ class AdaptiveTests(unittest.TestCase):
             s.validation_sum[:]=[1.,0.] if accepted else [0.,1.]
             s._decision()
             self.assertEqual(s.next_direction,1 if accepted else -1)
+
+    def test_monte_carlo_runs_do_not_share_structural_state(self):
+        from run import make_controllers
+        cfg=V12Config()
+        a,_,_,_=make_controllers('E2',0,2026092801,cfg,'essential')
+        b,_,_,_=make_controllers('E2',1,2026092801,cfg,'essential')
+        before=b['adaptive'].active.A.copy()
+        a['adaptive'].active.A[0,0,0]+=100
+        a['adaptive'].blocked_until[1]=10000
+        np.testing.assert_array_equal(b['adaptive'].active.A,before)
+        self.assertEqual(b['adaptive'].blocked_until[1],0)
 
     def test_v12_disabled_matches_fixed_controller(self):
         base=initial()

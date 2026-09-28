@@ -1,0 +1,217 @@
+{
+  "case": "E1",
+  "run": 1,
+  "phase": "dev",
+  "provenance": {
+    "phase": "dev",
+    "case": "E1",
+    "run": 1,
+    "source": "experiments_v12\\outputs\\mechanism_dev_residual_only\\caseE1_run01.npz",
+    "source_sha256": "2687609f05409aaf743fe2a469fa01e0e7b7a416d7a3cad85baf74f8a37c52fc",
+    "summary_sha256": "057ff7a427b121c7ffd5643a3eafe81a2b454011eaef3b82724e3faaf454a7b4",
+    "protocol_sha256": "5e719ddc4f3e9a3acdea94a345ce2004a9171e1e9c3b34aa100facb2297a1dbe",
+    "archived_core_sha256": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "switch": {
+    "sample": 19999,
+    "next_sample": 20000,
+    "source": "original_R4 at first low stage",
+    "full_output_invariance_max_abs": 1.1102230246251565e-16,
+    "inherited_FIR_max_abs_change": 0.0,
+    "R2_initial_relative_frobenius_error": 0.043973047197598,
+    "R4_initial_relative_frobenius_error": 0.006720780373544273,
+    "teacher_geometry_original": {
+      "low": {
+        "numeric_rank": 1,
+        "relative_best_R1": 1.1210853764511301e-16,
+        "relative_best_R2": 5.686020134890903e-17,
+        "relative_best_R4": 3.4814276048868066e-17
+      },
+      "high": {
+        "numeric_rank": 4,
+        "relative_best_R1": 0.8660254037844387,
+        "relative_best_R2": 0.7071067811865476,
+        "relative_best_R4": 1.7156283409462641e-16
+      }
+    },
+    "teacher_geometry_sorted": {
+      "low": {
+        "numeric_rank": 20,
+        "relative_best_R1": 0.22172898601208155,
+        "relative_best_R2": 0.051318072963993995,
+        "relative_best_R4": 0.024516946418471828
+      },
+      "high": {
+        "numeric_rank": 20,
+        "relative_best_R1": 0.8378378281433461,
+        "relative_best_R2": 0.7676997468293678,
+        "relative_best_R4": 0.6329129481594055
+      }
+    }
+  },
+  "transitions": {
+    "growth": {
+      "sample": 100000,
+      "from_R": 2,
+      "to_R": 4,
+      "added_A_seed": [
+        2026092801,
+        0,
+        1,
+        1401
+      ],
+      "immediate_weight_max_abs_change": 0.0,
+      "inherited_FIR_max_abs_change": 0.0
+    },
+    "prune": {
+      "sample": 200000,
+      "from_R": 4,
+      "to_R": 2,
+      "relative_frobenius_weight_change": 0.5712228621362859,
+      "inherited_FIR_max_abs_change": 0.0
+    }
+  },
+  "teacher_d_reconstruction_max_abs": 8.881784197001252e-16,
+  "initialization_file": "E1_run01_initialization.npz",
+  "initialization_file_sha256": "6f3223df466f2eadf5fa26e56aa2e3f1f9efe4fcdc5c6bc0b3130711da336eb7",
+  "costs": {
+    "original_R1": {
+      "segment_body_mults_per_sample": [
+        14167,
+        14167,
+        14167
+      ],
+      "mean_body_mults_per_sample": 14167.0,
+      "one_time_counted_mults": 0,
+      "amortized_counted_mults_per_sample": 14167.0,
+      "excluded": "sort comparisons/moves, feature gathers, memory/state copy, RNG generation, online gate and candidate training"
+    },
+    "original_R2": {
+      "segment_body_mults_per_sample": [
+        15822,
+        15822,
+        15822
+      ],
+      "mean_body_mults_per_sample": 15822.0,
+      "one_time_counted_mults": 0,
+      "amortized_counted_mults_per_sample": 15822.0,
+      "excluded": "sort comparisons/moves, feature gathers, memory/state copy, RNG generation, online gate and candidate training"
+    },
+    "original_R4": {
+      "segment_body_mults_per_sample": [
+        19132,
+        19132,
+        19132
+      ],
+      "mean_body_mults_per_sample": 19132.0,
+      "one_time_counted_mults": 0,
+      "amortized_counted_mults_per_sample": 19132.0,
+      "excluded": "sort comparisons/moves, feature gathers, memory/state copy, RNG generation, online gate and candidate training"
+    },
+    "sorted_R2": {
+      "segment_body_mults_per_sample": [
+        16484.0,
+        15822,
+        15822
+      ],
+      "mean_body_mults_per_sample": 16042.666666666666,
+      "one_time_counted_mults": 1002090,
+      "amortized_counted_mults_per_sample": 16046.006966666666,
+      "excluded": "sort comparisons/moves, feature gathers, memory/state copy, RNG generation, online gate and candidate training"
+    },
+    "sorted_R4": {
+      "segment_body_mults_per_sample": [
+        19132,
+        19132,
+        19132
+      ],
+      "mean_body_mults_per_sample": 19132.0,
+      "one_time_counted_mults": 1002180,
+      "amortized_counted_mults_per_sample": 19135.3406,
+      "excluded": "sort comparisons/moves, feature gathers, memory/state copy, RNG generation, online gate and candidate training"
+    },
+    "boundary_R2_R4_R2": {
+      "segment_body_mults_per_sample": [
+        16484.0,
+        19132,
+        15822
+      ],
+      "mean_body_mults_per_sample": 17146.0,
+      "one_time_counted_mults": 2004230,
+      "amortized_counted_mults_per_sample": 17152.68076666667,
+      "excluded": "sort comparisons/moves, feature gathers, memory/state copy, RNG generation, online gate and candidate training"
+    }
+  },
+  "segments": [
+    {
+      "segment": 1,
+      "bounds": [
+        0,
+        100000
+      ],
+      "teacher_R": 1,
+      "arm_ANR_db": {
+        "original_R1": -32.41113903368318,
+        "original_R2": -32.41748306098016,
+        "original_R4": -32.35336145730806,
+        "sorted_R2": -27.20515243460203,
+        "sorted_R4": -30.833359998437814,
+        "boundary_R2_R4_R2": -27.20515243460203
+      },
+      "max_reference_replay_abs_difference_db": 2.5922301603031883e-06
+    },
+    {
+      "segment": 2,
+      "bounds": [
+        100000,
+        200000
+      ],
+      "teacher_R": 4,
+      "arm_ANR_db": {
+        "original_R1": -5.386767524859343,
+        "original_R2": -8.276924938583415,
+        "original_R4": -34.62021028810057,
+        "sorted_R2": -7.662418022960263,
+        "sorted_R4": -10.61983951822708,
+        "boundary_R2_R4_R2": -10.42145837623334
+      },
+      "max_reference_replay_abs_difference_db": 1.5478661978818309e-06
+    },
+    {
+      "segment": 3,
+      "bounds": [
+        200000,
+        300000
+      ],
+      "teacher_R": 1,
+      "arm_ANR_db": {
+        "original_R1": -32.25633906360388,
+        "original_R2": -32.26475668090399,
+        "original_R4": -32.210089147911006,
+        "sorted_R2": -27.389802137254325,
+        "sorted_R4": -28.387531649142673,
+        "boundary_R2_R4_R2": -27.41183190913166
+      },
+      "max_reference_replay_abs_difference_db": 2.8514456786865594e-06
+    }
+  ],
+  "boundary_first_5000_ANR_db": {
+    "100000": {
+      "original_R1": -6.911590859193936,
+      "original_R2": -7.929791599839664,
+      "original_R4": -8.468263464200428,
+      "sorted_R2": -7.788891209505748,
+      "sorted_R4": -8.570176665427631,
+      "boundary_R2_R4_R2": -7.8110990561495495
+    },
+    "200000": {
+      "original_R1": -12.792117143701294,
+      "original_R2": -10.768708050115784,
+      "original_R4": -13.08018494816251,
+      "sorted_R2": -11.017446917487296,
+      "sorted_R4": -10.468124808360212,
+      "boundary_R2_R4_R2": -11.998907200462538
+    }
+  },
+  "total_seconds": 47.27671370000098
+}

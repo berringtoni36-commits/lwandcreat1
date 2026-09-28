@@ -1,0 +1,301 @@
+{
+  "case": "E2",
+  "run": 0,
+  "source": "experiments_v12\\outputs\\main_dev_round1\\caseE2_run00.npz",
+  "source_sha256": "b23df82a3b35eb72dd81a7430aa1a92bbad2c2b5b54310848738c91ee30a3efd",
+  "summary_sha256": "0a2c7e69ddbd65b83ba4a255e6ab44935b92e2a76056f30631fb816dee75bc61",
+  "protocol_sha256": "f3493fcca832dc6d31fee4c2cf8972e70f761fa42bec46126193231ea7964b03",
+  "T": 400000,
+  "mu": 0.2,
+  "R4_D500_segment_tail_anr_db": [
+    -8.303799629211426,
+    -8.01065731048584,
+    -6.606818675994873,
+    -8.39785099029541
+  ],
+  "R4_D500_complete_mults_per_sample": 19132,
+  "R4_D500_active_factor_coeffs": 180,
+  "segment_bounds": [
+    [
+      0,
+      100000
+    ],
+    [
+      100000,
+      200000
+    ],
+    [
+      200000,
+      300000
+    ],
+    [
+      300000,
+      400000
+    ]
+  ],
+  "tail_samples": 5000,
+  "rows": [
+    {
+      "D": 180,
+      "D1": 15,
+      "D2": 12,
+      "R": 2,
+      "mu": 0.2,
+      "segment_tail_anr_db": [
+        -3.4703614683444344,
+        -3.283208309331243,
+        -2.8917901203320135,
+        -3.594534230252963
+      ],
+      "segment_delta_vs_R4_db": [
+        4.833438160866992,
+        4.727449001154596,
+        3.7150285556628595,
+        4.803316760042447
+      ],
+      "mean_segment_delta_db": 4.519808119431724,
+      "worst_segment_delta_db": 4.833438160866992,
+      "complete_mults_per_sample": 5778,
+      "cost_ratio_vs_R4": 0.3020071085093038,
+      "active_factor_coeffs": 54,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 180,
+      "D1": 15,
+      "D2": 12,
+      "R": 3,
+      "mu": 0.2,
+      "segment_tail_anr_db": [
+        -5.011694069136285,
+        -4.828189237068636,
+        -4.074260257196422,
+        -5.126803810490849
+      ],
+      "segment_delta_vs_R4_db": [
+        3.292105560075141,
+        3.182468073417204,
+        2.532558418798451,
+        3.271047179804561
+      ],
+      "mean_segment_delta_db": 3.0695448080238394,
+      "worst_segment_delta_db": 3.292105560075141,
+      "complete_mults_per_sample": 6411,
+      "cost_ratio_vs_R4": 0.33509303784235833,
+      "active_factor_coeffs": 81,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 256,
+      "D1": 16,
+      "D2": 16,
+      "R": 2,
+      "mu": 0.2,
+      "segment_tail_anr_db": [
+        -4.765366219344302,
+        -4.489277294327482,
+        -3.997945398621844,
+        -4.904969292325666
+      ],
+      "segment_delta_vs_R4_db": [
+        3.5384334098671237,
+        3.521380016158358,
+        2.608873277373029,
+        3.492881697969744
+      ],
+      "mean_segment_delta_db": 3.2903921003420633,
+      "worst_segment_delta_db": 3.5384334098671237,
+      "complete_mults_per_sample": 8172,
+      "cost_ratio_vs_R4": 0.4271377796362116,
+      "active_factor_coeffs": 64,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 256,
+      "D1": 16,
+      "D2": 16,
+      "R": 3,
+      "mu": 0.2,
+      "segment_tail_anr_db": [
+        -6.008063195152663,
+        -6.0817812014632615,
+        -5.033157796793659,
+        -6.193605767663726
+      ],
+      "segment_delta_vs_R4_db": [
+        2.295736434058763,
+        1.9288761090225783,
+        1.5736608792012143,
+        2.204245222631684
+      ],
+      "mean_segment_delta_db": 2.00062966122856,
+      "worst_segment_delta_db": 2.295736434058763,
+      "complete_mults_per_sample": 9052,
+      "cost_ratio_vs_R4": 0.47313401630775664,
+      "active_factor_coeffs": 96,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 320,
+      "D1": 20,
+      "D2": 16,
+      "R": 2,
+      "mu": 0.2,
+      "segment_tail_anr_db": [
+        -4.97407805232299,
+        -5.372886944017896,
+        -4.543161385960749,
+        -5.754499002346401
+      ],
+      "segment_delta_vs_R4_db": [
+        3.329721576888436,
+        2.6377703664679437,
+        2.063657290034124,
+        2.643351987949009
+      ],
+      "mean_segment_delta_db": 2.6686253053348783,
+      "worst_segment_delta_db": 3.329721576888436,
+      "complete_mults_per_sample": 10180,
+      "cost_ratio_vs_R4": 0.5320928287685553,
+      "active_factor_coeffs": 72,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 320,
+      "D1": 20,
+      "D2": 16,
+      "R": 3,
+      "mu": 0.2,
+      "segment_tail_anr_db": [
+        -6.463916333766208,
+        -6.427850112785175,
+        -5.442891266944281,
+        -6.646182763240644
+      ],
+      "segment_delta_vs_R4_db": [
+        1.839883295445218,
+        1.5828071977006646,
+        1.1639274090505918,
+        1.7516682270547665
+      ],
+      "mean_segment_delta_db": 1.5845715323128102,
+      "worst_segment_delta_db": 1.839883295445218,
+      "complete_mults_per_sample": 11264,
+      "cost_ratio_vs_R4": 0.5887518293957767,
+      "active_factor_coeffs": 108,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 400,
+      "D1": 20,
+      "D2": 20,
+      "R": 2,
+      "mu": 0.2,
+      "segment_tail_anr_db": [
+        -4.973669334599494,
+        -5.028308274820151,
+        -4.212814598148583,
+        -5.391511084718398
+      ],
+      "segment_delta_vs_R4_db": [
+        3.3301302946119318,
+        2.982349035665689,
+        2.39400407784629,
+        3.006339905577012
+      ],
+      "mean_segment_delta_db": 2.928205828425231,
+      "worst_segment_delta_db": 3.3301302946119318,
+      "complete_mults_per_sample": 12692,
+      "cost_ratio_vs_R4": 0.6633911770855112,
+      "active_factor_coeffs": 80,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 400,
+      "D1": 20,
+      "D2": 20,
+      "R": 3,
+      "mu": 0.2,
+      "segment_tail_anr_db": [
+        -6.333164171270923,
+        -6.330517708265233,
+        -5.255558747429684,
+        -6.697353363772768
+      ],
+      "segment_delta_vs_R4_db": [
+        1.970635457940503,
+        1.6801396022206072,
+        1.351259928565189,
+        1.7004976265226421
+      ],
+      "mean_segment_delta_db": 1.6756331538122353,
+      "worst_segment_delta_db": 1.970635457940503,
+      "complete_mults_per_sample": 14032,
+      "cost_ratio_vs_R4": 0.7334309011080912,
+      "active_factor_coeffs": 120,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 500,
+      "D1": 25,
+      "D2": 20,
+      "R": 2,
+      "mu": 0.2,
+      "segment_tail_anr_db": [
+        -5.579757299066963,
+        -5.557748045953942,
+        -4.698644491862314,
+        -5.691650594953283
+      ],
+      "segment_delta_vs_R4_db": [
+        2.7240423301444627,
+        2.4529092645318977,
+        1.9081741841325588,
+        2.706200395342127
+      ],
+      "mean_segment_delta_db": 2.4478315435377613,
+      "worst_segment_delta_db": 2.7240423301444627,
+      "complete_mults_per_sample": 15822,
+      "cost_ratio_vs_R4": 0.8269914279740749,
+      "active_factor_coeffs": 90,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 500,
+      "D1": 25,
+      "D2": 20,
+      "R": 3,
+      "mu": 0.2,
+      "segment_tail_anr_db": [
+        -7.169598731700233,
+        -6.9259635473298795,
+        -5.740382387863918,
+        -7.1948067211163504
+      ],
+      "segment_delta_vs_R4_db": [
+        1.1342008975111924,
+        1.0846937631559603,
+        0.8664362881309549,
+        1.2030442691790597
+      ],
+      "mean_segment_delta_db": 1.0720938044942918,
+      "worst_segment_delta_db": 1.2030442691790597,
+      "complete_mults_per_sample": 17477,
+      "cost_ratio_vs_R4": 0.9134957139870374,
+      "active_factor_coeffs": 135,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": false
+    }
+  ],
+  "R2_D500_saved_max_abs_difference_db": 2.7250887502106025e-07,
+  "seconds": 89.269451199998
+}

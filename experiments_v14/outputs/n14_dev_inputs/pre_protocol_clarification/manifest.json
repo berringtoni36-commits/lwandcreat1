@@ -1,0 +1,1020 @@
+{
+  "phase": "dev",
+  "status": "inputs_only",
+  "cases": [
+    "E2",
+    "E3"
+  ],
+  "runs_per_case": 5,
+  "source_context_sha256": "00a53dfd40477fbf9fadfb20274a83dd2cf2748ef07ebd930b87935131281417",
+  "source_sha256": {
+    "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+    "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+    "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+    "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+    "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "entries": [
+    {
+      "case": "E2",
+      "run": 0,
+      "phase": "dev",
+      "T": 400000,
+      "smoke_only": false,
+      "segment_bounds": [
+        [
+          0,
+          100000
+        ],
+        [
+          100000,
+          200000
+        ],
+        [
+          200000,
+          300000
+        ],
+        [
+          300000,
+          400000
+        ]
+      ],
+      "seed_keys": {
+        "reference": [
+          20260928,
+          14,
+          1,
+          2,
+          0,
+          1
+        ],
+        "rff": [
+          20260928,
+          14,
+          1,
+          2,
+          0,
+          2
+        ],
+        "initial_factors": [
+          20260928,
+          14,
+          1,
+          2,
+          0,
+          3
+        ],
+        "measurement_noise": [
+          20260928,
+          14,
+          1,
+          2,
+          0,
+          4
+        ],
+        "teacher": [
+          20260928,
+          14,
+          1,
+          2,
+          0,
+          5
+        ],
+        "structure": [
+          20260928,
+          14,
+          1,
+          2,
+          0,
+          41
+        ]
+      },
+      "array_sha256": {
+        "x": "f70f2eaacff0807038c32cd9569926ea5230553f8c51c43c359025375d489aab",
+        "d": "e31829858adec1d0c928a5f3028ec47d80432b3ef0340a942388505b631b321a",
+        "v": "0691924a9168574aa70ef185cd8ae23fecaa51caf7027258d9727746d8be117a",
+        "omega": "358f43179f79e5827c83a2a4889edaae39853d65dd63a6c8210cbef1aefa4bf6",
+        "rff_phase": "8b8d6fcd5b723e46234c204968aac4a77c64b06b85c31ef015e65997e5e9e814",
+        "initial_A": "35b7ebadcfda57b435308d17dd624383b4ba7a15f0381fa8e7230b99cf0c8f03",
+        "initial_B": "5b84e2e26f606322658b419c3785efbbdf001fa94695df7497da347613061f1a"
+      },
+      "v12_formula_check": {
+        "primary_pointwise_equal": true,
+        "noise_pointwise_equal": true,
+        "mapping_pointwise_equal": true,
+        "initial_factors_pointwise_equal": true,
+        "max_primary_abs_gap": 0.0,
+        "max_noise_abs_gap": 0.0
+      },
+      "file_sha256": "052aaf07e3f5f2138b7117a3ba23c4c5abc041520932ef6fca82597c7bca1ce4",
+      "source_sha256": {
+        "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+        "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+        "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+        "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+        "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+      }
+    },
+    {
+      "case": "E3",
+      "run": 0,
+      "phase": "dev",
+      "T": 400000,
+      "smoke_only": false,
+      "segment_bounds": [
+        [
+          0,
+          100000
+        ],
+        [
+          100000,
+          200000
+        ],
+        [
+          200000,
+          300000
+        ],
+        [
+          300000,
+          400000
+        ]
+      ],
+      "seed_keys": {
+        "reference": [
+          20260928,
+          14,
+          1,
+          3,
+          0,
+          1
+        ],
+        "rff": [
+          20260928,
+          14,
+          1,
+          3,
+          0,
+          2
+        ],
+        "initial_factors": [
+          20260928,
+          14,
+          1,
+          3,
+          0,
+          3
+        ],
+        "measurement_noise": [
+          20260928,
+          14,
+          1,
+          3,
+          0,
+          4
+        ],
+        "teacher": [
+          20260928,
+          14,
+          1,
+          3,
+          0,
+          5
+        ],
+        "structure": [
+          20260928,
+          14,
+          1,
+          3,
+          0,
+          41
+        ]
+      },
+      "array_sha256": {
+        "x": "fe0d0a50f7fbc20a20a5b8128be1f9a90031b608eee6776e457866f3563699db",
+        "d": "53fe5db5b5ddb87803ccfe082a24dd2611e9ddc74aa41cefddd23cb9e5229b96",
+        "v": "02cd5b33925c4a051fcc2cffdad872ab2290f48586b7e7337b0b72197dc7c3f8",
+        "omega": "790dcbbbff35e6643182155d1c33ac1b52cfe06fb5adf11d6674ec029e84b5f0",
+        "rff_phase": "ab508dde52eedee57f45f7c7e1602ab96db2bef32b38a41aee2a5cbd325003bf",
+        "initial_A": "8b690046fc0bcbe93f7d6c158c49c9dc73132e606cc51ae328762362d683c6ad",
+        "initial_B": "f1e30ab579cfed38500ce399674e1e19969655bc35f864dd669aa43cb2418814"
+      },
+      "v12_formula_check": {
+        "primary_pointwise_equal": true,
+        "noise_pointwise_equal": true,
+        "mapping_pointwise_equal": true,
+        "initial_factors_pointwise_equal": true,
+        "max_primary_abs_gap": 0.0,
+        "max_noise_abs_gap": 0.0
+      },
+      "file_sha256": "e9e895a93b6d343c6b19c93a0ae6c7d3c7a8870c39f399d8cda7d999c72f5f90",
+      "source_sha256": {
+        "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+        "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+        "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+        "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+        "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+      }
+    },
+    {
+      "case": "E2",
+      "run": 1,
+      "phase": "dev",
+      "T": 400000,
+      "smoke_only": false,
+      "segment_bounds": [
+        [
+          0,
+          100000
+        ],
+        [
+          100000,
+          200000
+        ],
+        [
+          200000,
+          300000
+        ],
+        [
+          300000,
+          400000
+        ]
+      ],
+      "seed_keys": {
+        "reference": [
+          20260928,
+          14,
+          1,
+          2,
+          1,
+          1
+        ],
+        "rff": [
+          20260928,
+          14,
+          1,
+          2,
+          1,
+          2
+        ],
+        "initial_factors": [
+          20260928,
+          14,
+          1,
+          2,
+          1,
+          3
+        ],
+        "measurement_noise": [
+          20260928,
+          14,
+          1,
+          2,
+          1,
+          4
+        ],
+        "teacher": [
+          20260928,
+          14,
+          1,
+          2,
+          1,
+          5
+        ],
+        "structure": [
+          20260928,
+          14,
+          1,
+          2,
+          1,
+          41
+        ]
+      },
+      "array_sha256": {
+        "x": "0b999d7f0df515bf4050679002bb01baaac42493f1a7a75fe3c5877602d7e309",
+        "d": "be5cf35673bde7c3b9a87b69c27afaf8b65dbbed19c0182fd92d5d96b6689371",
+        "v": "2dd087f7b1f334c09063da1cb6ecb1f3595a6e83b58e04cdfa4aa3aaab04d5ce",
+        "omega": "6a8d3ddde232ed89c3b834fa0ffc1bea1745ebfcd6211e56669fbf295c7d6afb",
+        "rff_phase": "53d8d18c644efab06727c212cbda62108c3d1b20e349f7e3b09a907f0d17a108",
+        "initial_A": "60aafc888a6e22ab7f1f42baa8c41809c7f327d8a0f80b06a69c04a305cf4d63",
+        "initial_B": "2bb91fef26ac4604915b198b8fb03f51093dbea1467221778d6890f0ce625891"
+      },
+      "v12_formula_check": {
+        "primary_pointwise_equal": true,
+        "noise_pointwise_equal": true,
+        "mapping_pointwise_equal": true,
+        "initial_factors_pointwise_equal": true,
+        "max_primary_abs_gap": 0.0,
+        "max_noise_abs_gap": 0.0
+      },
+      "file_sha256": "dc30136c75dfdaa999a61264067209e4d0b94bd57e84f89355df910e8a10a5c3",
+      "source_sha256": {
+        "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+        "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+        "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+        "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+        "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+      }
+    },
+    {
+      "case": "E3",
+      "run": 1,
+      "phase": "dev",
+      "T": 400000,
+      "smoke_only": false,
+      "segment_bounds": [
+        [
+          0,
+          100000
+        ],
+        [
+          100000,
+          200000
+        ],
+        [
+          200000,
+          300000
+        ],
+        [
+          300000,
+          400000
+        ]
+      ],
+      "seed_keys": {
+        "reference": [
+          20260928,
+          14,
+          1,
+          3,
+          1,
+          1
+        ],
+        "rff": [
+          20260928,
+          14,
+          1,
+          3,
+          1,
+          2
+        ],
+        "initial_factors": [
+          20260928,
+          14,
+          1,
+          3,
+          1,
+          3
+        ],
+        "measurement_noise": [
+          20260928,
+          14,
+          1,
+          3,
+          1,
+          4
+        ],
+        "teacher": [
+          20260928,
+          14,
+          1,
+          3,
+          1,
+          5
+        ],
+        "structure": [
+          20260928,
+          14,
+          1,
+          3,
+          1,
+          41
+        ]
+      },
+      "array_sha256": {
+        "x": "477f4cb9167913bb0ceeea8d4d0f4a9fcb6bdd4a5d71aa444be4d708d1faec09",
+        "d": "c3e041486ef49b7806a7666fbb589c5be21eda3209df70997a5c4d39e92018f4",
+        "v": "d7c417fbd7b76508d1059fab50be5b780ba8ef073e3d422e37b229b2e778c1f1",
+        "omega": "d7416f5765bf0764f2b25597a66a90b3d8eec507f5acfe176813a7e33e5792de",
+        "rff_phase": "cccf036ef091cbad3e3a4534f6ec7679b8e56bf2baca24d4fbb5673991e43091",
+        "initial_A": "e39bacbfbfcd5bf4f60e937b2ab99b755c1eb9db96445025279ccfcb39c9f05d",
+        "initial_B": "6e5fbc17459c7bde36ef566f5c1394ba6a9482b70441d705166e25750e782453"
+      },
+      "v12_formula_check": {
+        "primary_pointwise_equal": true,
+        "noise_pointwise_equal": true,
+        "mapping_pointwise_equal": true,
+        "initial_factors_pointwise_equal": true,
+        "max_primary_abs_gap": 0.0,
+        "max_noise_abs_gap": 0.0
+      },
+      "file_sha256": "c7bf54a8e0699e88d104b1a930401fc1e6bc9737775f91afdeedbb8e1b3d2380",
+      "source_sha256": {
+        "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+        "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+        "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+        "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+        "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+      }
+    },
+    {
+      "case": "E2",
+      "run": 2,
+      "phase": "dev",
+      "T": 400000,
+      "smoke_only": false,
+      "segment_bounds": [
+        [
+          0,
+          100000
+        ],
+        [
+          100000,
+          200000
+        ],
+        [
+          200000,
+          300000
+        ],
+        [
+          300000,
+          400000
+        ]
+      ],
+      "seed_keys": {
+        "reference": [
+          20260928,
+          14,
+          1,
+          2,
+          2,
+          1
+        ],
+        "rff": [
+          20260928,
+          14,
+          1,
+          2,
+          2,
+          2
+        ],
+        "initial_factors": [
+          20260928,
+          14,
+          1,
+          2,
+          2,
+          3
+        ],
+        "measurement_noise": [
+          20260928,
+          14,
+          1,
+          2,
+          2,
+          4
+        ],
+        "teacher": [
+          20260928,
+          14,
+          1,
+          2,
+          2,
+          5
+        ],
+        "structure": [
+          20260928,
+          14,
+          1,
+          2,
+          2,
+          41
+        ]
+      },
+      "array_sha256": {
+        "x": "94c487b15cd6799e05f9e8f35898c51975540cc1dd34de0bbe391c715aca8d9e",
+        "d": "10c9d00219d8d1863fe10cf3860147c1b1c0e6f2f6ff17c614477e68b5760511",
+        "v": "732aec927b6f8dbb5c40836ad492f77fc0cc00cb0d0b4a8fc66d93376318333f",
+        "omega": "ebda6eda5df81c434e90dc00412023654dc3e9f02e782cef0eac6bd311c98cd0",
+        "rff_phase": "e0a6af3d03b0946810bb77566ed679d7e017356ac4e81091368629b01465eab1",
+        "initial_A": "3d9ae946d0a0f6c98fa91a644c7f4688b3cf6d82f0237b9f94d927d29755eec5",
+        "initial_B": "05623b42cba3d2475b7aa74dfb18c47f5aa47e2f1dd6a556ea544607dade8527"
+      },
+      "v12_formula_check": {
+        "primary_pointwise_equal": true,
+        "noise_pointwise_equal": true,
+        "mapping_pointwise_equal": true,
+        "initial_factors_pointwise_equal": true,
+        "max_primary_abs_gap": 0.0,
+        "max_noise_abs_gap": 0.0
+      },
+      "file_sha256": "8fb51f0233bdfb0d032df3777ccddaca6e632a9fb9e98e7a8c89617fe83856d6",
+      "source_sha256": {
+        "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+        "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+        "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+        "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+        "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+      }
+    },
+    {
+      "case": "E3",
+      "run": 2,
+      "phase": "dev",
+      "T": 400000,
+      "smoke_only": false,
+      "segment_bounds": [
+        [
+          0,
+          100000
+        ],
+        [
+          100000,
+          200000
+        ],
+        [
+          200000,
+          300000
+        ],
+        [
+          300000,
+          400000
+        ]
+      ],
+      "seed_keys": {
+        "reference": [
+          20260928,
+          14,
+          1,
+          3,
+          2,
+          1
+        ],
+        "rff": [
+          20260928,
+          14,
+          1,
+          3,
+          2,
+          2
+        ],
+        "initial_factors": [
+          20260928,
+          14,
+          1,
+          3,
+          2,
+          3
+        ],
+        "measurement_noise": [
+          20260928,
+          14,
+          1,
+          3,
+          2,
+          4
+        ],
+        "teacher": [
+          20260928,
+          14,
+          1,
+          3,
+          2,
+          5
+        ],
+        "structure": [
+          20260928,
+          14,
+          1,
+          3,
+          2,
+          41
+        ]
+      },
+      "array_sha256": {
+        "x": "d81eb7009c01175400ef19c1abffc45fc9d0f5edf1bd55cd77db9fd037d9db27",
+        "d": "30e547e709992ed9dcfd037b6e5be85d244d158d5284b9a622c8d85c3bf4da7f",
+        "v": "f7e7d3d4dfff545d7b0cea98f2bc71cb856e3ce6f952430b47caedb8b877109a",
+        "omega": "1043cb86b35830544fd4f12d9d8ba9b137fc8e1b4c2e622787319169f8da0d14",
+        "rff_phase": "336c2b6bbee493de89c93c38112dd34fafdb19a32f15d38be72b040166563af6",
+        "initial_A": "bc23718b2be88d981c5dbc470e108db5c810ba285aa52a02cac29d401faacc58",
+        "initial_B": "c08899dd18c62714e15c60fb947c3317b58c82cbf8848c614effbe01bcd8db5a"
+      },
+      "v12_formula_check": {
+        "primary_pointwise_equal": true,
+        "noise_pointwise_equal": true,
+        "mapping_pointwise_equal": true,
+        "initial_factors_pointwise_equal": true,
+        "max_primary_abs_gap": 0.0,
+        "max_noise_abs_gap": 0.0
+      },
+      "file_sha256": "cb9cd9d3f01e6b5e3f623680060169bacaa4ba1590b88e6e599c91aa701b7f61",
+      "source_sha256": {
+        "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+        "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+        "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+        "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+        "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+      }
+    },
+    {
+      "case": "E2",
+      "run": 3,
+      "phase": "dev",
+      "T": 400000,
+      "smoke_only": false,
+      "segment_bounds": [
+        [
+          0,
+          100000
+        ],
+        [
+          100000,
+          200000
+        ],
+        [
+          200000,
+          300000
+        ],
+        [
+          300000,
+          400000
+        ]
+      ],
+      "seed_keys": {
+        "reference": [
+          20260928,
+          14,
+          1,
+          2,
+          3,
+          1
+        ],
+        "rff": [
+          20260928,
+          14,
+          1,
+          2,
+          3,
+          2
+        ],
+        "initial_factors": [
+          20260928,
+          14,
+          1,
+          2,
+          3,
+          3
+        ],
+        "measurement_noise": [
+          20260928,
+          14,
+          1,
+          2,
+          3,
+          4
+        ],
+        "teacher": [
+          20260928,
+          14,
+          1,
+          2,
+          3,
+          5
+        ],
+        "structure": [
+          20260928,
+          14,
+          1,
+          2,
+          3,
+          41
+        ]
+      },
+      "array_sha256": {
+        "x": "e2a40a6fe9a968743374332e9fa82197bda4457b8f453f4d3041c0c057f746bb",
+        "d": "35cb084d852fef94631e76940489054d8d84f08044b3c303b02bd99948b2c7ed",
+        "v": "776066330d92c4b2a77a01c158f3273aafa0ad8e2b8b900a7cbe06bc23581dfa",
+        "omega": "5f6661305d4d1514223e621bdcd5eaacac1e7155f2a5372f44c45faae772dfe1",
+        "rff_phase": "817bae037b0693cc4704fa62d92833331ab638c08941dbdeb83749fef249f255",
+        "initial_A": "4b42ce5db2e9d50ecc5f177d0395377c0155b52f22aaebf2b3615d1484037537",
+        "initial_B": "2a2804fe456ec3a221a367b1373538ed5f578f3ac8057b1b03f5514646006849"
+      },
+      "v12_formula_check": {
+        "primary_pointwise_equal": true,
+        "noise_pointwise_equal": true,
+        "mapping_pointwise_equal": true,
+        "initial_factors_pointwise_equal": true,
+        "max_primary_abs_gap": 0.0,
+        "max_noise_abs_gap": 0.0
+      },
+      "file_sha256": "e98176b3037d6961001f665dd46df9df53ffd4ab9d0e61e8dac6ee0ef2d10847",
+      "source_sha256": {
+        "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+        "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+        "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+        "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+        "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+      }
+    },
+    {
+      "case": "E3",
+      "run": 3,
+      "phase": "dev",
+      "T": 400000,
+      "smoke_only": false,
+      "segment_bounds": [
+        [
+          0,
+          100000
+        ],
+        [
+          100000,
+          200000
+        ],
+        [
+          200000,
+          300000
+        ],
+        [
+          300000,
+          400000
+        ]
+      ],
+      "seed_keys": {
+        "reference": [
+          20260928,
+          14,
+          1,
+          3,
+          3,
+          1
+        ],
+        "rff": [
+          20260928,
+          14,
+          1,
+          3,
+          3,
+          2
+        ],
+        "initial_factors": [
+          20260928,
+          14,
+          1,
+          3,
+          3,
+          3
+        ],
+        "measurement_noise": [
+          20260928,
+          14,
+          1,
+          3,
+          3,
+          4
+        ],
+        "teacher": [
+          20260928,
+          14,
+          1,
+          3,
+          3,
+          5
+        ],
+        "structure": [
+          20260928,
+          14,
+          1,
+          3,
+          3,
+          41
+        ]
+      },
+      "array_sha256": {
+        "x": "2df28d2ec1977b5075e1ab0695b5379e03398d7c00bb540a863c983d6427d659",
+        "d": "0899cb7d7218ea16a7b12b480153c3b9be8a990bd95c518f8e76358e6509533f",
+        "v": "d94b66f0c0a99f0ba39c09200b724d8d0475f6699d2d4c3ba876fbbb2a8c05c8",
+        "omega": "b6a10e16ed2fc282213687a5a53fe04739b474b0a203e9cb3239ff8f4209eeb3",
+        "rff_phase": "82820c41cb725fd39fbe619e02734d3d967120e41e6d9452464130bc504d7620",
+        "initial_A": "cfc5c9a916cb69556de58268de1c901fd7341fd524d7f9b889108fe12d91b843",
+        "initial_B": "173b080258b3a7b968ff30d6a3590cda0de27edf83085ea683946170c365efe3"
+      },
+      "v12_formula_check": {
+        "primary_pointwise_equal": true,
+        "noise_pointwise_equal": true,
+        "mapping_pointwise_equal": true,
+        "initial_factors_pointwise_equal": true,
+        "max_primary_abs_gap": 0.0,
+        "max_noise_abs_gap": 0.0
+      },
+      "file_sha256": "68c26fd9585afa748a1a7a62c4d25ff8f5ce41c86abb3c956632fd468ede8947",
+      "source_sha256": {
+        "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+        "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+        "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+        "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+        "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+      }
+    },
+    {
+      "case": "E2",
+      "run": 4,
+      "phase": "dev",
+      "T": 400000,
+      "smoke_only": false,
+      "segment_bounds": [
+        [
+          0,
+          100000
+        ],
+        [
+          100000,
+          200000
+        ],
+        [
+          200000,
+          300000
+        ],
+        [
+          300000,
+          400000
+        ]
+      ],
+      "seed_keys": {
+        "reference": [
+          20260928,
+          14,
+          1,
+          2,
+          4,
+          1
+        ],
+        "rff": [
+          20260928,
+          14,
+          1,
+          2,
+          4,
+          2
+        ],
+        "initial_factors": [
+          20260928,
+          14,
+          1,
+          2,
+          4,
+          3
+        ],
+        "measurement_noise": [
+          20260928,
+          14,
+          1,
+          2,
+          4,
+          4
+        ],
+        "teacher": [
+          20260928,
+          14,
+          1,
+          2,
+          4,
+          5
+        ],
+        "structure": [
+          20260928,
+          14,
+          1,
+          2,
+          4,
+          41
+        ]
+      },
+      "array_sha256": {
+        "x": "9817d685811027eaabe1bdff7ed4334dc06186fc523953553e251315f6dbd6ed",
+        "d": "1af8e944710bed7d43c6c0041f95c31109ee2a5089ffc634c2a996703b68d8f7",
+        "v": "a57aca1959dd3747a1006f94fb87a0caf2f56ef9f4eeb7dea5c712dd28767ed6",
+        "omega": "b59d7d9861e4866d9a9fd8b924b8377c4c471d85a117a53d21ea5e93bf28e861",
+        "rff_phase": "906d86bee4a196f4333aff7bf0585a57f5418ced3fa111d3f42d1e168c8294c8",
+        "initial_A": "7f5d553a80b2e1214282d8bb5f39fd7a81343e34ab9a4fa0d087cd20b41baa9c",
+        "initial_B": "36636ec327455fad229163831869deb149b899ae35e41c773ac0450f30dda625"
+      },
+      "v12_formula_check": {
+        "primary_pointwise_equal": true,
+        "noise_pointwise_equal": true,
+        "mapping_pointwise_equal": true,
+        "initial_factors_pointwise_equal": true,
+        "max_primary_abs_gap": 0.0,
+        "max_noise_abs_gap": 0.0
+      },
+      "file_sha256": "44b0aae54d0ab9440d63a25a127bccb3ef01efb2b1cd4c04a20dc5cf455da6a9",
+      "source_sha256": {
+        "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+        "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+        "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+        "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+        "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+      }
+    },
+    {
+      "case": "E3",
+      "run": 4,
+      "phase": "dev",
+      "T": 400000,
+      "smoke_only": false,
+      "segment_bounds": [
+        [
+          0,
+          100000
+        ],
+        [
+          100000,
+          200000
+        ],
+        [
+          200000,
+          300000
+        ],
+        [
+          300000,
+          400000
+        ]
+      ],
+      "seed_keys": {
+        "reference": [
+          20260928,
+          14,
+          1,
+          3,
+          4,
+          1
+        ],
+        "rff": [
+          20260928,
+          14,
+          1,
+          3,
+          4,
+          2
+        ],
+        "initial_factors": [
+          20260928,
+          14,
+          1,
+          3,
+          4,
+          3
+        ],
+        "measurement_noise": [
+          20260928,
+          14,
+          1,
+          3,
+          4,
+          4
+        ],
+        "teacher": [
+          20260928,
+          14,
+          1,
+          3,
+          4,
+          5
+        ],
+        "structure": [
+          20260928,
+          14,
+          1,
+          3,
+          4,
+          41
+        ]
+      },
+      "array_sha256": {
+        "x": "d5b4ab352be8fd8681587407ac135a08c1ece53f004fa86c0605d78bf7a79a4c",
+        "d": "fdb6b18d8da5168b4d02d153b1c89b3c510d684ef89f357d0646fc3219635085",
+        "v": "b3e5a9966fddd0eb2984457ada98ab765811850d73ee40089cf26cf570c03a1c",
+        "omega": "b2807b37129ca54368a48fb87f25e843a06ecddf26326f63d3a9a8acadeff2d1",
+        "rff_phase": "a7b72b5e859efff5fc82070ccff8722384984d5b03a36143ab5fa6070b3d2256",
+        "initial_A": "07bad454bd971676c26dd65a6ffdb831c9ca3dea5d891a0f8e8b1d6e1a64eab9",
+        "initial_B": "3e9bf130e3166fc5b2107f73f1c86322c3d11b041d3e1055ce5014fa5ab8d817"
+      },
+      "v12_formula_check": {
+        "primary_pointwise_equal": true,
+        "noise_pointwise_equal": true,
+        "mapping_pointwise_equal": true,
+        "initial_factors_pointwise_equal": true,
+        "max_primary_abs_gap": 0.0,
+        "max_noise_abs_gap": 0.0
+      },
+      "file_sha256": "5e0a3f02990335cb55f9e939f45610d06a7e77abda4980e5ae9c9f17dbcf08aa",
+      "source_sha256": {
+        "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+        "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+        "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+        "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+        "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+      }
+    }
+  ],
+  "no_controller_or_select_confirm": true
+}

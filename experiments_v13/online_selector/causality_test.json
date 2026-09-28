@@ -1,0 +1,31 @@
+{
+  "phase": "synthetic_unit_test",
+  "same_prefix_samples": 23000,
+  "different_future_samples": 3000,
+  "checks": {
+    "drive": true,
+    "error": true,
+    "anr": true,
+    "R": true,
+    "candidate_R": true,
+    "retiring_R": true,
+    "ys_active": true,
+    "ys_candidate": true,
+    "ys_actual": true,
+    "gamma": true,
+    "cost": true,
+    "prefix_events": true
+  },
+  "future_drive_max_difference": 2.483408225013834,
+  "events_before_cut": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 317311,
+      "truncation_relative_frobenius": 0.05819311963290981,
+      "jacobi_sweeps": 9
+    }
+  ]
+}

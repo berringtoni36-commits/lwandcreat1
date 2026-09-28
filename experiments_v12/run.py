@@ -97,7 +97,8 @@ def make_controllers(case, run, seed, cfg, baselines='all', mu_map=None):
     amu=float(mu_map.get('adaptive',mu))
     base=ac.KronRFF('adaptive_base',1,25,20,2,amu/2,amu/2,2.,1e-8,np.random.default_rng(0))
     base.A,base.B=A[:,:,:2].copy(),B[:,:,:2].copy()
-    controllers['adaptive'] = AdaptiveKronV12(base,stream(seed,case,run,4),cfg)
+    # Keep structural exploration independent of the measurement-noise stream (part 4).
+    controllers['adaptive'] = AdaptiveKronV12(base,stream(seed,case,run,41),cfg)
     return controllers,A,B,mu
 
 
@@ -244,6 +245,9 @@ def main():
                         text=True,capture_output=True,check=False).stdout.strip()
     protocol=dict(phase=args.phase,round=args.round,runs=runs,cases=args.cases,
                   lengths=lengths,seed=seed,config=asdict(cfg),mu_by_method=mu_map,
+                  rng_stream_parts={'reference':1,'rff':2,'initial_factors':3,
+                                    'measurement_noise':4,'teacher':5,'burst':9,
+                                    'v11_structure':40,'v12_structure':41},
                   baselines=args.baselines,git_head=head,python=sys.version,
                   numpy=np.__version__,platform=platform.platform(),
                   sources_sha256={str(p.relative_to(HERE.parent)):

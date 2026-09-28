@@ -1,0 +1,1 @@
+N14 full MATLAB replay: T=400000 proposal=20000 accepted=1 decision=24000 mean_cost=16068.41694250 physical_gap=1.11e-15

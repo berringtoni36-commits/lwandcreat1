@@ -1,0 +1,6 @@
+    max_secondary_error: 5.9604e-08
+          max_anr_error: 5.2554e-06
+     max_cost_sum_error: 0
+        wrong_decisions: 0
+              decisions: 33
+

@@ -1,0 +1,192 @@
+{
+  "phase": "dev_audit",
+  "case": "E3",
+  "run": 0,
+  "maintenance_proposal": "clone",
+  "config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false,
+    "resort_interval": 50000,
+    "maintenance_proposal": "clone"
+  },
+  "input_sha256": "e9e895a93b6d343c6b19c93a0ae6c7d3c7a8870c39f399d8cda7d999c72f5f90",
+  "controller_sha256": "97dbc1a9a4b339cd0786aafa5919ca94ab90b273a69869f39017a53e4ee49320",
+  "parent_controller_sha256": "3be39ad3665aeab96e9f068135f9cab9b04fbafda960421682be398fd4e3f356",
+  "segment_anr_db": [
+    -9.306768417358398,
+    -8.486987113952637,
+    -7.05320930480957,
+    -9.043213844299316
+  ],
+  "segment_gap_to_signed_db": [
+    0.35983943939208984,
+    0.8990001678466797,
+    1.1522254943847656,
+    0.8981609344482422
+  ],
+  "cost_ratio": 0.8514408727524566,
+  "ledger_mean": {
+    "core": 16016.608275,
+    "candidate": 249.141695,
+    "retiring": 6.641,
+    "management": 12.45475,
+    "reorder": 0.9210575,
+    "total": 16289.7667775
+  },
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 368423,
+      "truncation_relative_frobenius": 0.02657503705251578,
+      "jacobi_sweeps": 11
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0001603666697219,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    },
+    {
+      "n": 74000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 0,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 0
+    },
+    {
+      "n": 78000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0,
+      "validation_samples": 2000,
+      "ramp_start": 78001,
+      "ramp_end": 78100
+    },
+    {
+      "n": 128000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 0,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 0
+    },
+    {
+      "n": 132000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0,
+      "validation_samples": 2000,
+      "ramp_start": 132001,
+      "ramp_end": 132100
+    },
+    {
+      "n": 182000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 0,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 0
+    },
+    {
+      "n": 186000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0,
+      "validation_samples": 2000,
+      "ramp_start": 186001,
+      "ramp_end": 186100
+    },
+    {
+      "n": 236000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 0,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 0
+    },
+    {
+      "n": 240000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0,
+      "validation_samples": 2000,
+      "ramp_start": 240001,
+      "ramp_end": 240100
+    },
+    {
+      "n": 290000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 0,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 0
+    },
+    {
+      "n": 294000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0,
+      "validation_samples": 2000,
+      "ramp_start": 294001,
+      "ramp_end": 294100
+    },
+    {
+      "n": 344000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 0,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 0
+    },
+    {
+      "n": 348000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0,
+      "validation_samples": 2000,
+      "ramp_start": 348001,
+      "ramp_end": 348100
+    },
+    {
+      "n": 398000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 0,
+      "truncation_relative_frobenius": 0.0,
+      "jacobi_sweeps": 0
+    }
+  ],
+  "physical_fir_max_abs": 9.037215420448774e-14,
+  "post_ramp_max_abs": 0.0,
+  "seconds": 23.02941930000088
+}

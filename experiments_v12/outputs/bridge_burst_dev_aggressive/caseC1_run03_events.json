@@ -1,0 +1,113 @@
+[
+  {
+    "sample": 1999,
+    "event": "proposal",
+    "old_R": 2,
+    "new_R": 3,
+    "remove_index": null,
+    "prune_mode": null,
+    "growth_mode": "random",
+    "smallest_singular": null,
+    "decomposition_sweeps": null,
+    "decomposition_charge": 0
+  },
+  {
+    "sample": 3999,
+    "event": "validation_start"
+  },
+  {
+    "sample": 4999,
+    "event": "accept",
+    "old_R": 2,
+    "new_R": 3,
+    "old_loss": 0.03726757164280013,
+    "new_loss": 0.03494969710702132,
+    "old_score": 0.03781286949166941,
+    "new_score": 0.03555204818258668,
+    "validation_samples": 1000,
+    "direction": 1,
+    "loss_delta": -0.0023178745357788147,
+    "cost_penalty_delta": 5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 0
+  },
+  {
+    "sample": 5099,
+    "event": "switch_complete",
+    "old_R": 2,
+    "new_R": 3
+  },
+  {
+    "sample": 9099,
+    "event": "proposal",
+    "old_R": 3,
+    "new_R": 2,
+    "remove_index": null,
+    "prune_mode": "counted",
+    "growth_mode": null,
+    "smallest_singular": 6.123712166685511,
+    "decomposition_sweeps": 4,
+    "decomposition_charge": 1415
+  },
+  {
+    "sample": 11099,
+    "event": "validation_start"
+  },
+  {
+    "sample": 12099,
+    "event": "reject",
+    "old_R": 3,
+    "new_R": 2,
+    "old_loss": 0.030624898430310885,
+    "new_loss": 0.03628122890133305,
+    "old_score": 0.031227249505876246,
+    "new_score": 0.03682652675020233,
+    "validation_samples": 1000,
+    "direction": -1,
+    "loss_delta": 0.005656330471022163,
+    "cost_penalty_delta": -5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 1
+  },
+  {
+    "sample": 16099,
+    "event": "proposal",
+    "old_R": 3,
+    "new_R": 4,
+    "remove_index": null,
+    "prune_mode": null,
+    "growth_mode": "random",
+    "smallest_singular": null,
+    "decomposition_sweeps": null,
+    "decomposition_charge": 0
+  },
+  {
+    "sample": 18099,
+    "event": "validation_start"
+  },
+  {
+    "sample": 19099,
+    "event": "accept",
+    "old_R": 3,
+    "new_R": 4,
+    "old_loss": 0.025724465065787523,
+    "new_loss": 0.025269535778631138,
+    "old_score": 0.026326816141352884,
+    "new_score": 0.025928940080892582,
+    "validation_samples": 1000,
+    "direction": 1,
+    "loss_delta": -0.0004549292871563852,
+    "cost_penalty_delta": 5.705322669608384e-05,
+    "margin": 2e-05,
+    "candidate_lifetime": 3000,
+    "rejection_streak": 0
+  },
+  {
+    "sample": 19199,
+    "event": "switch_complete",
+    "old_R": 3,
+    "new_R": 4
+  }
+]

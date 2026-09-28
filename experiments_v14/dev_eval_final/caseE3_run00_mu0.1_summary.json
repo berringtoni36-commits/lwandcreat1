@@ -1,0 +1,66 @@
+{
+  "phase": "dev",
+  "case": "E3",
+  "run": 0,
+  "mu": 0.1,
+  "config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false
+  },
+  "source": "experiments_v14\\outputs\\n14_dev_inputs\\caseE3_run00.npz",
+  "source_sha256": "e9e895a93b6d343c6b19c93a0ae6c7d3c7a8870c39f399d8cda7d999c72f5f90",
+  "simulator_sha256": "60f6fa3f0afe5b9ffc03ef4b610bc446efd7a9e5ed391d621fce6f9b1cc78846",
+  "protocol_sha256": "0f8e4ce8da696e8349b2a586ecb5e2d7b742a26ed7f04a14e47c708e46a1c225",
+  "segments": [
+    {
+      "anr_db": -9.20167064666748,
+      "mean_mults": 16771.42205,
+      "mean_R": 2.48002
+    },
+    {
+      "anr_db": -8.251749992370605,
+      "mean_mults": 15834.0,
+      "mean_R": 2.0
+    },
+    {
+      "anr_db": -6.571314811706543,
+      "mean_mults": 15834.0,
+      "mean_R": 2.0
+    },
+    {
+      "anr_db": -8.593356132507324,
+      "mean_mults": 15834.0,
+      "mean_R": 2.0
+    }
+  ],
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 322723,
+      "truncation_relative_frobenius": 0.033440961172968166,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.000357040527146,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    }
+  ],
+  "mean_mults": 16068.3555125,
+  "mean_cost_ratio_to_R4": 0.8398680489494041,
+  "accepted_prune": 1,
+  "physical_fir_max_abs": 1.8463008899516353e-13,
+  "seconds": 14.154462999998941,
+  "result_sha256": "4bee617b8a628daea6200e63310db889b976b39491ef8216a04a266171acf84d"
+}

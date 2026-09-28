@@ -1,0 +1,27 @@
+{
+  "phase": "dev",
+  "cases": [
+    "E2",
+    "E3"
+  ],
+  "runs": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "T": 400000,
+  "segment_length": 100000,
+  "source_sha256": {
+    "experiments_v14/protocol/PREREGISTRATION.md": "fd06e4355c8f0a2235406ce7b1f2de09bf2ce1fad9190c2b22a40189434832ea",
+    "experiments_v14/protocol/generator.py": "031e7520a0a34a463601ffb78bbd0c133748dbeb0dbc039e3e1fe25f4b723f85",
+    "experiments_v14/protocol/test_generator.py": "c2ffc2bc5d757c80ac41817f0442848a694c19d8e5513f0792193b4bc51ac1d3",
+    "experiments_v14/protocol/materialize_dev.py": "7da19d1da622f8fe206d6405e277a63f7b17e11b3cee1bda7e124fb5770d8f34",
+    "experiments_v10/anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "no_controller_or_select_confirm": true
+}

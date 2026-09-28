@@ -1,0 +1,91 @@
+{
+  "case": "E2",
+  "run": 0,
+  "arm": "once",
+  "proposal": "fixed_random",
+  "phase": "dev",
+  "source": "experiments_v12\\outputs\\main_dev_round1\\caseE2_run00.npz",
+  "fixed_R4_source": "experiments_v12\\diagnostics\\capacity_envelope.sweeps.json",
+  "source_sha256": "b23df82a3b35eb72dd81a7430aa1a92bbad2c2b5b54310848738c91ee30a3efd",
+  "T": 400000,
+  "mu": 0.1,
+  "configuration": {
+    "train": 2000,
+    "validate": 2000,
+    "first_propose": 20000,
+    "propose_interval": 40000,
+    "cooldown": 12000,
+    "detect_rel": 0.28,
+    "detect_hold": 250,
+    "spectral_threshold": null
+  },
+  "segments": [
+    {
+      "selector_anr_db": -6.009261608123779,
+      "tuned_fixed_R4_anr_db": -8.172871992886158,
+      "anr_gap_db": 2.1636099815368652,
+      "mean_mults": 16764.35525,
+      "cost_ratio_to_R4": 0.876246876960067,
+      "mean_R": 2.48
+    },
+    {
+      "selector_anr_db": -6.017786026000977,
+      "tuned_fixed_R4_anr_db": -8.511232157034511,
+      "anr_gap_db": 2.4934463500976562,
+      "mean_mults": 15834.0,
+      "cost_ratio_to_R4": 0.8276186493832323,
+      "mean_R": 2.0
+    },
+    {
+      "selector_anr_db": -4.944015026092529,
+      "tuned_fixed_R4_anr_db": -7.252679325715799,
+      "anr_gap_db": 2.308664321899414,
+      "mean_mults": 15834.0,
+      "cost_ratio_to_R4": 0.8276186493832323,
+      "mean_R": 2.0
+    },
+    {
+      "selector_anr_db": -6.024894714355469,
+      "tuned_fixed_R4_anr_db": -8.995185578972647,
+      "anr_gap_db": 2.9702911376953125,
+      "mean_mults": 15834.0,
+      "cost_ratio_to_R4": 0.8276186493832323,
+      "mean_R": 2.0
+    }
+  ],
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 295855,
+      "truncation_relative_frobenius": 0.842740599598886,
+      "jacobi_sweeps": 8
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.002723168655035,
+      "validation_samples": 2000
+    }
+  ],
+  "mean_mults": 16066.5888125,
+  "mean_cost_ratio_to_R4": 0.8397757062774409,
+  "ledger_mean": {
+    "core": 16016.608275,
+    "candidate": 33.22,
+    "management": 12.0209,
+    "reorder": 0.7396375,
+    "total": 16066.5888125
+  },
+  "max_resident_factor_coeffs": 270,
+  "accepted_prune": 1,
+  "accepted_growth": 0,
+  "rejected_proposals": 0,
+  "physical_fir_max_abs": 3.117385087847424e-07,
+  "seconds": 14.927770900001633
+}

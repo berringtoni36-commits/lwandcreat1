@@ -1,0 +1,113 @@
+{
+  "phase": "dev",
+  "source": {
+    "source": "experiments_v14/outputs/n14_dev_inputs/caseE3_run00.npz",
+    "source_sha256": "e9e895a93b6d343c6b19c93a0ae6c7d3c7a8870c39f399d8cda7d999c72f5f90",
+    "source_metadata_sha256": "acf1730fc8ad5afd31f24c0b9aaedc34ac5fcaee14e5b1bbe031c468b0f1ba31",
+    "manifest_sha256": "90c774f77c08cfd317656a7e591f8fc85a7afe13aae87693b767bcffd110f86e",
+    "phase": "dev",
+    "case": "E3",
+    "run": 0,
+    "seed_keys": {
+      "reference": [
+        20260928,
+        14,
+        1,
+        3,
+        0,
+        1
+      ],
+      "rff": [
+        20260928,
+        14,
+        1,
+        3,
+        0,
+        2
+      ],
+      "initial_factors": [
+        20260928,
+        14,
+        1,
+        3,
+        0,
+        3
+      ],
+      "measurement_noise": [
+        20260928,
+        14,
+        1,
+        3,
+        0,
+        4
+      ],
+      "teacher": [
+        20260928,
+        14,
+        1,
+        3,
+        0,
+        5
+      ],
+      "structure": [
+        20260928,
+        14,
+        1,
+        3,
+        0,
+        41
+      ]
+    }
+  },
+  "selector_sha256": "60f6fa3f0afe5b9ffc03ef4b610bc446efd7a9e5ed391d621fce6f9b1cc78846",
+  "reference_summary": "experiments_v14/dev_eval_final/caseE3_run00_mu0.1_summary.json",
+  "reference_summary_sha256": "3df82d1e37abfcb4ef2620195dac5d117ba16fd7de028a9628ad06d68a6a3cab",
+  "reference_trace": "experiments_v14/dev_eval_final/caseE3_run00_mu0.1.npz",
+  "reference_trace_sha256": "4bee617b8a628daea6200e63310db889b976b39491ef8216a04a266171acf84d",
+  "fixture": "E3_run00_mu0.1_60f6_full.mat",
+  "fixture_sha256": "35c4d4d0e3a07e2d32744182b21e373aaffe7818b902c502e07fc7c29af3186a",
+  "expected_events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 322723,
+      "truncation_relative_frobenius": 0.033440961172968166,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.000357040527146,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    }
+  ],
+  "expected_segments": [
+    {
+      "anr_db": -9.20167064666748,
+      "mean_mults": 16771.42205,
+      "mean_R": 2.48002
+    },
+    {
+      "anr_db": -8.251749992370605,
+      "mean_mults": 15834.0,
+      "mean_R": 2.0
+    },
+    {
+      "anr_db": -6.571314811706543,
+      "mean_mults": 15834.0,
+      "mean_R": 2.0
+    },
+    {
+      "anr_db": -8.593356132507324,
+      "mean_mults": 15834.0,
+      "mean_R": 2.0
+    }
+  ]
+}

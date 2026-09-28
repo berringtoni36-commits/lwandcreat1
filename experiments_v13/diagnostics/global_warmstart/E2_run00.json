@@ -1,0 +1,112 @@
+{
+  "case": "E2",
+  "run": 0,
+  "phase": "dev",
+  "switch": 20000,
+  "known_segment_boundaries_used": false,
+  "no_candidate_gate": true,
+  "fixed_R4_segment_anr_db": [
+    -8.303800172219086,
+    -8.01065755235729,
+    -6.606818636181355,
+    -8.397850825309746
+  ],
+  "branches": {
+    "signed_sort_R2": {
+      "segment_deltas_db": [
+        -0.03384783187069651,
+        -0.19733657929556436,
+        -0.17805150573601836,
+        -0.12214414958138775
+      ],
+      "body_cost_ratio": 0.8356418565753712,
+      "conventional_cost_ratio": 0.8357728008049342,
+      "quality_within_half_db": true,
+      "check": {
+        "relative_initial_truncation": 0.08469791765979942,
+        "full_output_invariance_error": 2.220446049250313e-16,
+        "inherited_FIR_error": 0.0
+      }
+    },
+    "signed_sort_R3": {
+      "segment_deltas_db": [
+        -0.6737502452530162,
+        -0.8509475636299104,
+        -0.6159734634986247,
+        -0.8135493062055446
+      ],
+      "body_cost_ratio": 0.9178209282876856,
+      "conventional_cost_ratio": 0.9179518783974493,
+      "quality_within_half_db": true,
+      "check": {
+        "relative_initial_truncation": 0.021468454433890147,
+        "full_output_invariance_error": 2.220446049250313e-16,
+        "inherited_FIR_error": 0.0
+      }
+    },
+    "identity_R2": {
+      "segment_deltas_db": [
+        2.5446339956090585,
+        2.5452780796439365,
+        1.877318594868246,
+        2.8717215694451
+      ],
+      "body_cost_ratio": 0.8356418565753712,
+      "conventional_cost_ratio": 0.8357728008049342,
+      "quality_within_half_db": false,
+      "check": {
+        "relative_initial_truncation": 0.5734419219376051,
+        "full_output_invariance_error": 0.0,
+        "inherited_FIR_error": 0.0
+      }
+    },
+    "identity_R3": {
+      "segment_deltas_db": [
+        1.1102372137079257,
+        1.1243071406303358,
+        0.7860427023175101,
+        1.234849261926101
+      ],
+      "body_cost_ratio": 0.9178209282876856,
+      "conventional_cost_ratio": 0.9179518783974493,
+      "quality_within_half_db": false,
+      "check": {
+        "relative_initial_truncation": 0.34267124137284616,
+        "full_output_invariance_error": 0.0,
+        "inherited_FIR_error": 0.0
+      }
+    },
+    "fixed_random_R2": {
+      "segment_deltas_db": [
+        2.4467220781829226,
+        2.2554750994988355,
+        1.9970645863743268,
+        2.1688358151567435
+      ],
+      "body_cost_ratio": 0.8356418565753712,
+      "conventional_cost_ratio": 0.8357728008049342,
+      "quality_within_half_db": false,
+      "check": {
+        "relative_initial_truncation": 0.824018287899913,
+        "full_output_invariance_error": 0.0,
+        "inherited_FIR_error": 0.0
+      }
+    },
+    "fixed_random_R3": {
+      "segment_deltas_db": [
+        1.150494620362628,
+        0.803163676860196,
+        0.6697293116760639,
+        0.8719934854078799
+      ],
+      "body_cost_ratio": 0.9178209282876856,
+      "conventional_cost_ratio": 0.9179518783974493,
+      "quality_within_half_db": false,
+      "check": {
+        "relative_initial_truncation": 0.7600658582127562,
+        "full_output_invariance_error": 0.0,
+        "inherited_FIR_error": 0.0
+      }
+    }
+  }
+}

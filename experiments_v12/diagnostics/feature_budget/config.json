@@ -1,0 +1,32 @@
+{
+  "purpose": "development-only fixed R2/R3 feature-budget capacity feasibility diagnostic",
+  "source_directory": "experiments_v12/outputs/main_dev_round1",
+  "source_phase": "dev",
+  "cases": ["E2", "E3"],
+  "run": 0,
+  "samples_per_case": 400000,
+  "segment_count": 4,
+  "segment_length": 100000,
+  "tail_mean_samples": 5000,
+  "ranks": [2, 3],
+  "feature_shapes": {
+    "180": [15, 12],
+    "256": [16, 16],
+    "320": [20, 16],
+    "400": [20, 20],
+    "500": [25, 20]
+  },
+  "reference": {"D": 500, "D1": 25, "D2": 20, "R": 4},
+  "mu_by_case": {"E2": 0.2, "E3": 0.1},
+  "factor_step_size": "mu_a=mu_b=mu/2",
+  "mcc_sigma": 2.0,
+  "normalizer_epsilon": 1e-8,
+  "anr_beta": 0.999,
+  "anr_epsilon": 1e-12,
+  "rff_rule": "Use the first D saved Om/ph rows from the original D=500 realization; z_D = sqrt(500/D) times the first D original features, equivalent to sqrt(2/D) cos(Om_D x + ph_D).",
+  "factor_initialization": "Saved initial_A first D1 rows and R columns; saved initial_B first D2 rows and R columns; no extra factor rescaling.",
+  "complete_cost_multiplies_per_sample": "D*(M+1+Ls)+R*(3*D+D2+3*(D1+D2))+8+Ls, M=20, Ls=4",
+  "reference_cost_multiplies_per_sample": 19132,
+  "cost_scope": "Single fixed controller including its own RFF projection/scaling, filtered-x, factor prediction and sequential updates, and one actual output secondary FIR; no selector or candidate branches.",
+  "interpretation": "Post hoc capacity feasibility only; no parameter or budget selection based on these same outcomes is a validated online method."
+}

@@ -1,0 +1,10 @@
+{
+  "prefix_samples": 12000,
+  "validation_samples_checked": 1000,
+  "ramp_samples_checked": 100,
+  "physical_preupdate_max_abs": 4.440892098500626e-16,
+  "validation_increment_max_abs": 6.938893903907228e-18,
+  "saved_actuator_replay_max_abs": 0.0,
+  "noise_growth_rng_reuse_confirmed": true,
+  "interpretation": "Replays saved selection input only. No new trial or confirmation stream used."
+}

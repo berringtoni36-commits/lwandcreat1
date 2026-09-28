@@ -1,0 +1,301 @@
+{
+  "case": "E3",
+  "run": 0,
+  "source": "experiments_v12\\outputs\\main_dev_round1\\caseE3_run00.npz",
+  "source_sha256": "3531d81b4382b6fd8ee1cc068e5507b4fa8cb47ca68d791a423ace19f010ac70",
+  "summary_sha256": "439e40dbf9a144208287301def03be51a512e890b184c46ab31e194d6afa209f",
+  "protocol_sha256": "f3493fcca832dc6d31fee4c2cf8972e70f761fa42bec46126193231ea7964b03",
+  "T": 400000,
+  "mu": 0.1,
+  "R4_D500_segment_tail_anr_db": [
+    -9.02332878112793,
+    -8.715815544128418,
+    -7.970213413238525,
+    -9.646371841430664
+  ],
+  "R4_D500_complete_mults_per_sample": 19132,
+  "R4_D500_active_factor_coeffs": 180,
+  "segment_bounds": [
+    [
+      0,
+      100000
+    ],
+    [
+      100000,
+      200000
+    ],
+    [
+      200000,
+      300000
+    ],
+    [
+      300000,
+      400000
+    ]
+  ],
+  "tail_samples": 5000,
+  "rows": [
+    {
+      "D": 180,
+      "D1": 15,
+      "D2": 12,
+      "R": 2,
+      "mu": 0.1,
+      "segment_tail_anr_db": [
+        -5.493809480840375,
+        -5.206114499272023,
+        -4.66134841722682,
+        -5.54264332682688
+      ],
+      "segment_delta_vs_R4_db": [
+        3.5295193002875545,
+        3.509701044856395,
+        3.308864996011706,
+        4.103728514603784
+      ],
+      "mean_segment_delta_db": 3.61295346393986,
+      "worst_segment_delta_db": 4.103728514603784,
+      "complete_mults_per_sample": 5778,
+      "cost_ratio_vs_R4": 0.3020071085093038,
+      "active_factor_coeffs": 54,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 180,
+      "D1": 15,
+      "D2": 12,
+      "R": 3,
+      "mu": 0.1,
+      "segment_tail_anr_db": [
+        -6.725765286648006,
+        -6.405744025356495,
+        -5.488285128854587,
+        -6.960667557393999
+      ],
+      "segment_delta_vs_R4_db": [
+        2.297563494479924,
+        2.310071518771923,
+        2.4819282843839385,
+        2.6857042840366647
+      ],
+      "mean_segment_delta_db": 2.4438168954181125,
+      "worst_segment_delta_db": 2.6857042840366647,
+      "complete_mults_per_sample": 6411,
+      "cost_ratio_vs_R4": 0.33509303784235833,
+      "active_factor_coeffs": 81,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 256,
+      "D1": 16,
+      "D2": 16,
+      "R": 2,
+      "mu": 0.1,
+      "segment_tail_anr_db": [
+        -5.667128554772353,
+        -5.320687016052511,
+        -4.8558821994529735,
+        -5.873379797347229
+      ],
+      "segment_delta_vs_R4_db": [
+        3.3562002263555764,
+        3.395128528075907,
+        3.114331213785552,
+        3.772992044083435
+      ],
+      "mean_segment_delta_db": 3.409663003075117,
+      "worst_segment_delta_db": 3.772992044083435,
+      "complete_mults_per_sample": 8172,
+      "cost_ratio_vs_R4": 0.4271377796362116,
+      "active_factor_coeffs": 64,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 256,
+      "D1": 16,
+      "D2": 16,
+      "R": 3,
+      "mu": 0.1,
+      "segment_tail_anr_db": [
+        -7.028429745097963,
+        -6.595306736004343,
+        -5.860799720299656,
+        -7.4221321944305005
+      ],
+      "segment_delta_vs_R4_db": [
+        1.9948990360299668,
+        2.1205088081240753,
+        2.10941369293887,
+        2.2242396470001635
+      ],
+      "mean_segment_delta_db": 2.112265296023269,
+      "worst_segment_delta_db": 2.2242396470001635,
+      "complete_mults_per_sample": 9052,
+      "cost_ratio_vs_R4": 0.47313401630775664,
+      "active_factor_coeffs": 96,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 320,
+      "D1": 20,
+      "D2": 16,
+      "R": 2,
+      "mu": 0.1,
+      "segment_tail_anr_db": [
+        -6.620094514146404,
+        -6.3933650529500765,
+        -5.709453080524473,
+        -6.792846487942402
+      ],
+      "segment_delta_vs_R4_db": [
+        2.403234266981526,
+        2.3224504911783415,
+        2.260760332714052,
+        2.853525353488262
+      ],
+      "mean_segment_delta_db": 2.4599926110905455,
+      "worst_segment_delta_db": 2.853525353488262,
+      "complete_mults_per_sample": 10180,
+      "cost_ratio_vs_R4": 0.5320928287685553,
+      "active_factor_coeffs": 72,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 320,
+      "D1": 20,
+      "D2": 16,
+      "R": 3,
+      "mu": 0.1,
+      "segment_tail_anr_db": [
+        -7.943106465015964,
+        -7.552070954965465,
+        -6.507752260871029,
+        -8.190352501321959
+      ],
+      "segment_delta_vs_R4_db": [
+        1.080222316111966,
+        1.1637445891629525,
+        1.4624611523674966,
+        1.4560193401087052
+      ],
+      "mean_segment_delta_db": 1.29061184943778,
+      "worst_segment_delta_db": 1.4624611523674966,
+      "complete_mults_per_sample": 11264,
+      "cost_ratio_vs_R4": 0.5887518293957767,
+      "active_factor_coeffs": 108,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 400,
+      "D1": 20,
+      "D2": 20,
+      "R": 2,
+      "mu": 0.1,
+      "segment_tail_anr_db": [
+        -6.344410953958349,
+        -5.977276151303288,
+        -5.516282312778064,
+        -6.681233729147201
+      ],
+      "segment_delta_vs_R4_db": [
+        2.678917827169581,
+        2.73853939282513,
+        2.453931100460461,
+        2.965138112283463
+      ],
+      "mean_segment_delta_db": 2.709131608184659,
+      "worst_segment_delta_db": 2.965138112283463,
+      "complete_mults_per_sample": 12692,
+      "cost_ratio_vs_R4": 0.6633911770855112,
+      "active_factor_coeffs": 80,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 400,
+      "D1": 20,
+      "D2": 20,
+      "R": 3,
+      "mu": 0.1,
+      "segment_tail_anr_db": [
+        -7.766688679229319,
+        -7.38093021598662,
+        -6.770851249354309,
+        -8.0817817376686
+      ],
+      "segment_delta_vs_R4_db": [
+        1.2566401018986104,
+        1.334885328141798,
+        1.1993621638842162,
+        1.5645901037620646
+      ],
+      "mean_segment_delta_db": 1.3388694244216723,
+      "worst_segment_delta_db": 1.5645901037620646,
+      "complete_mults_per_sample": 14032,
+      "cost_ratio_vs_R4": 0.7334309011080912,
+      "active_factor_coeffs": 120,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 500,
+      "D1": 25,
+      "D2": 20,
+      "R": 2,
+      "mu": 0.1,
+      "segment_tail_anr_db": [
+        -6.7490279105396995,
+        -6.601903049358008,
+        -5.954203474513734,
+        -6.962094337546762
+      ],
+      "segment_delta_vs_R4_db": [
+        2.27430087058823,
+        2.1139124947704095,
+        2.0160099387247916,
+        2.6842775038839024
+      ],
+      "mean_segment_delta_db": 2.2721252019918334,
+      "worst_segment_delta_db": 2.6842775038839024,
+      "complete_mults_per_sample": 15822,
+      "cost_ratio_vs_R4": 0.8269914279740749,
+      "active_factor_coeffs": 90,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": true
+    },
+    {
+      "D": 500,
+      "D1": 25,
+      "D2": 20,
+      "R": 3,
+      "mu": 0.1,
+      "segment_tail_anr_db": [
+        -8.157540731139111,
+        -7.768569854426902,
+        -6.894625713575624,
+        -8.406754315491472
+      ],
+      "segment_delta_vs_R4_db": [
+        0.8657880499888186,
+        0.947245689701516,
+        1.0755876996629015,
+        1.2396175259391917
+      ],
+      "mean_segment_delta_db": 1.032059741323107,
+      "worst_segment_delta_db": 1.2396175259391917,
+      "complete_mults_per_sample": 17477,
+      "cost_ratio_vs_R4": 0.9134957139870374,
+      "active_factor_coeffs": 135,
+      "all_four_within_half_db": false,
+      "under_90_percent_cost": false
+    }
+  ],
+  "R2_D500_saved_max_abs_difference_db": 2.953318825049678e-07,
+  "seconds": 92.30425910000122
+}

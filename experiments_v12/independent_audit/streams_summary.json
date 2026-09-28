@@ -1,0 +1,8 @@
+{
+  "paired_config_comparisons": 84,
+  "exact_noise_replays": 64,
+  "same_length_all_input_matches": 54,
+  "different_length_e3_noise_mismatches": 15,
+  "e1_rank_step_choices_rebuilt": 8,
+  "e1_fixed_r4_sweep_vs_saved_max_abs": 4.8629146220946495e-06
+}

@@ -1,0 +1,12 @@
+{
+  "phase": "dev",
+  "runs": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "max_reference_replay_abs_difference_db": 3.792490957721384e-06,
+  "max_teacher_d_reconstruction_abs": 9.43689570931383e-16
+}

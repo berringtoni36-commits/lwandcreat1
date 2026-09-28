@@ -1,0 +1,223 @@
+% N14 methods-only insertion.  Requires the amsmath/amssymb/bm packages
+% already loaded by main_stage_draft.tex.  New citation keys are listed in
+% INTEGRATION_NOTES.md.  No selection or confirmation outcomes appear here.
+\section{Causal re-tensorization of a fixed RFF controller}
+\label{sec:n14_method}
+
+\subsection{Coefficient-guided coordinate layout}
+The fixed Gaussian map in Eq.~(4) uses $\ell_r=3.9$ and supplies $D=500$
+features throughout.  We use
+$D_1=25$, $D_2=20$ and the sequential filtered-x MCC factor updates in
+Eqs.~(11)--(12), with $\mu_a=\mu_b=\mu/2$, $\sigma_c=2$, and
+$\varepsilon=10^{-8}$.  The initial active controller has four Kronecker
+terms.  A structural proposal changes the assignment of these same 500
+features to the $20\times25$ coefficient matrix; it does not select or
+discard RFFs.
+
+Let $\boldsymbol\pi$ list the original feature indices in the current
+controller order, and let $\mathbf{P}_{\boldsymbol\pi}$ be its permutation
+matrix.  Within a branch, both the output features and filtered-x features
+use that order:
+\begin{equation}
+ \mathbf{z}^{\boldsymbol\pi}_n=\mathbf{P}_{\boldsymbol\pi}\mathbf{z}_n,
+ \qquad
+ \mathbf{q}^{\boldsymbol\pi}_n=\mathbf{P}_{\boldsymbol\pi}\mathbf{q}_n,
+ \qquad
+ \mathbf{w}^{\boldsymbol\pi}_n
+   =\mathrm{vec}(\mathbf{B}_n\mathbf{A}_n^T).
+ \label{eq:n14_permuted_map}
+\end{equation}
+At a proposal sample $t$, after the active branch's update on that sample,
+we stably sort the \emph{signed} entries of its current coefficient vector:
+\begin{equation}
+ \mathbf{p}_t=\operatorname{argsort}_{\rm stable}
+       (\mathbf{w}^{\boldsymbol\pi}_t),\qquad
+ \boldsymbol\pi^+=\boldsymbol\pi[\mathbf{p}_t],\qquad
+ \widetilde{\mathbf W}_t
+   =\operatorname{mat}_{D_2\times D_1}
+       (\mathbf{P}_{\mathbf p_t}\mathbf{w}^{\boldsymbol\pi}_t).
+ \label{eq:n14_sort}
+\end{equation}
+Here $\operatorname{mat}_{D_2\times D_1}$ reverses columnwise
+vectorization.  Simultaneously permuting the complete coefficients and the
+features preserves every untruncated output exactly:
+\begin{equation}
+ (\mathbf{w}^{\boldsymbol\pi}_t)^T
+       \mathbf{z}^{\boldsymbol\pi}_n
+ = (\mathbf{P}_{\mathbf p_t}\mathbf{w}^{\boldsymbol\pi}_t)^T
+       (\mathbf{P}_{\mathbf p_t}\mathbf{z}^{\boldsymbol\pi}_n).
+ \label{eq:n14_invariance}
+\end{equation}
+The permutation is fixed for the lifetime of the proposed branch, and the
+same permutation is applied to $\mathbf q_n$.  This identity describes the
+full vector \emph{before} rank truncation; it is not a claim that a rank-two
+candidate has identical output.
+
+We compute a counted QR--Jacobi SVD
+$\widetilde{\mathbf W}_t=\mathbf U\boldsymbol\Sigma\mathbf V^T$ and form
+the best rank-two Frobenius approximation:
+\begin{equation}
+ \mathbf{B}_{c,t}=\mathbf U_{:,1:2}
+          \boldsymbol\Sigma_{1:2}^{1/2},\qquad
+ \mathbf{A}_{c,t}=\mathbf V_{:,1:2}
+          \boldsymbol\Sigma_{1:2}^{1/2},\qquad
+ \eta_{2,t}=
+ \left(\frac{\sum_{j>2}\sigma_j^2}{\sum_j\sigma_j^2}\right)^{1/2}.
+ \label{eq:n14_truncation}
+\end{equation}
+The candidate inherits the active branch's secondary-output FIR history.
+If the decomposition fails to converge or $\eta_{2,t}>0.15$, the proposal
+is rejected after charging its incurred computation.  Otherwise the
+candidate continues the same sequential MCC updates as the active branch,
+using its own permutation and factor states.
+
+The first proposal follows sample $t=20{,}000$ (zero-based indexing) and
+is the sole possible reduction from $R=4$ to $R=2$.  After each accepted
+proposal, the next opportunity occurs 50{,}000 newly observed samples
+later.  These later proposals start from the \emph{current} $R=2$
+coefficients and produce an $R=2$ candidate in a newly sorted layout:
+they update the coordinate arrangement and factors, not the number of
+Kronecker terms.  A rejected or spectrally vetoed proposal ends structural
+search for that run.  Neither a known change point nor a future coefficient
+enters the proposal rule.
+
+\subsection{Virtual secondary-path validation and actuator transition}
+At each sample there is one physical actuator drive $y_n^{\rm act}$ and
+one measured microphone error $e_n$.  With the known secondary-path model
+$\widehat{\mathbf s}=\mathbf s$ in the present simulation, the observable
+primary-plus-measurement disturbance is reconstructed as
+\begin{equation}
+ \widetilde d_n=e_n+
+       \sum_{\ell=0}^{L_s-1}\widehat s_\ell
+                              y_{n-\ell}^{\rm act}.
+ \label{eq:n14_d_reconstruction}
+\end{equation}
+The active and candidate branches maintain separate hypothetical actuator
+histories.  Filtering them with $\widehat{\mathbf s}$ gives
+$\widehat y_{s,a,n}$ and $\widehat y_{s,c,n}$, respectively; their virtual
+secondary-path residuals are
+\begin{equation}
+ \widetilde e_{a,n}=\widetilde d_n-\widehat y_{s,a,n},
+ \qquad
+ \widetilde e_{c,n}=\widetilde d_n-\widehat y_{s,c,n}.
+ \label{eq:n14_virtual_residuals}
+\end{equation}
+The candidate is evaluated from the actual measured error and the
+secondary-path model, but does not itself drive the actuator until
+acceptance.  Each branch updates on $\widetilde d_n$ through
+Eqs.~(11)--(12).  The MCC influence $\psi$ belongs to those factor
+updates; it is not the candidate-selection loss.
+
+The proposal is followed by 2{,}000 strictly subsequent samples of
+candidate training and then 2{,}000 new samples of prequential validation.
+For the validation set $\mathcal V_t$, let $s_n$ be a causal slow scale of
+the actual absolute microphone error and set
+$c_n=\max\{3s_n,10^{-3}\}$.  The gate uses clipped absolute virtual
+residuals,
+\begin{equation}
+ L_j(t)=\sum_{n\in\mathcal V_t}
+       \min\{|\widetilde e_{j,n}|,c_n\},
+ \quad j\in\{a,c\},\qquad
+ \frac{L_c(t)}{\max\{L_a(t),10^{-12}\}}
+       \leq 10^{0.5/20}.
+ \label{eq:n14_gate}
+\end{equation}
+The right-hand side permits at most a 0.5-dB increase in this
+\emph{validation amplitude} score.  The cap is formed only from current
+and past physical microphone errors.  Specifically, starting at zero,
+the implementation uses
+$r_n=|e_n|$ when $s_{n-1}=0$, and otherwise
+$r_n=\min\{|e_n|,3\max(s_{n-1},10^{-3})\}$;
+$f_n=0.98f_{n-1}+0.02r_n$.
+A hold counter increments when
+$n>1000$ and $f_n>1.28s_{n-1}$, and resets otherwise.
+For hold count below 250,
+$s_n=0.9995s_{n-1}+0.0005r_n$; otherwise
+$s_n=s_{n-1}$.  This scale supplies the cap in Eq.~\eqref{eq:n14_gate}
+and does not trigger rank growth in the present method.
+
+Upon acceptance, the new branch becomes active, while the retiring
+branch supplies a 100-sample actuator transition.  For transition sample
+$j=1,\ldots,100$,
+\begin{equation}
+ y_{t+j}^{\rm act}
+   =\left(1-\frac{j}{100}\right)y_{o,t+j}
+       +\frac{j}{100}y_{c,t+j}.
+ \label{eq:n14_ramp}
+\end{equation}
+The physical secondary path filters this \emph{single mixed output} with
+its continuous FIR history.  The retiring and new branches retain their
+own hypothetical histories for the transition; the new active branch is
+then synchronized to the actual actuator history.  Candidate training,
+validation, vetoes, rejection, and a candidate still pending at the record
+endpoint all contribute to the arithmetic bill.  The a posteriori
+factor-step contraction of Proposition~1 applies to the fixed-layout
+updates in Eqs.~(11)--(12); it makes no contraction assertion about SVD
+truncation or the actuator transition.
+
+\subsection{Adaptive state and complete search arithmetic}
+The active factor state contains $R(D_1+D_2)=45R$ scalar coefficients:
+180 before the first accepted reduction and 90 thereafter.  All 500 RFFs
+and their filtered histories remain in use.  A feature permutation stores
+500 indices (approximately 1, 2, or 4 kB with 16-, 32-, or 64-bit indices);
+overlapping active, candidate, and retiring branches may each need their
+own permutation and factor state.
+
+For $M=20$, $D=500$, and the conservative four-tap filtered-x count, the
+fixed-rank cost including the physical secondary FIR is
+\begin{equation}
+ \begin{aligned}
+ C_R&=12{,}512+1{,}655R
+       &&\text{multiplications/sample},\\
+ C_2&=15{,}822,\qquad C_4=19{,}132.
+ \end{aligned}
+ \label{eq:n14_fixed_cost}
+\end{equation}
+The four multiplications for the actual physical FIR are separate from
+the fixed-controller count in the table immediately preceding this
+section.  In particular, its 19{,}128 for $R=4$ becomes
+19{,}132 under Eq.~\eqref{eq:n14_fixed_cost}.  At sample $n$ the dynamic
+bill is computed from non-overlapping terms,
+\begin{equation}
+ \begin{aligned}
+ C_n={}&(12{,}508+1{,}655R_{a,n})
+       +I_{c,n}(12+1{,}655R_{c,n})\\
+      &+I_{o,n}(12+1{,}655R_{o,n})
+       +C_{\mathrm{manage},n}+C_{\mathrm{reorder},n}+4.
+ \end{aligned}
+ \label{eq:n14_dynamic_cost}
+\end{equation}
+The shared RFF projection, scaling, and filtered-x computation are charged
+once even while branches overlap.  $I_c$ and $I_o$ indicate a live
+candidate and retiring branch.  Management counts the causal scale and
+phase logic (12 multiplications per nonfixed sample), private secondary
+histories, four validation-score multiplications per validation sample,
+two crossfade multiplications per ramp sample, and proposal factor-scale
+work.  The one-time reorder bill includes coefficient assembly, the
+counted QR and Jacobi sweeps, rank truncation, and the spectral-tail
+calculation.  Rejected and unfinished proposals retain their incurred
+terms in $\sum_{n=0}^{T-1}C_n/T$.  The frozen comparison is to an
+equal-input, equal-initialization continuously trained $R=4$ controller;
+the prespecified scalar-multiplication target is
+$T^{-1}\sum_n C_n/C_4\leq 0.90$.  The offline calibration grid comprises
+80 dynamic and 720 fixed-controller case--method--run evaluations; those
+evaluations are reported separately from this per-run online bill.
+Sorting comparisons, permutation memory
+traffic, cosine and exponential evaluation, division, and wall-clock time
+are separate resource measures; a reduction in Eq.~\eqref{eq:n14_dynamic_cost}
+alone is not a hardware speedup claim.
+
+\subsection{Relation to prior methods}
+RFF correntropy ANC and Kronecker filtered-x MCC adaptation already have
+close precedents \cite{ref11,n14_nkp_fxnsaf_mcc}; model-based virtual
+candidate evaluation and structural selection have also been used in
+nonlinear ANC \cite{n14_spiriti}.  Sorting or reordering weights to expose
+low-rank tensor structure is likewise established outside ANC
+\cite{n14_einsort,n14_neukron}.  The method studied here combines a
+\emph{causal, coefficient-derived permutation of a fixed dense RFF map}
+with synchronized feature and filtered-x coordinates, a single validated
+$R=4\!\to\!2$ reduction, and subsequent validated $R=2\!\to\!2$
+re-tensorization in an operating filtered-x ANC loop.  Its candidate
+gate is the clipped virtual secondary-path score of
+Eq.~\eqref{eq:n14_gate}, while its learning recursion remains MCC and
+its online search operations enter Eq.~\eqref{eq:n14_dynamic_cost}.

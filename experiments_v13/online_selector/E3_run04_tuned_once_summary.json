@@ -1,0 +1,97 @@
+{
+  "case": "E3",
+  "run": 4,
+  "arm": "once",
+  "proposal": "signed_sort",
+  "phase": "dev",
+  "source": "experiments_v12\\outputs\\main_dev_round1\\caseE3_run04.npz",
+  "fixed_R4_source": "experiments_v12\\diagnostics\\capacity_envelope.sweeps.json",
+  "source_sha256": "08a89c1da13e6c2746d7258e565d69da274cdaf3b64320aa0c675c9aaa094c79",
+  "T": 400000,
+  "mu": 0.05,
+  "configuration": {
+    "train": 2000,
+    "validate": 2000,
+    "first_propose": 20000,
+    "propose_interval": 40000,
+    "cooldown": 12000,
+    "detect_rel": 0.28,
+    "detect_hold": 250,
+    "spectral_threshold": 0.15,
+    "ramp_samples": 100
+  },
+  "segments": [
+    {
+      "selector_anr_db": -8.768168449401855,
+      "tuned_fixed_R4_anr_db": -8.628962796191354,
+      "anr_gap_db": -0.1392059326171875,
+      "mean_mults": 16771.64809,
+      "cost_ratio_to_R4": 0.8766280624085302,
+      "mean_R": 2.48002
+    },
+    {
+      "selector_anr_db": -8.760807991027832,
+      "tuned_fixed_R4_anr_db": -8.772814723850393,
+      "anr_gap_db": 0.012006759643554688,
+      "mean_mults": 15834.0,
+      "cost_ratio_to_R4": 0.8276186493832323,
+      "mean_R": 2.0
+    },
+    {
+      "selector_anr_db": -7.625938892364502,
+      "tuned_fixed_R4_anr_db": -7.792109818789765,
+      "anr_gap_db": 0.16617107391357422,
+      "mean_mults": 15834.0,
+      "cost_ratio_to_R4": 0.8276186493832323,
+      "mean_R": 2.0
+    },
+    {
+      "selector_anr_db": -8.975198745727539,
+      "tuned_fixed_R4_anr_db": -9.089185144007583,
+      "anr_gap_db": 0.11398601531982422,
+      "mean_mults": 15834.0,
+      "cost_ratio_to_R4": 0.8276186493832323,
+      "mean_R": 2.0
+    }
+  ],
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 345327,
+      "truncation_relative_frobenius": 0.05371437169399055,
+      "jacobi_sweeps": 10
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9987720764136792,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    }
+  ],
+  "mean_mults": 16068.4120225,
+  "mean_cost_ratio_to_R4": 0.8398710026395568,
+  "ledger_mean": {
+    "core": 16016.608275,
+    "candidate": 33.22,
+    "retiring": 1.658,
+    "management": 12.06243,
+    "reorder": 0.8633175,
+    "total": 16068.4120225
+  },
+  "mean_exp_evals": 2.0205,
+  "post_ramp_max_abs": 0.0,
+  "max_resident_factor_coeffs": 270,
+  "accepted_prune": 1,
+  "accepted_growth": 0,
+  "rejected_proposals": 0,
+  "physical_fir_max_abs": 4.884981308350689e-15,
+  "seconds": 19.037903799999185
+}

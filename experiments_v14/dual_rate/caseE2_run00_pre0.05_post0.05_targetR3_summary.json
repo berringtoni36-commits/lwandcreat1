@@ -1,0 +1,81 @@
+{
+  "phase": "dev",
+  "case": "E2",
+  "run": 0,
+  "mu_before": 0.05,
+  "mu_after": 0.05,
+  "target_rank": 3,
+  "config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false,
+    "mu_after": 0.05,
+    "target_rank": 3
+  },
+  "input_sha256": "052aaf07e3f5f2138b7117a3ba23c4c5abc041520932ef6fca82597c7bca1ce4",
+  "controller_sha256": "d7478096cafd0fc5ac4952d426b1e9b7b68dde1acbf7332c5d034dab692cf16b",
+  "source_core_sha256": "60F6FA3F0AFE5B9FFC03EF4B610BC446EFD7A9E5ED391D621FCE6F9B1CC78846",
+  "segments": [
+    {
+      "segment": 1,
+      "anr_db": -9.907273292541504,
+      "fixed_R4_mu0.05_anr_db": -9.408624140187992,
+      "gap_db": -0.4986491523535115,
+      "mean_mults": 18095.47163,
+      "cost_ratio_to_R4": 0.9458222679280787
+    },
+    {
+      "segment": 2,
+      "anr_db": -9.355990409851074,
+      "fixed_R4_mu0.05_anr_db": -9.21812063019555,
+      "gap_db": -0.13786977965552438,
+      "mean_mults": 17489.0,
+      "cost_ratio_to_R4": 0.9141229353961948
+    },
+    {
+      "segment": 3,
+      "anr_db": -8.357610702514648,
+      "fixed_R4_mu0.05_anr_db": -8.493171259005733,
+      "gap_db": 0.13556055649108423,
+      "mean_mults": 17489.0,
+      "cost_ratio_to_R4": 0.9141229353961948
+    },
+    {
+      "segment": 4,
+      "anr_db": -10.221858978271484,
+      "fixed_R4_mu0.05_anr_db": -10.091464995752219,
+      "gap_db": -0.1303939825192657,
+      "mean_mults": 17489.0,
+      "cost_ratio_to_R4": 0.9141229353961948
+    }
+  ],
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 3,
+      "reorder_mults": 329336,
+      "truncation_relative_frobenius": 0.018312722550063196,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 3,
+      "accepted": true,
+      "validation_ratio": 1.0004469047384712,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    }
+  ],
+  "max_gap_db": 0.13556055649108423,
+  "max_cost_ratio": 0.9458222679280787,
+  "mean_cost_ratio": 0.9220477685291658,
+  "physical_fir_max_abs": 1.3322676295501878e-15,
+  "post_ramp_max_abs": 0.0,
+  "seconds": 17.997078399999737
+}

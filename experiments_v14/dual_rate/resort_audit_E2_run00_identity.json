@@ -1,0 +1,82 @@
+{
+  "phase": "dev_audit",
+  "case": "E2",
+  "run": 0,
+  "maintenance_proposal": "identity",
+  "config": {
+    "arm": "once",
+    "proposal": "signed_sort",
+    "ramp_samples": 100,
+    "ablate_spectral_veto": false,
+    "resort_interval": 50000,
+    "maintenance_proposal": "identity"
+  },
+  "input_sha256": "052aaf07e3f5f2138b7117a3ba23c4c5abc041520932ef6fca82597c7bca1ce4",
+  "controller_sha256": "b9320fa523dc6f8b288ee992e6419ef5f1812a7dbd6ae0717167f65a18d0766b",
+  "parent_controller_sha256": "3be39ad3665aeab96e9f068135f9cab9b04fbafda960421682be398fd4e3f356",
+  "segment_anr_db": [
+    -9.3876953125,
+    -8.902610778808594,
+    -7.719491958618164,
+    -9.629383087158203
+  ],
+  "segment_gap_to_signed_db": [
+    0.5147991180419922,
+    0.9596385955810547,
+    1.5234832763671875,
+    1.5420665740966797
+  ],
+  "cost_ratio": 0.839955262648965,
+  "ledger_mean": {
+    "core": 16016.608275,
+    "candidate": 33.22,
+    "retiring": 1.658,
+    "management": 12.06288,
+    "reorder": 2.47493,
+    "total": 16070.024085
+  },
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 328791,
+      "truncation_relative_frobenius": 0.10886963172848718,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 1.0002397995922807,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    },
+    {
+      "n": 74000,
+      "type": "proposal_prune",
+      "from_R": 2,
+      "to_R": 2,
+      "reorder_mults": 661181,
+      "truncation_relative_frobenius": Infinity,
+      "jacobi_sweeps": 32
+    },
+    {
+      "n": 74000,
+      "type": "prune",
+      "from_R": 2,
+      "to_R": 2,
+      "accepted": false,
+      "reason": "jacobi_nonconvergence",
+      "validation_ratio": null,
+      "validation_samples": 0
+    }
+  ],
+  "physical_fir_max_abs": 1.2212453270876722e-15,
+  "post_ramp_max_abs": 0.0,
+  "seconds": 20.36094890000095
+}

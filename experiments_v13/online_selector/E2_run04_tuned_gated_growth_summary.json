@@ -1,0 +1,169 @@
+{
+  "case": "E2",
+  "run": 4,
+  "arm": "gated_growth",
+  "proposal": "signed_sort",
+  "phase": "dev",
+  "source": "experiments_v12\\outputs\\main_dev_round1\\caseE2_run04.npz",
+  "fixed_R4_source": "experiments_v12\\diagnostics\\capacity_envelope.sweeps.json",
+  "source_sha256": "1465ea3e5fa9396671a2d2b0290699e9f3e36db88011be6367fb63d1cc48d6dd",
+  "T": 400000,
+  "mu": 0.1,
+  "configuration": {
+    "train": 2000,
+    "validate": 2000,
+    "first_propose": 20000,
+    "propose_interval": 40000,
+    "cooldown": 12000,
+    "detect_rel": 0.28,
+    "detect_hold": 250,
+    "spectral_threshold": 0.15,
+    "ramp_samples": 100
+  },
+  "segments": [
+    {
+      "selector_anr_db": -9.609023094177246,
+      "tuned_fixed_R4_anr_db": -9.484240175982844,
+      "anr_gap_db": -0.12478256225585938,
+      "mean_mults": 17102.72581,
+      "cost_ratio_to_R4": 0.893932981915116,
+      "mean_R": 2.48002
+    },
+    {
+      "selector_anr_db": -8.496883392333984,
+      "tuned_fixed_R4_anr_db": -8.590409948715017,
+      "anr_gap_db": 0.09352684020996094,
+      "mean_mults": 16165.3218,
+      "cost_ratio_to_R4": 0.8449363265732803,
+      "mean_R": 2.0
+    },
+    {
+      "selector_anr_db": -7.299680233001709,
+      "tuned_fixed_R4_anr_db": -7.686482962402671,
+      "anr_gap_db": 0.38680267333984375,
+      "mean_mults": 16165.3218,
+      "cost_ratio_to_R4": 0.8449363265732803,
+      "mean_R": 2.0
+    },
+    {
+      "selector_anr_db": -9.34768009185791,
+      "tuned_fixed_R4_anr_db": -9.353683418154347,
+      "anr_gap_db": 0.006003379821777344,
+      "mean_mults": 16165.3218,
+      "cost_ratio_to_R4": 0.8449363265732803,
+      "mean_R": 2.0
+    }
+  ],
+  "events": [
+    {
+      "n": 20000,
+      "type": "proposal_prune",
+      "from_R": 4,
+      "to_R": 2,
+      "reorder_mults": 320919,
+      "truncation_relative_frobenius": 0.026890264035658154,
+      "jacobi_sweeps": 9
+    },
+    {
+      "n": 24000,
+      "type": "prune",
+      "from_R": 4,
+      "to_R": 2,
+      "accepted": true,
+      "validation_ratio": 0.9968302186286863,
+      "validation_samples": 2000,
+      "ramp_start": 24001,
+      "ramp_end": 24100
+    },
+    {
+      "n": 36000,
+      "type": "proposal_grow",
+      "from_R": 2,
+      "to_R": 4,
+      "reorder_mults": 330000,
+      "truncation_relative_frobenius": null,
+      "jacobi_sweeps": null
+    },
+    {
+      "n": 40000,
+      "type": "grow",
+      "from_R": 2,
+      "to_R": 4,
+      "accepted": false,
+      "validation_ratio": 0.9999997230302266,
+      "validation_samples": 2000
+    },
+    {
+      "n": 140000,
+      "type": "proposal_grow",
+      "from_R": 2,
+      "to_R": 4,
+      "reorder_mults": 330000,
+      "truncation_relative_frobenius": null,
+      "jacobi_sweeps": null
+    },
+    {
+      "n": 144000,
+      "type": "grow",
+      "from_R": 2,
+      "to_R": 4,
+      "accepted": false,
+      "validation_ratio": 1.000000260598604,
+      "validation_samples": 2000
+    },
+    {
+      "n": 244000,
+      "type": "proposal_grow",
+      "from_R": 2,
+      "to_R": 4,
+      "reorder_mults": 330000,
+      "truncation_relative_frobenius": null,
+      "jacobi_sweeps": null
+    },
+    {
+      "n": 248000,
+      "type": "grow",
+      "from_R": 2,
+      "to_R": 4,
+      "accepted": false,
+      "validation_ratio": 0.9999983101669248,
+      "validation_samples": 2000
+    },
+    {
+      "n": 348000,
+      "type": "proposal_grow",
+      "from_R": 2,
+      "to_R": 4,
+      "reorder_mults": 330000,
+      "truncation_relative_frobenius": null,
+      "jacobi_sweeps": null
+    },
+    {
+      "n": 352000,
+      "type": "grow",
+      "from_R": 2,
+      "to_R": 4,
+      "accepted": false,
+      "validation_ratio": 0.9999967892654874,
+      "validation_samples": 2000
+    }
+  ],
+  "mean_mults": 16399.6728025,
+  "mean_cost_ratio_to_R4": 0.8571854904087394,
+  "ledger_mean": {
+    "core": 16016.608275,
+    "candidate": 298.5,
+    "retiring": 1.658,
+    "management": 74.80423,
+    "reorder": 4.1022975,
+    "total": 16399.6728025
+  },
+  "mean_exp_evals": 2.1005,
+  "post_ramp_max_abs": 0.0,
+  "max_resident_factor_coeffs": 270,
+  "accepted_prune": 1,
+  "accepted_growth": 0,
+  "rejected_proposals": 4,
+  "physical_fir_max_abs": 1.3322676295501878e-15,
+  "seconds": 17.87253580000106
+}

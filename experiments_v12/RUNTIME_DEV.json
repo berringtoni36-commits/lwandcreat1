@@ -1,0 +1,41 @@
+{
+  "phase": "dev",
+  "source": "D:\\\u539f\u59cb\u8bba\u6587\u5b9e\u9a8c\u548c\u8bba\u6587\\\u539f\u59cb\u8bba\u6587\u5b9e\u9a8c\u548c\u8bba\u6587\\experiments_v12\\outputs\\selection_e1_v500\\caseE1_run00.npz",
+  "samples_per_repeat": 20000,
+  "warmup_repeats": 1,
+  "measured_repeats": 7,
+  "single_process": true,
+  "numeric_threads_requested": 1,
+  "timing_includes_shared_rff_feature_generation": true,
+  "does_not_measure_structural_transition_peak": true,
+  "times_seconds": {
+    "fixed_R4": [
+      0.594049500001347,
+      0.6800416999994923,
+      0.6747197999993659,
+      0.6775448999997025,
+      0.6758947999987868,
+      0.6840363000010257,
+      0.6909111000004486
+    ],
+    "adaptive": [
+      0.7974114999997255,
+      0.9280879000016284,
+      0.9147719000011421,
+      0.9153342999998131,
+      0.92333409999992,
+      0.9594238999998197,
+      0.9276771000004373
+    ]
+  },
+  "median_us_per_sample": {
+    "fixed_R4": 33.87724499998512,
+    "adaptive": 46.166704999996
+  },
+  "iqr_us_per_sample": {
+    "fixed_R4": 0.33658500005913083,
+    "adaptive": 0.6414700000277662
+  },
+  "process_working_set_bytes_at_end": 37199872,
+  "process_peak_working_set_bytes": 37924864
+}

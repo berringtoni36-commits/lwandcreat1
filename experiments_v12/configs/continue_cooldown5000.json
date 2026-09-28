@@ -1,0 +1,12 @@
+{
+  "selection": {
+    "prune_mode": "counted",
+    "lambda_cost": 0.0005,
+    "margin": 0.00002,
+    "train_samples": 2000,
+    "validation_samples": 500,
+    "cooldown": 5000,
+    "continue_on_accept": true
+  },
+  "mu_by_method": {}
+}

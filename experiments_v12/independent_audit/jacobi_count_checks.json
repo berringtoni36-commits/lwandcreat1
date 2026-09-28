@@ -1,0 +1,23 @@
+[
+  {
+    "rank": 2,
+    "sweeps": 2,
+    "legacy": 38,
+    "current": 40,
+    "missing": 2
+  },
+  {
+    "rank": 4,
+    "sweeps": 5,
+    "legacy": 1198,
+    "current": 1228,
+    "missing": 30
+  },
+  {
+    "rank": 8,
+    "sweeps": 7,
+    "legacy": 13736,
+    "current": 13932,
+    "missing": 196
+  }
+]

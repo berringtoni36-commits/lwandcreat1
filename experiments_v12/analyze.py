@@ -74,9 +74,9 @@ def analyze(folder):
     with (folder/'paired_stats.csv').open('w',newline='',encoding='utf-8-sig') as f:
         writer=csv.DictWriter(f,fieldnames=list(rows[0]))
         writer.writeheader();writer.writerows(rows)
-    lines += ['', '## 固定项数前沿', '',
-              '每个固定 R 的成本按相同理论口径计输出 FIR。以下为逐工况、全部段等权的描述性前沿；正式优越性还需要锁定优势维度与独立检验。', '',
-              '| 工况 | 方法 | ANR dB | 总乘法/采样 | 动态方法是否被该固定点同时超过 |',
+    lines += ['', '## 性能—成本对照', '',
+              '每个固定 R 的成本按相同理论口径计输出 FIR。以下为逐工况、全部段等权的描述性对照；正式优越性还需要锁定优势维度与独立检验。', '',
+              '| 工况 | 方法 | ANR dB | 总乘法/采样 | 该方法在开发均值上是否同时超过动态方法 |',
               '|---|---|---:|---:|---|']
     from adaptive_core import ac
     for case in protocol['cases']:
@@ -97,7 +97,7 @@ def analyze(folder):
                 cost=float(ac.mults_full(500,20,4)+4)
             else:
                 cost=float('nan')
-            dominated=(name.startswith('fixed_R') and cost<=dynamic_cost and
+            dominated=(name!='adaptive' and np.isfinite(cost) and cost<=dynamic_cost and
                        values[name]<=values['adaptive'])
             lines.append(f'| {case} | {name} | {values[name]:.3f} | {cost:.0f} | '
                          f'{"是" if dominated else "否"} |')

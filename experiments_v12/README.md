@@ -62,5 +62,7 @@ python -B experiments_v12/run.py --phase confirm --cases E1 E2 E3 C1 C2 C3 C4 Fc
 - `outputs/selection_e1_v500/` 等：三套配置在新随机流上的 E1 选择集；均未同时通过预设性能与成本上界。
 - `FEASIBILITY_DIAGNOSTIC.md`：E2/E3 固定项数逐段容量差的开发集诊断。
 - `PAPER_INTEGRATION.md`：算法写入现有论文的条件及“主张—证据”对照。
+- `VALIDATION_STATUS.md`：本轮逐门槛验收、未进入正式确认的理由与未完成项目。
+- `figures/`：从已保存开发/选择数据生成的性能—成本图，不能替代正式论文图。
 
 每轮提交、推送和状态报告按根目录 `AGENTS.md` 执行，保留其他人已暂存或修改的文件。

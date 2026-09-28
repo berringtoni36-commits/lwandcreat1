@@ -1,0 +1,14 @@
+{
+  "anr_and_cost": {
+    "E2": false,
+    "E3": false
+  },
+  "fixed_frontier": {
+    "E2": false,
+    "E3": false
+  },
+  "joint_numeric": {
+    "E2": false,
+    "E3": false
+  }
+}

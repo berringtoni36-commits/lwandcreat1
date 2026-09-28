@@ -69,7 +69,7 @@ def jacobi_svd(square,counter,max_sweeps=32,tol=1e-12):
                 cp=work[:,p].copy();cq=work[:,q].copy()
                 app=float(np.dot(cp,cp));aqq=float(np.dot(cq,cq));apq=float(np.dot(cp,cq))
                 counter.multiplies += 3*n
-                counter.multiplies += 1
+                counter.multiplies += 2  # app*aqq and tol*sqrt(app*aqq)
                 counter.square_roots += 1
                 if abs(apq)<=tol*np.sqrt(app*aqq):
                     continue
