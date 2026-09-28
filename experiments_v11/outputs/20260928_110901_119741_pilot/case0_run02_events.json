@@ -1,0 +1,113 @@
+[
+  {
+    "sample": 1999,
+    "event": "proposal",
+    "old_R": 2,
+    "new_R": 3,
+    "remove_index": null
+  },
+  {
+    "sample": 2999,
+    "event": "validation_start"
+  },
+  {
+    "sample": 3999,
+    "event": "accept",
+    "old_R": 2,
+    "new_R": 3,
+    "old_loss": 0.03892172664768531,
+    "new_loss": 0.03337447222829644,
+    "old_score": 0.04982768362507086,
+    "new_score": 0.04542149373960366,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 4099,
+    "event": "switch_complete",
+    "old_R": 2,
+    "new_R": 3
+  },
+  {
+    "sample": 6099,
+    "event": "proposal",
+    "old_R": 3,
+    "new_R": 2,
+    "remove_index": 2
+  },
+  {
+    "sample": 7099,
+    "event": "validation_start"
+  },
+  {
+    "sample": 8099,
+    "event": "reject",
+    "old_R": 3,
+    "new_R": 2,
+    "old_loss": 0.028472331947872753,
+    "new_loss": 0.038998293273037714,
+    "old_score": 0.04051935345917998,
+    "new_score": 0.04990425025042326,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 10099,
+    "event": "proposal",
+    "old_R": 3,
+    "new_R": 4,
+    "remove_index": null
+  },
+  {
+    "sample": 11099,
+    "event": "validation_start"
+  },
+  {
+    "sample": 12099,
+    "event": "accept",
+    "old_R": 3,
+    "new_R": 4,
+    "old_loss": 0.026277492508680323,
+    "new_loss": 0.024496285567181655,
+    "old_score": 0.03832451401998755,
+    "new_score": 0.03768437161241056,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 12199,
+    "event": "switch_complete",
+    "old_R": 3,
+    "new_R": 4
+  },
+  {
+    "sample": 14199,
+    "event": "proposal",
+    "old_R": 4,
+    "new_R": 3,
+    "remove_index": 3
+  },
+  {
+    "sample": 15199,
+    "event": "validation_start"
+  },
+  {
+    "sample": 16199,
+    "event": "reject",
+    "old_R": 4,
+    "new_R": 3,
+    "old_loss": 0.021196705507381917,
+    "new_loss": 0.02370588524184026,
+    "old_score": 0.034384791552610816,
+    "new_score": 0.03575290675314748,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 18199,
+    "event": "proposal",
+    "old_R": 4,
+    "new_R": 5,
+    "remove_index": null
+  },
+  {
+    "sample": 19199,
+    "event": "validation_start"
+  }
+]

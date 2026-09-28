@@ -1,0 +1,55 @@
+Pre-declared operating point (RFF-MCC best mean steady state): {"E1_chaotic": 0.2, "E2_sas_ref": 0.1, "E3_gauss": 0.2, "E4_sas_noise": 0.1}
+
+== E1_chaotic at mu=0.2 (structured: mu_a=mu_b=mu/2); 20 independent runs; ss = mean ANR of last 5000 samples
+  RFF-NLMS     ss  -14.67 +- 0.34 dB | t(-5 dB)     807 +-    50 (20/20 crossed)
+  RFF-MCC      ss  -14.65 +- 0.34 dB | t(-5 dB)     956 +-    62 (20/20 crossed)
+  RFF-MCC-180  ss   -9.69 +- 0.61 dB | t(-5 dB)    1169 +-   221 (20/20 crossed)
+  NKP-RFF-MCC  ss  -10.19 +- 0.45 dB | t(-5 dB)    1063 +-   166 (20/20 crossed)
+  paired NKP-RFF-MCC - RFF-MCC: mean diff +4.46 dB, wins(lower ANR) 0/20, Wilcoxon p = 1.91e-06
+  paired NKP-RFF-MCC - RFF-MCC-180: mean diff -0.50 dB, wins(lower ANR) 18/20, Wilcoxon p = 3.95e-04
+  paired RFF-MCC - RFF-NLMS: mean diff +0.01 dB, wins(lower ANR) 0/20, Wilcoxon p = 1.91e-06
+
+== E2_sas_ref at mu=0.1 (structured: mu_a=mu_b=mu/2); 20 independent runs; ss = mean ANR of last 5000 samples
+  RFF-NLMS     ss   -2.39 +- 0.23 dB | t(-5 dB) never
+  RFF-MCC      ss   -2.64 +- 0.23 dB | t(-5 dB) never
+  RFF-MCC-180  ss   -1.47 +- 0.21 dB | t(-5 dB) never
+  NKP-RFF-MCC  ss   -1.66 +- 0.19 dB | t(-5 dB) never
+  paired NKP-RFF-MCC - RFF-MCC: mean diff +0.98 dB, wins(lower ANR) 0/20, Wilcoxon p = 1.91e-06
+  paired NKP-RFF-MCC - RFF-MCC-180: mean diff -0.19 dB, wins(lower ANR) 15/20, Wilcoxon p = 1.21e-03
+  paired RFF-MCC - RFF-NLMS: mean diff -0.25 dB, wins(lower ANR) 20/20, Wilcoxon p = 1.91e-06
+
+== E3_gauss at mu=0.2 (structured: mu_a=mu_b=mu/2); 20 independent runs; ss = mean ANR of last 5000 samples
+  RFF-NLMS     ss  -11.26 +- 0.29 dB | t(-5 dB)     985 +-    79 (20/20 crossed)
+  RFF-MCC      ss  -11.36 +- 0.29 dB | t(-5 dB)    1242 +-    94 (20/20 crossed)
+  RFF-MCC-180  ss   -7.62 +- 0.64 dB | t(-5 dB)    1814 +-   468 (20/20 crossed)
+  NKP-RFF-MCC  ss   -8.31 +- 0.35 dB | t(-5 dB)    1596 +-   249 (20/20 crossed)
+  paired NKP-RFF-MCC - RFF-MCC: mean diff +3.06 dB, wins(lower ANR) 0/20, Wilcoxon p = 1.91e-06
+  paired NKP-RFF-MCC - RFF-MCC-180: mean diff -0.69 dB, wins(lower ANR) 16/20, Wilcoxon p = 3.95e-04
+  paired RFF-MCC - RFF-NLMS: mean diff -0.10 dB, wins(lower ANR) 20/20, Wilcoxon p = 1.91e-06
+
+== E4_sas_noise at mu=0.1 (structured: mu_a=mu_b=mu/2); 20 independent runs; ss = mean ANR of last 5000 samples
+  RFF-NLMS     ss  -10.32 +- 0.32 dB | t(-5 dB)    1973 +-   455 (20/20 crossed)
+  RFF-MCC      ss  -10.47 +- 0.26 dB | t(-5 dB)    2318 +-   216 (20/20 crossed)
+  RFF-MCC-180  ss   -7.54 +- 0.57 dB | t(-5 dB)    3084 +-   479 (20/20 crossed)
+  NKP-RFF-MCC  ss   -7.86 +- 0.38 dB | t(-5 dB)    2731 +-   562 (20/20 crossed)
+  paired NKP-RFF-MCC - RFF-MCC: mean diff +2.62 dB, wins(lower ANR) 0/20, Wilcoxon p = 1.91e-06
+  paired NKP-RFF-MCC - RFF-MCC-180: mean diff -0.31 dB, wins(lower ANR) 15/20, Wilcoxon p = 1.07e-02
+  paired RFF-MCC - RFF-NLMS: mean diff -0.15 dB, wins(lower ANR) 20/20, Wilcoxon p = 1.91e-06
+
+== Asymmetric-step check (E1): RFF-MCC at mu=0.05 vs NKP-RFF-MCC at effective 0.2 (mu_a=mu_b=0.1)
+  RFF-MCC mu=0.05  ss -13.40 dB, t(-5)   2846, t(-10)   7020 (20/20)
+  NKP eff=0.2      ss -10.19 dB, t(-5)   1063, t(-10)  10636 (16/20)
+  RFF-MCC mu=0.2   ss -14.65 dB, t(-5)    956, t(-10)   2611 (20/20)
+
+== Storage and arithmetic per iteration (M=20, Ls=4)
+  RFF-MCC D=500          trainable  500 | fixed map  10500 | total  11000 | mults  14504
+  NKP-RFF-MCC 25x20 R=4  trainable  180 | fixed map  10500 | total  10680 | mults  19128
+  RFF-MCC D=180          trainable  180 | fixed map   3780 | total   3960 | mults   5224
+
+== R sweep (E1, mu=0.2): RFF-MCC -14.51+-0.42; NKP-RFF-MCC_R1 -4.98+-0.51; NKP-RFF-MCC_R2 -7.32+-0.52; NKP-RFF-MCC_R4 -10.05+-0.47; NKP-RFF-MCC_R8 -12.11+-0.46; NKP-RFF-MCC_R12 -12.67+-0.46; NKP-RFF-MCC_R20 -12.97+-0.46
+
+== k sweep (E1, mu=0.2): RFF-MCC_k1 -14.50+-0.57; NKP-RFF-MCC_k1 -10.02+-0.48; RFF-MCC_k1.5 -14.49+-0.57; NKP-RFF-MCC_k1.5 -10.00+-0.46; RFF-MCC_k2 -14.48+-0.57; NKP-RFF-MCC_k2 -10.01+-0.48; RFF-MCC_k2.8 -14.47+-0.57; NKP-RFF-MCC_k2.8 -9.98+-0.46; RFF-MCC_k4 -14.44+-0.57; NKP-RFF-MCC_k4 -9.91+-0.47; RFF-MCC_k5.6 -14.39+-0.58; NKP-RFF-MCC_k5.6 -9.91+-0.42; RFF-MCC_k8 -14.31+-0.59; NKP-RFF-MCC_k8 -9.77+-0.45; RFF-MCC_k12 -14.13+-0.61; NKP-RFF-MCC_k12 -9.52+-0.48; RFF-MCC_k20 -13.54+-0.73; NKP-RFF-MCC_k20 -8.95+-0.69
+
+== ablation (E1, mu=0.2): NKP-sequential -10.28+-0.55; NKP-simultaneous -10.25+-0.59
+
+== init (E1, mu=0.2): RFF-MCC -14.67+-0.40; NKP-RFF-MCC_init0.01 -10.24+-0.41; NKP-RFF-MCC_init0.1 -10.13+-0.47; NKP-RFF-MCC_init0.3 -10.12+-0.50

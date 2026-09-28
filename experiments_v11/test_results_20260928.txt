@@ -1,0 +1,17 @@
+test_causal_prefix_and_rank_bounds (__main__.AdaptiveTests.test_causal_prefix_and_rank_bounds) ... ok
+test_cost_counts_candidate_without_duplicating_features (__main__.AdaptiveTests.test_cost_counts_candidate_without_duplicating_features) ... ok
+test_crossfade_filters_actual_output_history (__main__.AdaptiveTests.test_crossfade_filters_actual_output_history) ... ok
+test_decision_penalty_and_hysteresis (__main__.AdaptiveTests.test_decision_penalty_and_hysteresis) ... ok
+test_disabled_matches_original_bitwise (__main__.AdaptiveTests.test_disabled_matches_original_bitwise) ... ok
+test_equal_loss_prune_can_be_accepted_by_cost (__main__.AdaptiveTests.test_equal_loss_prune_can_be_accepted_by_cost) ... ok
+test_growth_preserves_output_and_new_term_can_learn (__main__.AdaptiveTests.test_growth_preserves_output_and_new_term_can_learn) ... ok
+test_growth_scale_matches_learned_factors (__main__.AdaptiveTests.test_growth_scale_matches_learned_factors) ... ok
+test_prune_transition_completes_and_retains_history (__main__.AdaptiveTests.test_prune_transition_completes_and_retains_history) ... ok
+test_pruning_removes_exactly_one_term (__main__.AdaptiveTests.test_pruning_removes_exactly_one_term) ... ok
+test_validation_is_after_training_and_has_exact_window (__main__.AdaptiveTests.test_validation_is_after_training_and_has_exact_window) ... ok
+test_validation_uses_physical_preupdate_error (__main__.AdaptiveTests.test_validation_uses_physical_preupdate_error) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.101s
+
+OK

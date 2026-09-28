@@ -1,0 +1,12 @@
+[PASS] T1 w=sum a_r(x)b_r=vec(BA^T), b^T u_b = a^T u_a = w^T q: max dev 8.88e-16
+[PASS] T2 sequential step: w1-w0 = psi0 P_b q, w2-w1 = psi1 P_a q (exact): max dev 7.98e-15
+[PASS] T3a sequential residual factors e1=(1-g0 mu_b rho_b)e0, e2=(1-g1 mu_a rho_a)e1: max rel dev 5.97e-14 over 100000 random cases
+[PASS] T3b sequential |e2| <= |e0| for 0<mu_a,mu_b<2: violations 0/100000, max |e2|/|e0| = 1.000000
+[PASS] T4a simultaneous: e+ = (1-x)e - tr(dB^T Q dA) (exact): max rel dev 1.57e-09
+[PASS] T4b simultaneous: |e+| <= (|1-x| + kappa)|e| (conditional bound): violations 0/100000
+[PASS] T4c simultaneous with mu_a+mu_b<2 is NOT always contracting: expansions found in 38205/100000 random cases (so no unconditional guarantee)
+[PASS] T5a counterexample, simultaneous update: e0=0.9999, dA=dB=7.05874, e+=-48.967
+[PASS] T5b same data, sequential update: e0=0.9999 -> e1=0.9293 -> e2=0.8626
+[PASS] T6 KronRFF.step (batched) equals the per-run formulas: max dev 2.78e-17
+[PASS] T7 exact Wilcoxon p-values: p(n=5, all +) = 0.062500 (exact 0.0625); p(n=20, all +) = 1.907e-06 (exact 1.907e-06)
+[PASS] T8 multiplication counts D=500, M=20, Ls=4, 25x20, R=4: full 14504, structured 19128, ratio 1.319 (old Table 2: 14,004 vs 17,048 omitted the output y(n))

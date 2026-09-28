@@ -1,0 +1,40 @@
+{
+  "profile": "pilot",
+  "runs": 3,
+  "lengths": [
+    20000,
+    20000,
+    32000
+  ],
+  "seed": 20260928,
+  "config": {
+    "r_min": 1,
+    "r_max": 8,
+    "warmup": 2000,
+    "train_samples": 1000,
+    "validation_samples": 1000,
+    "ramp_samples": 100,
+    "cooldown": 2000,
+    "screen_every": 50,
+    "screen_beta": 0.9,
+    "lambda_cost": 0.01,
+    "margin": 0.0005,
+    "enabled": true
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "sources_sha256": {
+    "adaptive_core.py": "b64ffd2ef9c1d9ad2c0687c5803f062099790c0c5bc0a2dca9bb260e28a0692e",
+    "run_adaptive.py": "1825288b49925a07057341f8bd22cb241cc1a6f05a5ca36e23790f624a72cfa1",
+    "analyze_adaptive.py": "9652725c33d7fc9d551f16b97c8b245a26c8c2d5b12a5997e46e49e6e63d5881",
+    "test_adaptive.py": "f33d6ef4b66b6b6db5ac69071b9909251b3d8717d4af79eb4bb43e4cf2c161aa",
+    "anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "case_names": [
+    "chaotic_stationary",
+    "gaussian_impulsive_noise",
+    "gaussian_piecewise_primary_with_burst"
+  ],
+  "interpretation": "Development pilot, not confirmatory publication evidence. No target R trajectory."
+}

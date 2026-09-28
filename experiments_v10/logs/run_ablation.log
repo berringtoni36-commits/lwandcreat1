@@ -1,0 +1,2 @@
+=== ablation 2026-09-26 13:09:07 code bc0376643209
+E7 ablation mu=0.2 (6.1 s): {"NKP-sequential": "ss  -10.28 +-  0.55 dB", "NKP-simultaneous": "ss  -10.25 +-  0.59 dB"}

@@ -1,0 +1,2 @@
+=== init 2026-09-26 13:09:13 code bc0376643209
+E8 init mu=0.2 (8.0 s): {"RFF-MCC": "ss  -14.67 +-  0.40 dB", "NKP-RFF-MCC_init0.01": "ss  -10.24 +-  0.41 dB", "NKP-RFF-MCC_init0.1": "ss  -10.13 +-  0.47 dB", "NKP-RFF-MCC_init0.3": "ss  -10.12 +-  0.50 dB"}

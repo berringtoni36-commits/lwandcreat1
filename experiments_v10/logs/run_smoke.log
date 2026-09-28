@@ -1,0 +1,9 @@
+=== smoke 2026-09-26 11:18:10 code 09be4330ca67
+E1_chaotic mu=0.1 (0.7 s, 3 runs x 6000): {"RFF-NLMS": "ss  -11.94 +-  0.58 dB", "RFF-MCC": "ss  -11.60 +-  0.62 dB", "RFF-MCC-180": "ss   -8.44 +-  0.48 dB", "NKP-RFF-MCC": "ss   -8.56 +-  0.26 dB"}
+E1_chaotic mu=0.4 (0.7 s, 3 runs x 6000): {"RFF-NLMS": "ss  -13.35 +-  0.39 dB", "RFF-MCC": "ss  -13.31 +-  0.39 dB", "RFF-MCC-180": "ss   -8.76 +-  0.54 dB", "NKP-RFF-MCC": "ss   -8.83 +-  0.40 dB"}
+E2_sas_ref mu=0.1 (0.7 s, 3 runs x 6000): {"RFF-NLMS": "ss   -2.13 +-  0.30 dB", "RFF-MCC": "ss   -1.83 +-  0.29 dB", "RFF-MCC-180": "ss   -1.12 +-  0.28 dB", "NKP-RFF-MCC": "ss   -1.33 +-  0.29 dB"}
+E2_sas_ref mu=0.4 (0.8 s, 3 runs x 6000): {"RFF-NLMS": "ss   -1.38 +-  0.15 dB", "RFF-MCC": "ss   -2.42 +-  0.29 dB", "RFF-MCC-180": "ss   -1.19 +-  0.09 dB", "NKP-RFF-MCC": "ss   -1.45 +-  0.26 dB"}
+E3_gauss mu=0.1 (0.7 s, 3 runs x 6000): {"RFF-NLMS": "ss   -9.52 +-  0.42 dB", "RFF-MCC": "ss   -9.17 +-  0.44 dB", "RFF-MCC-180": "ss   -6.72 +-  0.84 dB", "NKP-RFF-MCC": "ss   -6.57 +-  0.25 dB"}
+E3_gauss mu=0.4 (0.8 s, 3 runs x 6000): {"RFF-NLMS": "ss   -9.85 +-  0.12 dB", "RFF-MCC": "ss   -9.96 +-  0.12 dB", "RFF-MCC-180": "ss   -6.18 +-  0.67 dB", "NKP-RFF-MCC": "ss   -7.05 +-  0.25 dB"}
+E4_sas_noise mu=0.1 (0.8 s, 3 runs x 6000): {"RFF-NLMS": "ss   -9.01 +-  0.36 dB", "RFF-MCC": "ss   -8.77 +-  0.36 dB", "RFF-MCC-180": "ss   -6.77 +-  0.47 dB", "NKP-RFF-MCC": "ss   -6.18 +-  0.72 dB"}
+E4_sas_noise mu=0.4 (0.9 s, 3 runs x 6000): {"RFF-NLMS": "ss   -9.28 +-  0.77 dB", "RFF-MCC": "ss   -9.51 +-  0.65 dB", "RFF-MCC-180": "ss   -6.34 +-  1.22 dB", "NKP-RFF-MCC": "ss   -6.69 +-  0.67 dB"}

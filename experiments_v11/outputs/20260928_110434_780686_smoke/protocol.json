@@ -1,0 +1,39 @@
+{
+  "profile": "smoke",
+  "runs": 1,
+  "lengths": [
+    8000,
+    8000,
+    8000
+  ],
+  "seed": 20260928,
+  "config": {
+    "r_min": 1,
+    "r_max": 8,
+    "warmup": 2000,
+    "train_samples": 1000,
+    "validation_samples": 1000,
+    "ramp_samples": 100,
+    "cooldown": 2000,
+    "screen_every": 50,
+    "screen_beta": 0.9,
+    "lambda_cost": 0.01,
+    "margin": 0.0005,
+    "enabled": true
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "sources_sha256": {
+    "adaptive_core.py": "ac563e93f7611d675b3dc579add27ad16b3303367649dd2ea1dc7da6ec67dd18",
+    "run_adaptive.py": "f4553b7b3695c351a709f81140911115845c7e9b5ea337e8c33da5f8be619aaf",
+    "analyze_adaptive.py": "83bf51d7eda2a7397ccc3aba07ccae809e378ed666816bcb1d1ecf4dc98a774a",
+    "anc_core.py": "868c9776fbce3b4de4aefbd5056f51b2f6fb5d52605ae40d0e5ce80996ba9f41"
+  },
+  "case_names": [
+    "chaotic_stationary",
+    "gaussian_impulsive_noise",
+    "gaussian_piecewise_primary_with_burst"
+  ],
+  "interpretation": "Development pilot, not confirmatory publication evidence. No target R trajectory."
+}

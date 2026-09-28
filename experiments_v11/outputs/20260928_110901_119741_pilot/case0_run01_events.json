@@ -1,0 +1,107 @@
+[
+  {
+    "sample": 1999,
+    "event": "proposal",
+    "old_R": 2,
+    "new_R": 3,
+    "remove_index": null
+  },
+  {
+    "sample": 2999,
+    "event": "validation_start"
+  },
+  {
+    "sample": 3999,
+    "event": "accept",
+    "old_R": 2,
+    "new_R": 3,
+    "old_loss": 0.032283185323358214,
+    "new_loss": 0.029970298454932313,
+    "old_score": 0.04318914230074376,
+    "new_score": 0.04201731996623954,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 4099,
+    "event": "switch_complete",
+    "old_R": 2,
+    "new_R": 3
+  },
+  {
+    "sample": 6099,
+    "event": "proposal",
+    "old_R": 3,
+    "new_R": 2,
+    "remove_index": 2
+  },
+  {
+    "sample": 7099,
+    "event": "validation_start"
+  },
+  {
+    "sample": 8099,
+    "event": "reject",
+    "old_R": 3,
+    "new_R": 2,
+    "old_loss": 0.02565760563823357,
+    "new_loss": 0.03367336879186695,
+    "old_score": 0.037704627149540794,
+    "new_score": 0.0445793257692525,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 10099,
+    "event": "proposal",
+    "old_R": 3,
+    "new_R": 4,
+    "remove_index": null
+  },
+  {
+    "sample": 11099,
+    "event": "validation_start"
+  },
+  {
+    "sample": 12099,
+    "event": "reject",
+    "old_R": 3,
+    "new_R": 4,
+    "old_loss": 0.021480938137253908,
+    "new_loss": 0.020624812768024893,
+    "old_score": 0.03352795964856113,
+    "new_score": 0.03381289881325379,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 14099,
+    "event": "proposal",
+    "old_R": 3,
+    "new_R": 2,
+    "remove_index": 1
+  },
+  {
+    "sample": 15099,
+    "event": "validation_start"
+  },
+  {
+    "sample": 16099,
+    "event": "reject",
+    "old_R": 3,
+    "new_R": 2,
+    "old_loss": 0.02020055438716305,
+    "new_loss": 0.0340254626704144,
+    "old_score": 0.03224757589847028,
+    "new_score": 0.044931419647799946,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 18099,
+    "event": "proposal",
+    "old_R": 3,
+    "new_R": 4,
+    "remove_index": null
+  },
+  {
+    "sample": 19099,
+    "event": "validation_start"
+  }
+]

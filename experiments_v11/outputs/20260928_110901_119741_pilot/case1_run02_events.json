@@ -1,0 +1,112 @@
+[
+  {
+    "sample": 1999,
+    "event": "proposal",
+    "old_R": 2,
+    "new_R": 3,
+    "remove_index": null
+  },
+  {
+    "sample": 2999,
+    "event": "validation_start"
+  },
+  {
+    "sample": 3999,
+    "event": "reject",
+    "old_R": 2,
+    "new_R": 3,
+    "old_loss": 0.04693431099424743,
+    "new_loss": 0.04595284928413292,
+    "old_score": 0.057840267971632976,
+    "new_score": 0.057999870795440146,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 5999,
+    "event": "proposal",
+    "old_R": 2,
+    "new_R": 1,
+    "remove_index": 1
+  },
+  {
+    "sample": 6999,
+    "event": "validation_start"
+  },
+  {
+    "sample": 7999,
+    "event": "reject",
+    "old_R": 2,
+    "new_R": 1,
+    "old_loss": 0.04902552106315345,
+    "new_loss": 0.07037564540997894,
+    "old_score": 0.059931478040539,
+    "new_score": 0.08014053785344281,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 9999,
+    "event": "proposal",
+    "old_R": 2,
+    "new_R": 3,
+    "remove_index": null
+  },
+  {
+    "sample": 10999,
+    "event": "validation_start"
+  },
+  {
+    "sample": 11999,
+    "event": "reject",
+    "old_R": 2,
+    "new_R": 3,
+    "old_loss": 0.04258953252834395,
+    "new_loss": 0.04123424266801726,
+    "old_score": 0.0534954895057295,
+    "new_score": 0.05328126417932448,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 13999,
+    "event": "proposal",
+    "old_R": 2,
+    "new_R": 1,
+    "remove_index": 1
+  },
+  {
+    "sample": 14999,
+    "event": "validation_start"
+  },
+  {
+    "sample": 15999,
+    "event": "reject",
+    "old_R": 2,
+    "new_R": 1,
+    "old_loss": 0.03736908184916778,
+    "new_loss": 0.061017771373765725,
+    "old_score": 0.04827503882655333,
+    "new_score": 0.0707826638172296,
+    "validation_samples": 1000
+  },
+  {
+    "sample": 17999,
+    "event": "proposal",
+    "old_R": 2,
+    "new_R": 3,
+    "remove_index": null
+  },
+  {
+    "sample": 18999,
+    "event": "validation_start"
+  },
+  {
+    "sample": 19999,
+    "event": "reject",
+    "old_R": 2,
+    "new_R": 3,
+    "old_loss": 0.0403983124340117,
+    "new_loss": 0.03958616933432279,
+    "old_score": 0.05130426941139725,
+    "new_score": 0.05163319084563001,
+    "validation_samples": 1000
+  }
+]

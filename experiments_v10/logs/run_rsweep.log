@@ -1,0 +1,2 @@
+=== rsweep 2026-09-26 13:08:53 code bc0376643209
+E6 rsweep mu=0.2 (13.3 s): {"RFF-MCC": "ss  -14.51 +-  0.42 dB", "NKP-RFF-MCC_R1": "ss   -4.98 +-  0.51 dB", "NKP-RFF-MCC_R2": "ss   -7.32 +-  0.52 dB", "NKP-RFF-MCC_R4": "ss  -10.05 +-  0.47 dB", "NKP-RFF-MCC_R8": "ss  -12.11 +-  0.46 dB", "NKP-RFF-MCC_R12": "ss  -12.67 +-  0.46 dB", "NKP-RFF-MCC_R20": "ss  -12.97 +-  0.46 dB"}

@@ -1,0 +1,32 @@
+# Local dependencies, environments and generated caches
+**/.deps/
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# OS/archive metadata
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+Desktop.ini
+
+# Local credentials/configuration (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and LaTeX intermediate files
+*.swp
+*.tmp
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Research outputs, NPZ data, figures, PDFs and logs are intentionally tracked.

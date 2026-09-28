@@ -1,0 +1,10 @@
+# Preserve exact experiment source bytes: protocol.json hashes raw source files.
+# Do not silently change historical LF/CRLF line endings on checkout.
+* -text
+*.npz binary
+*.mat binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
