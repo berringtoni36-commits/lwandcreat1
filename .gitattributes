@@ -8,3 +8,4 @@
 *.pdf binary
 *.docx binary
 *.xlsx binary
+experiments_v12/outputs/*/*.npz filter=lfs diff=lfs merge=lfs -text

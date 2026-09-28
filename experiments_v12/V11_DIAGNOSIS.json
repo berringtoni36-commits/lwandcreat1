@@ -1,0 +1,19 @@
+{
+  "grow": {
+    "decisions": 27,
+    "accepted": 8,
+    "loss_change_min": -0.005547254419388872,
+    "loss_change_max": -0.0003385065540598628
+  },
+  "prune": {
+    "decisions": 21,
+    "accepted": 0,
+    "loss_change_min": 0.0025091797344583416,
+    "loss_change_max": 0.029693454831236518
+  },
+  "pilot": {
+    "runs": 9,
+    "mean_candidate_occupancy": 0.5,
+    "mean_cost_ratio_fixed4": 1.000031625570597
+  }
+}

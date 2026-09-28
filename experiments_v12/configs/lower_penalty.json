@@ -1,0 +1,7 @@
+{
+  "selection": {
+    "lambda_cost": 0.0025,
+    "margin": 0.00025
+  },
+  "mu_by_method": {}
+}
