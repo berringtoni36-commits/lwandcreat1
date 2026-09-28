@@ -1,12 +1,7 @@
-"""Rebuild Figs. 3-7 from the vector paths in the compiled Overleaf PDF.
+"""Inspect figure paths and text in the historical v09 compiled PDF.
 
-The curves are read from the PDF drawing commands (no digitizing of pixels),
-so the plotted data are exactly those of the current manuscript figures.
-Only the presentation changes: legend names follow the text
-(RFF-NLMS / RFF-MCC / NKP-RFF-MCC), axis labels are unified, and the
-threshold lines used in Table 4 are drawn.
-
-Usage:  python3 figures_revised/rebuild_figures.py [--probe]
+Usage: python archive/v09_pdf_probe/probe_pdf_figures.py --probe
+This diagnostic script does not generate revised figures.
 """
 from __future__ import annotations
 
@@ -18,7 +13,7 @@ import numpy as np
 import pymupdf
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parent
+ROOT = HERE.parents[1]
 PDF = ROOT / "稿件" / "v09历史稿" / "Overleaf_润色稿_v09_编译版.pdf"
 PAGES = {3: 13, 4: 14, 5: 15, 6: 16, 7: 17}  # figure number -> 1-based page
 
